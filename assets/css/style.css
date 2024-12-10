@@ -2005,6 +2005,10 @@ img {
 }
 
 @media screen and (max-width: 1440px) {
+  .wrist-ultrasound .name-txt .form-control {
+    width: 200px;
+  }
+
   .wrist-ultrasound .form-wrapper .data-get.date-feild .form-control,
   .wrist-ultrasound .normal-form-group .form-control {
     width: 180px;
