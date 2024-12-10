@@ -1936,12 +1936,14 @@ img {
   display: grid;
   grid-template-columns: 100px 150px 150px 1fr;
   margin: 5px 0;
+  align-items: center;
 }
 
 .grid-column-3 {
   display: grid;
   grid-template-columns: 250px 150px 1fr;
   margin: 5px 0;
+  align-items: center;
 }
 
 .dorsal-aspect-comp-section .comp-item div label:nth-child(2) {
@@ -1997,22 +1999,139 @@ img {
 }
 
 @media screen and (max-width: 1579px) {
-  .name-txt .form-control {
+  .wrist-ultrasound .name-txt .form-control {
     width: 400px;
   }
 }
 
 @media screen and (max-width: 1440px) {
-  .form-wrapper .data-get.date-feild .form-control,
-  .normal-form-group .form-control {
+  .wrist-ultrasound .form-wrapper .data-get.date-feild .form-control,
+  .wrist-ultrasound .normal-form-group .form-control {
     width: 180px;
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 1210px) {
-  .name-txt .form-control {
+  .wrist-ultrasound .name-txt .form-control {
     width: 200px;
+  }
+
+  .form-wrapper select.form-control {
+    font-size: 22px !important;
+    height: 60px;
+  }
+
+  .top-form select.form-control {
+    font-size: 32px !important;
+  }
+}
+
+@media (max-width: 1126px) {
+  .wrist-ultrasound .data-get {
+    row-gap: 12px;
+    grid-row-gap: 12px;
+  }
+  .wrist-ultrasound .normal-form-group {
+    justify-content: start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .wrist-ultrasound .section-1 {
+    margin-bottom: 0 !important;
+  }
+
+  .wrist-ultrasound .data-get label {
+    min-width: 120px;
+    display: inline-block !important;
+  }
+
+  .wrist-ultrasound .name-txt .form-control {
+    width: calc(100% - 140px);
+  }
+
+  .wrist-ultrasound .flex-justify-between {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .wrist-ultrasound .data-get.date-feild label {
+    display: inline-block !important;
+  }
+
+  .clinical .form-control {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .wrist-ultrasound .clinical .form-control {
+    margin-left: 20px;
+  }
+
+  .wrist-ultrasound .normal-form-group {
+    justify-content: start;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .wrist-ultrasound .normal-form-group.data-get label {
+    min-width: 136px;
+  }
+
+  .form-wrapper select.form-control {
+    font-size: 17px !important;
+  }
+
+  .top-form select.form-control {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrist-ultrasound .top-form .d-flex {
+    flex-direction: row-reverse;
+  }
+  .wrist-ultrasound .top-form {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .wrist-ultrasound .name-txt .form-control {
+    width: 100%;
+  }
+
+  .wrist-ultrasound .clinical .form-control {
+    margin-left: 0px;
+  }
+
+  .wrist-ultrasound .grid-column-4 {
+    grid-template-columns: 59px 138px 52px 1fr;
+  }
+
+  .wrist-ultrasound .grid-column-3 {
+    grid-template-columns: 105px 84px 1fr;
+  }
+
+  .wrist-ultrasound .top-form .d-flex {
+    flex-direction: column-reverse;
+  }
+
+  .wrist-ultrasound .top-form .form-control {
+    width: 100%;
+  }
+}
+
+@media (max-width: 359px) {
+  .wrist-ultrasound .grid-column-4 {
+    grid-template-columns: 59px 93px 52px 1fr;
+  }
+
+  .wrist-ultrasound .section {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
