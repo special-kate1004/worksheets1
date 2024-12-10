@@ -1,0 +1,524 @@
+@media (min-width: 768px) {
+  input[type="reset"],
+  .search-wrap,
+  .back-sec,
+  .mob-data {
+    display: none !important;
+  }
+}
+@media (min-width: 1361px) {
+  .adv_search {
+    display: none;
+  }
+  .reset-filter input[type="reset"] {
+    display: block !important;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url("../images/cancelFilled-gray.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding: 0;
+    font-size: 0;
+    cursor: pointer;
+    border: 0;
+    padding-left: 30px;
+    background-position: center;
+  }
+  #popUpSearch {
+    display: none !important;
+  }
+}
+@media (max-width: 1479px) {
+  body {
+    font-size: 15px;
+  }
+  .table-data {
+    width: 10%;
+  }
+  .table-row .table-data {
+    padding: 0 10px;
+  }
+  .study-data {
+    width: 22%;
+  }
+  .modality {
+    width: 8%;
+  }
+  .upload-top h3 {
+    font-size: 30px;
+  }
+  .gray-strip,
+  .side-list ul li {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+  .messages-sec .chat-messages {
+    height: 204px;
+  }
+}
+
+@media (max-width: 1360px) {
+  body {
+    font-size: 13px;
+  }
+  .added-box .dashboard-right {
+    width: 440px;
+    max-width: 440px;
+  }
+  .added-box .dashboard-left {
+    width: calc(100% - 440px);
+    max-width: calc(100% - 440px);
+  }
+  .adv_search a {
+    width: 48px;
+    background: #f0f2f5;
+    border-radius: 12px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placeholder {
+    font-size: 14px;
+  }
+  .hide-dev {
+    display: none;
+  }
+  .input-group {
+    width: 16%;
+  }
+  .upload-top h3 {
+    font-size: 27px;
+  }
+  .chat-msg {
+    padding: 10px 12px;
+  }
+
+  #popUpSearch {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100%;
+    background: rgba(31, 34, 38, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  .showForm#popUpSearch {
+    opacity: 1;
+    visibility: visible;
+  }
+  #popUpSearch .search-wrap {
+    display: none !important;
+  }
+  #popUpSearch form {
+    max-width: 600px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px;
+  }
+  .dark-mode #popUpSearch form {
+    background: #000;
+  }
+  .dark-mode #popUpSearch form h2 {color: #fff}
+  .dark-mode .close svg path {
+    fill: #fff;
+  }
+  .adv_search a {
+    background: #7a7a7a;
+  }
+  #popUpSearch .close {
+    position: absolute;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    display: block;
+  }
+  #popUpSearch .input-group {
+    display: block !important;
+    width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+  #popUpSearch .adv_search {
+    display: none;
+  }
+  #popUpSearch input[type="reset"] {
+    display: block !important;
+  }
+  #popUpSearch form h2 {
+    display: block;
+    margin-bottom: 16px;
+    color: #1f2226;
+    font-weight: 600;
+    font-size: 24px;
+    width: 100%;
+    max-width: 100%;
+    line-height: 133.4%;
+  }
+  #popUpSearch input[type="reset"] {
+    font-family: "Roboto", sans-serif;
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #d32f2f;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: transparent;
+    background-image: url("../images/cancelFilled.png");
+    background-repeat: no-repeat;
+    padding: 0;
+    border: 0;
+    padding-left: 30px;
+    background-position: center left;
+  }
+}
+
+@media (max-width: 1199px) {
+  .added-box .dashboard-right {
+    width: 400px;
+    max-width: 400px;
+  }
+  .added-box .dashboard-left {
+    overflow: hidden;
+    width: calc(100% - 400px);
+    max-width: calc(100% - 400px);
+  }
+  .added-box .dashboard-content {
+    width: 1000px;
+    max-width: 1000px;
+  }
+  .added-box .dashboard-responsive {
+    width: 100%;
+    overflow-y: scroll !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .added-box .dashboard-right {
+    width: 300px;
+    max-width: 300px;
+  }
+  .added-box .dashboard-left {
+    overflow: hidden;
+    width: calc(100% - 300px);
+    max-width: calc(100% - 300px);
+  }
+  .added-box {
+    padding: 15px;
+    grid-gap: 15px;
+    gap: 15px;
+  }
+  .upload-top h3 {
+    font-size: 24px;
+  }
+  .added-box .dashboard-content {
+    width: 800px;
+    max-width: 800px;
+  }
+  .dash_heading .table-data *,
+  .dash_heading .table-data {
+    font-size: 12px;
+  }
+  .hide-dev2 {
+    display: none;
+  }
+  .input-group {
+    width: 17%;
+  }
+  .messages-sec .chat-messages {
+    height: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo a {
+    width: auto;
+    padding: 0 20px;
+    border: 0;
+    height: 56px;
+  }
+  .profile-right {
+    padding: 0 20px;
+    gap: 0;
+    font-size: 0;
+  }
+  .profile-name {
+    gap: 0;
+    grid-gap: 0;
+    width: 24px;
+  }
+  .profile-right img + img {
+    display: none;
+  }
+  .dash_heading {
+    display: none !important;
+  }
+  .table-row .table-data {
+    display: none;
+    padding: 0;
+    height: auto;
+  }
+  .dash_data {
+    display: block !important;
+    padding: 16px 0;
+    background: #fff;
+    border-radius: 20px;
+    margin-bottom: 8px;
+  }
+  .dashboard-content {
+    background: transparent;
+  }
+  .date-study {
+    padding: 16px 20px 0;
+  }
+  .date-study .modality {
+    width: auto;
+  }
+  .date-study .modality .bg-cont {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .date-study .b_date {
+    color: rgba(31, 34, 38, 0.6);
+    letter-spacing: 0.17px;
+    font-size: 14px;
+  }
+  .date-study .study-data {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1f2226;
+  }
+  .name-data {
+    padding: 0 20px 16px;
+    border-bottom: 1px solid rgba(31, 34, 38, 0.08);
+  }
+  .name-data-left > * {
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #1f2226;
+  }
+  .name-data .b_date {
+    font-size: 14px;
+    line-height: 143%;
+    color: rgba(31, 34, 38, 0.6);
+  }
+
+  .search-desk-section form {
+    display: none;
+  }
+  .search-desk-section {
+    padding: 0;
+  }
+  .search-wrap {
+    padding: 16px 20px;
+
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    padding-left: 47px;
+    background-image: url('../images/searchFilled.png');
+    background-repeat: no-repeat;
+    background-position: left 18px center;
+  }
+  .search-wrap:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    background: url("../images/icon.png");
+  }
+  .search-wrap img {
+    margin-right: 8px;
+    display: inline-block;
+  }
+  .dashboard-table {
+    padding: 16px 12px;
+  }
+  .dashboard-table .dashboard-right {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    left: auto;
+    background-color: #f0f2f5;
+    right: 100%;
+  }
+  .added-box .dashboard-right {
+    right: 0;
+  }
+  .side-sec {
+    border-radius: 0;
+  }
+  .dashboard-table .dashboard-left {
+    width: 100%;
+    max-width: 100%;
+  }
+  .messages-sec {
+    position: absolute;
+    top: 58px;
+    transition: all 0.5s;
+    left: 100%;
+    height: calc(100% - 58px);
+  }
+  .gray-txt {
+    font-size: 16px;
+  }
+  .users-sec .left-side + div {
+    padding-left: 64px;
+  }
+  .back-sec {
+    padding: 0 20px;
+    font-size: 0;
+    height: 56px;
+    background: #fff;
+    border-bottom: 1px solid #f9f9f9;
+  }
+  .messages-sec .chat-messages {
+    height: calc(100vh - 228px);
+    box-sizing: border-box;
+  }
+  .back-02 {
+    display: none;
+  }
+  .msg .messages-sec {
+    left: 0;
+  }
+  .msg .msg-01 {
+    display: none;
+  }
+  .msg .back-02 {
+    display: block;
+  }
+  .search-desk-section form {
+    z-index: 3;
+    grid-column-gap: 0;
+    column-gap: 0;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    background: #fff;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 20px 20px 20px;
+    box-sizing: border-box;
+  }
+  .search-desk-section form .btn {
+    width: 200px;
+  }
+  .adv_search {
+    display: none;
+  }
+  .input-group.study,
+  .input-group {
+    width: 100%;
+  }
+  .hide-dev2,
+  .hide-dev {
+    display: block;
+  }
+  .pat_id,
+  .date-field {
+    width: calc(50% - 6px);
+    max-width: calc(50% - 6px);
+  }
+  #searchform {
+    transition: all 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #searchform.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  input[type="reset"] {
+    font-family: "Roboto", sans-serif;
+
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #d32f2f;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    background-color: transparent;
+    background-image: url("../images/CancelFilled.png");
+    background-repeat: no-repeat;
+    padding: 0;
+    border: 0;
+    padding-left: 30px;
+    background-position: center left;
+  }
+
+  .chat-sec {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #popUpSearch {
+    display: none !important;
+  }
+
+  .no-result-cont h6 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .added-box .dashboard-responsive {overflow: hidden !important;}
+  /*-------*/
+  .dark-mode .dash_data {
+    background: #000; color: #fff;
+    border: 0;
+  }
+  .dark-mode .date-study .study-data ,
+  .dark-mode .name-data-left > * {
+    color: #fff;
+  }
+  .dark-mode .date-study .b_date ,
+  .dark-mode .name-data .b_date {
+    color: rgba(255,255,255,.75)
+  }
+  
+  .dark-mode.dark-mode .dashboard-content {background: transparent;}
+   .dark-mode .back-sec ,
+  .dark-mode .dashboard-table .dashboard-right {
+        background-color: rgba(18,18,18,1);
+    color: white;
+  }
+  .dark-mode .search-wrap {
+    background-image: url('../images/searchFilled-white.png');
+    background-repeat: no-repeat;
+    background-position: left 18px center;
+  }
+  .dark-mode .search-wrap:before {
+    background-image: url(../images/icon-white.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+  .dark-mode .search-desk-section form {
+    background: #000;
+  }
+}
