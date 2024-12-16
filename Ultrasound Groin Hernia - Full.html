@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="assets/images/favicon.ico">
+	<title>QUBS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="form-wrapper">
+	<div id="wrapper">
+		<div class="container">
+			<div class="top-form d-flex justify-content-between align-items-end">
+				<h1>Groin Hernia Ultrasound</h1>
+				<div class="logo">
+					<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/carescanimaginggroup.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2076996743&Signature=N2H%2FA3FEEacyc4Pa2L1r9CLBWGA%3D"
+						alt="" />
+				</div>
+			</div>
+			<form>
+				<div class="d-flex flex-wrap form-row">
+					<div class="data-get name-txt">
+						<label for="patientName">Patient Name:</label>
+						<input class="form-control" type="text" name="Patient Name" id="patientName" value="">
+					</div>
+					<div class="data-get date-feild">
+						<label for="DOB">DOB:</label>
+						<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="DOB" id="DOB" value="">
+					</div>
+					<div class="data-get date-feild">
+						<label for="studyDate">Study Date:</label>
+						<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="Study Date"
+							id="studyDate" value="">
+					</div>
+
+					<div class="get-data d-flex flex-wrap align-items-center">
+						<label>Scan Quality:</label>
+						<div class="radio-list d-flex align-items-center">
+							<label class="customRadio" for="scan-radio-satisfactory">Satisfactory
+								<input type="radio" checked="checked" name="Scan Quality" id="scan-radio-satisfactory"
+									value="Satisfactory">
+								<span class="checkmark"></span>
+							</label>
+							<label class="customRadio" for="scan-radio-suboptimal">Suboptimal
+								<input type="radio" name="Scan Quality" id="scan-radio-suboptimal" value="Suboptimal">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="data-get sonographer">
+						<label for="sonographer">Sonographer:</label>
+						<input class="form-control" type="text" name="Sonographer" id="sonographer" value="">
+					</div>
+
+					<div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+						<label for="clinical">Clinical: </label>
+						<input class="form-control" type="text" name="Clinical Info" id="clinical" value="">
+					</div>
+
+				</div>
+
+				<div class="ant-sec groin-sec">
+					<div class="d-flex align-items-center w-100 headSec">
+						<h4 class="ant-label">Groin side</h4>
+						<select class="form-control" name="Scan" >
+							<option value="Groin hernia side" selected></option>
+							<option value="Groin hernia side left">Left</option>
+							<option value="Groin hernia side right">Right</option>
+						</select>
+					</div>
+ 
+
+					<div class="d-flex flex-wrap data-tear-row">
+						<div class="data-get d-flex flex-wrap align-items-center mb-0">
+							<label>Femoral Hernia</label>
+							<div class="radio-list d-flex align-items-center">
+								<label class="customRadio">Yes
+									<input type="radio" name="Right femoral hernia" value="Yes">
+									<span class="checkmark"></span>
+								</label>
+								<label class="customRadio">No
+									<input type="radio" name="Right femoral hernia" checked="checked" value="No">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="data-get d-flex flex-wrap align-items-center">
+							<label>Inguinal Hernia</label>
+							<div class="radio-list d-flex align-items-center">
+								<label class="customRadio">Yes
+									<input type="radio" name="Right inguinal hernia" value="Yes">
+									<span class="checkmark"></span>
+								</label>
+								<label class="customRadio">No
+									<input type="radio" checked="checked" name="Right inguinal hernia" value="No">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="data-get d-flex flex-wrap align-items-center herina-row one-line">
+						<div class="d-flex flex-wrap align-items-center flex-wrap one-line">
+							<label>
+								Nature:
+							</label>
+							<div class="date-feild w-190">
+								<select class="form-control" name="Right nature">
+									<option value="N/A" selected>N/A</option>
+									<option value="Direct">Direct</option>
+									<option value="Femoral">Femoral</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap align-items-center flex-wrap">
+							<label>
+								Contents:
+							</label>
+							<div class="date-feild w-190">
+								<select class="form-control" name="Right contents">
+									<option value="N/A" selected>N/A</option>
+									<option value="Omentum">Omentum</option>
+									<option value="Bowel">Bowel</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap align-items-center flex-wrap">
+							<label>
+								Tenderness:
+							</label>
+							<div class="date-feild w-270">
+								<select class="form-control" name="Right Tenderness">
+									<option value="Non Tender" selected>Non Tender</option>
+									<option value="Tender">Tender</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap align-items-center flex-wrap">
+							<label>
+								Reducibility:
+							</label>
+							<div class="date-feild w-360">
+								<select class="form-control" name="Right Reducibility">
+									<option value="N/A" selected>N/A</option>
+									<option value="Reducible">Reducible</option>
+									<option value="Partially reducible">Partially reducible</option>
+									<option value="Non reducible">Non reducible</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap align-items-center flex-wrap w-150">
+							<label>
+								Neck Size:
+							</label>
+							<span class="cm-txt afterInput w-150">
+								<input class="form-control" type="text" name="Right neck size (cm)">
+								<span class="cm-txt-in">cm</span>
+							</span>
+						</div>
+						<div class="data-get w-150 d-flex align-items-end m-0  ">
+							<label>Sac Size:</label>
+
+							<span class="cm-txt afterInput">
+								<input class="form-control auto-insert-x" type="text" name="Right Sac Size (cm)"
+									placeholder="cm x cm" value="">
+							</span>
+						</div>
+
+						<div class="w-100 left-right-sec d-flex flex-wrap align-items-end">
+							<div class="left-checkbox d-flex flex-wrap">
+								<div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+									<label>Lymphadenopathy</label>
+									<label class="customcheckbox">
+										<input type="checkbox" checked name="Right Lymphadenopathy">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+
+								<div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+									<label>Mass</label>
+									<label class="customcheckbox">
+										<input type="checkbox" checked name="Right Mass">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+
+								<div class="d-flex flex-wrap align-items-center w-100 justify-content-between">
+									<label>Hip Joint Effusion</label>
+									<label class="customcheckbox">
+										<input type="checkbox" checked name="Right Hip Joint Effusion">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="right-comment">
+								<label><strong>Comments:</strong></label>
+								<textarea class="form-control" name="Right Comments"></textarea>
+							</div>
+
+					
+
+						</div>		<div class="d-flex flex-wrap form-row w-100 clip-row">
+							<div class="data-get w-215">
+								<label class="setWid">No. of video clips</label>
+								<input class="form-control" type="text" name="No. of video clips">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			 
+
+				<input type="submit" class="btn btn-rounded" value="Submit">
+			</form>
+		</div>
+	</div>
+	<script src="assets/js/submitform.js"></script>
+</body>
+
+</html>

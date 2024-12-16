@@ -875,7 +875,7 @@ textarea {
     height: 510px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1203px) {
   .form-wrapper {
     padding: 40px 0;
   }
@@ -1915,21 +1915,33 @@ img {
 
 /* kate */
 
-.wrist-ultrasound .top-form {
-  padding-bottom: 77px;
-}
-
-.wrist-ultrasound .form-wrapper .container {
-  margin: 0 100px;
-}
-
-.wrist-ultrasound .flex-justify-between {
-  justify-content: space-between;
-}
-
 .section {
   margin-top: 62px;
   margin-bottom: 71px;
+}
+
+.ml-13 {
+  margin-left: 13px;
+}
+
+.ml-22 {
+  margin-left: 22px;
+}
+
+.gap-18 {
+  gap: 18px;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.gap-100 {
+  gap: 100px;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .grid-column-4 {
@@ -1977,7 +1989,7 @@ img {
   padding-top: 18px;
 }
 
-.data-get label {
+.data-get label:first-child {
   min-width: 170px;
   display: inline-block; /* Make label block-level to respect width and min-width */
 }
@@ -1998,6 +2010,18 @@ img {
   display: inline !important;
 }
 
+.wrist-ultrasound .top-form {
+  padding-bottom: 77px;
+}
+
+.wrist-ultrasound .form-wrapper .container {
+  margin: 0 100px;
+}
+
+.wrist-ultrasound .flex-justify-between {
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 1579px) {
   .wrist-ultrasound .name-txt .form-control {
     width: 400px;
@@ -2013,6 +2037,17 @@ img {
   .wrist-ultrasound .normal-form-group .form-control {
     width: 180px;
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .elbow-ultrasound .selectboxgroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .elbow-ultrasound .selectboxgroup label {
+    min-width: 170px;
   }
 }
 
@@ -2043,11 +2078,15 @@ img {
 }
 
 @media (max-width: 991px) {
-  .wrist-ultrasound .section-1 {
+  .gap-100 {
+    gap: 50px;
+  }
+
+  .interval .wrist-ultrasound .section-1 {
     margin-bottom: 0 !important;
   }
 
-  .wrist-ultrasound .data-get label {
+  .wrist-ultrasound .data-get label:first-child {
     min-width: 120px;
     display: inline-block !important;
   }
@@ -2091,18 +2130,48 @@ img {
   .top-form select.form-control {
     font-size: 22px !important;
   }
+
+  .elbow-ultrasound .selectboxgroup label {
+    min-width: 120px;
+  }
 }
 
 @media (max-width: 768px) {
+  .gap-50 {
+    gap: 20px;
+  }
+
   .wrist-ultrasound .top-form .d-flex {
     flex-direction: row-reverse;
   }
   .wrist-ultrasound .top-form {
     padding-bottom: 0;
   }
+
+  .elbow-ultrasound .selectboxgroup {
+    grid-template-columns: 1fr;
+    row-gap: 18px;
+  }
+
+  .elbow-ultrasound .selectboxgroup .data-get {
+    margin-bottom: 0px;
+  }
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 609px) {
+  .elbow-ultrasound .joint-effusion {
+    gap: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .elbow-ultrasound .joint-effusion .checkboxgroup {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 578px) {
   .wrist-ultrasound .name-txt .form-control {
     width: 100%;
   }
@@ -2125,6 +2194,11 @@ img {
 
   .wrist-ultrasound .top-form .form-control {
     width: 100%;
+  }
+
+  .elbow-ultrasound .title-checkbox {
+    width: fit-content;
+    flex-wrap: nowrap;
   }
 }
 
@@ -2192,7 +2266,7 @@ img {
     overflow-x: scroll;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1203px) {
   .twinSecWrapper .biometric-left {
     width: 60%;
     max-width: 60%;

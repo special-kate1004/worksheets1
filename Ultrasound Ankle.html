@@ -1,0 +1,190 @@
+<!-- form body start -->
+
+<div class="top-form d-flex justify-content-between align-items-end">
+	<div class="date-feild d-flex flex-wrap align-items-center w-270">
+		<h1>Ultrasound Ankle</h1>
+		<select class="form-control" name="Scan" >
+			<option value="Ultrasound ankle" selected></option>
+			<option value="Ultrasound ankle left">Left</option>
+			<option value="Ultrasound ankle right">Right</option>
+		</select>
+	</div>
+	<div class="logo">
+		<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/carescanimaginggroup.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2076996743&Signature=N2H%2FA3FEEacyc4Pa2L1r9CLBWGA%3D"
+			alt="" />
+	</div>
+</div>
+
+<div class="d-flex flex-wrap form-row">
+	<div class="data-get name-txt">
+		<label for="patientName">Patient Name:</label>
+		<input class="form-control" type="text" name="Patient Name" id="patientName" value="">
+	</div>
+	<div class="data-get date-feild">
+		<label for="DOB">DOB:</label>
+		<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="DOB" id="DOB" value="">
+	</div>
+	<div class="data-get date-feild">
+		<label for="studyDate">Study Date:</label>
+		<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="Study Date" id="studyDate" value="">
+	</div>
+
+	<div class="data-get sonographer">
+		<label for="sonographer">Sonographer:</label>
+		<input class="form-control" type="text" name="Sonographer" id="sonographer" value="">
+	</div>
+
+	<div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+		<label for="clinical">Clinical: </label>
+		<input class="form-control" type="text" name="Clinical Info" id="clinical" value="">
+	</div>
+
+
+	<div class="ankle-sec lateral-sec w-100">
+		<h4>Lateral</h4>
+
+		<span class="img-abs">
+			<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/lateral.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2045460727&Signature=BNW3fJhdnkVcCMVBZaYkQWcAmFQ%3D"
+				alt="">
+		</span>
+
+		<div class="ankle-row">
+			<div class="data-get">
+				<label class="label-175">PTFL:</label>
+				<input class="form-control" type="text" name="Posterior talofibular ligament comments"
+					id="posteriortalofibularligament" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">AITFL:</label>
+				<input class="form-control" type="text" name="Anterior inferior tibiofibular ligament comments"
+					id="anteriorinferiortibiofibularligament" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">CFL:</label>
+				<input class="form-control" type="text" name="Calcaneofibular ligament comments"
+					id="calcaneofibularligament" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">PER LONGUS:</label>
+				<input class="form-control" type="text" name="Peroneus longus comments" id="peroneuslongus" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">PER BREVIS:</label>
+				<input class="form-control" type="text" name="Peroneus brevis comments" id="peroneusbrevis" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">ATFL:</label>
+				<input class="form-control" type="text" name="Anterior talofibular ligament comments"
+					id="anteriortalofibularligament" value="">
+			</div>
+		</div>
+
+		<div class="data-get w-100">
+			<label>Comments:</label>
+			<textarea class="form-control" type="text" name="Lateral comments" id="lateralcomments" value=""></textarea>
+		</div>
+	</div>
+
+	<div class="ankle-sec medial-sec w-100">
+		<h4>Medial</h4>
+
+		<span class="img-abs">
+			<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/medial.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2045460694&Signature=F9%2B3lyR6dvwhplIdDlAXaaKqUj0%3D"
+				alt="">
+		</span>
+
+		<div class="ankle-row">
+			<div class="data-get">
+				<label class="label-175">DELTOID LIG:</label>
+				<input class="form-control" type="text" name="Deltoid ligament comments" id="deltoidligament" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">SPRING LIG:</label>
+				<input class="form-control" type="text" name="Spring ligament comments" id="springligament" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">TIB POST:</label>
+				<input class="form-control" type="text" name="Tibialis posterior comments" id="tibialisposterior"
+					value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">FDL</label>
+				<input class="form-control" type="text" name="Flexor digitorum longus comments"
+					id="flexordigitorumlongus" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">FHL</label>
+				<input class="form-control" type="text" name="Flexor hallucis longus comments"
+					id="flexorhallucislongus" value="">
+			</div>
+
+			<div class="data-get d-flex flex-wrap align-items-center">
+				<div class="get-data d-flex flex-wrap align-items-center">
+					<label>Ankle Effusion:</label>
+					<div class="radio-list d-flex align-items-center">
+						<label class="customRadio">Yes
+							<input type="radio" checked="checked" name="Ankle effusion" id="ankleeffusionyes"
+								value="Yes">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">No
+							<input type="radio" name="Ankle effusion" id="ankleeffusionno" value="no">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="get-data">
+					<label>Meas.</label>
+					<input class="form-control" type="text" name="Ankle effusion measures" id="measure" value="">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="data-get w-100">
+			<label>Comments:</label>
+			<textarea class="form-control" type="text" name="Medial comments" id="medialcomments" value=""></textarea>
+		</div>
+	</div>
+
+	<div class="ankle-sec medial-sec w-100">
+		<h4>Anterior</h4>
+
+		<div class="ankle-row">
+			<div class="data-get">
+				<label class="label-175">TIB Ant:</label>
+				<input class="form-control" type="text" name="Tibialis Comments" id="tibialisanterior"
+					value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">EHL:</label>
+				<input class="form-control" type="text" name="Extensor hallucis longus comments"
+					id="extensorhallucislongus" value="">
+			</div>
+
+			<div class="data-get">
+				<label class="label-175">EDL:</label>
+				<input class="form-control" type="text" name="Extensor digitorum longus comments"
+					id="extensordigitorumlongus" value="">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="data-get w-100 summary">
+		<h4>Summary</h4>
+		<textarea class="form-control" type="text" name="Summary" id="summary" value=""></textarea>
+	</div>
+
+</div>

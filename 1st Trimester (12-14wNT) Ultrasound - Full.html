@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="assets/images/favicon.ico"> 
+	<title>QUBS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+</head>
+<body class="form-wrapper trimester-pg">
+	<div id="wrapper" >
+		<div class="container">
+		
+		<!-- form body start -->
+
+		<div class="top-form d-flex justify-content-between align-items-end">
+			<h1>1st Trimester (12-14w/NT) Ultrasound</h1>
+			<div class="logo">
+				<img src="assets/images/form-logo.png" alt="" />
+			</div>
+		</div>
+
+		
+				<div class="d-flex flex-wrap form-row">
+					<div class="data-get name-txt">
+						<label>Patient Name:</label>
+						<input class="form-control" type="text" name="Patient Name" id="patientName" value="">
+					</div>
+					<div class="data-get date-feild">
+						<label>DOB:</label>
+						<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="DOB" id="DOB"
+						value="">
+					</div>
+					<div class="data-get date-feild">
+						<label>Study Date:</label>
+						<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="Study Date" id="studyDate"
+						value="">
+					</div>
+
+					<div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+						<label>Clinical: </label>
+						<input class="form-control" type="text" name="Clinical Info" id="clinical" value="">
+					</div>
+
+					<div class="get-data d-flex flex-wrap align-items-center">
+						<div class="radio-list d-flex align-items-center">
+							<label class="customcheckbox">G
+							  <input type="checkbox" name="Gravida" id="gravida">
+							  <span class="checkmark"></span>
+							</label>
+							<label class="customcheckbox">P
+							  <input type="checkbox" name="Para" id="para">
+							  <span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<div class="data-get calculated w-100px d-flex align-items-end">
+						<label>Calculated: </label>
+						GA <input class="form-control" type="text" name="Gestational Age Weeks" id="gestationalageweeks" value=""> w 
+						<input class="form-control afterInput" type="text" name="Gestational Age Days" id="gestationalagedays" value=""> d
+					</div>
+
+					<div class="data-get calculated edd w-100px d-flex align-items-end">
+						<label>EDD </label>
+						<input class="form-control" type="text" name="Estimated Date of Delivery Day" id="estimateddateofdeliveryday" value=""> / 
+						<input class="form-control afterInput" type="text" name="Estimated Date of Delivery Month" id="estimateddateofdeliverymonth" value=""> /
+						<input class="form-control afterInput" type="text" name="Estimated Date of Delivery Year" id="estimateddateofdeliveryyear" value=""> &nbsp;  Based on
+					</div>
+
+					<div class="data-get calculated edd lmp w-100px d-flex align-items-end">
+						<label>LMP </label>
+						<input class="form-control" type="text" name="Last Menstrual Period Day" id="lastmenstrualperiodday" value=""> / 
+						<input class="form-control afterInput" type="text" name="Last Menstrual Period Month" id="lastmenstrualperiodmonth" value=""> /
+						<input class="form-control afterInput" type="text" name="Last Menstrual Period Year" id="lastmenstrualperiodyear" value=""> 
+					</div>
+
+					<div class="data-get calculated edd prevus w-100 w-100px d-flex align-items-end justify-content-end">
+						<label>PREV US </label> 
+						@<input class="form-control afterInput" type="text" name="Previous Ultrasound" id="previousultrasound" value=""> w 
+					</div>
+					
+				</div>
+
+				<div class="column-struct d-flex flex-wrap justify-content-between">
+					<div class="column column-01">
+						<div class="data-get sm-col w-130">
+							<div>
+								<label>FHR</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Fetal Heart Rate" id="fetalheartrate" value="">
+									<span class="cm-txt-in">BPM</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="data-get sm-col w-130 d-flex flex-wrap justify-content-between">
+							<div class="sm-left">
+								<label>CRL</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Crown-Rump Length" id="crown-rumplength" value="">
+									<span class="cm-txt-in">mm</span>
+								</span>
+							</div>
+							<div class="sm-right w-100px d-flex align-items-end">
+								<input class="form-control afterInput" type="text" name="Weeks" id="weeks" value=""> w 
+								<input class="form-control afterInput" type="text" name="Days" id="days" value=""> d
+							</div>
+						</div>
+
+						<div class="data-get sm-col w-130">
+							<div>
+								<label>BPD</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Biparietal Diameter" id="biparietaldiameter" value="">
+									<span class="cm-txt-in">mm</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="data-get sm-col w-130">
+							<div>
+								<label>NT</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Nuchal Translucency" id="nuchaltranslucency" value="">
+									<span class="cm-txt-in">mm</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="data-get lg-col">
+							<div>
+								<label>Placenta</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Placenta" id="placenta" value="">
+									<span class="cm-txt-in">mm</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="data-get lg-col w-150">
+							<div>
+								<label>Cervix</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Cervix" id="cervix" value="">
+									<span class="cm-txt-in">cm</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="data-get lg-col">
+							<div>
+								<label>Right Ovary</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Right Ovary" id="rightovary" value="">
+									<span class="cm-txt-in">mm</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="data-get lg-col">
+							<div>
+								<label>Left Ovary</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Left Ovary" id="leftovary" value="">
+									<span class="cm-txt-in">mm</span>
+								</span>
+							</div>
+						</div>
+
+						<div class="data-get lg-col">
+							<div>
+								<label>Corpus Luteum</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Corpus Luteum" id="corpusluteum" value="">
+									<span class="cm-txt-in">mm</span>
+								</span>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="column checkColumn column-02">
+						<div class="data-get checkboxWrap d-flex">
+							<label class="checklabel">
+								HEAD
+							</label>
+							<div class="radio-list d-flex flex-wrap align-items-center">
+								<label class="customcheckbox">Skull/Ossification
+								  <input type="checkbox" name="Skull/Ossification" id="skull/ossification">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Choroid
+								  <input type="checkbox" name="Choroid" id="choroid">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Faix
+								  <input type="checkbox" name="Faix" id="faix">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">lntracranial Translucency
+								  <input type="checkbox" name="lntracranial Translucency" id="intracranialtranslucency">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="data-get checkboxWrap d-flex">
+							<label class="checklabel">
+								FACE
+							</label>
+							<div class="radio-list d-flex flex-wrap align-items-center">
+								<label class="customcheckbox">Orbits
+								  <input type="checkbox" name="Orbits" id="orbits">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Profile
+								  <input type="checkbox" name="Profile" id="profile">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">NB
+								  <input type="checkbox" name="Nasal Bone" id="nasalbone">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Mandible
+								  <input type="checkbox" name="Mandible" id="mandible">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="data-get checkboxWrap d-flex">
+							<label class="checklabel">
+								SPINE
+							</label>
+							<div class="radio-list d-flex flex-wrap align-items-center">
+								<label class="customcheckbox">Vertebrae
+								  <input type="checkbox" name="Vertebrae" id="vertebrae">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Skin Line
+								  <input type="checkbox" name="Skin Line" id="skineline">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="data-get checkboxWrap d-flex">
+							<label class="checklabel">
+								CHEST
+							</label>
+							<div class="radio-list d-flex flex-wrap align-items-center">
+								<label class="customcheckbox">Situs
+								  <input type="checkbox" name="Situs" id="situs">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">4CH
+								  <input type="checkbox" name="Four Chamber View" id="fourchamberview">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">3VV
+								  <input type="checkbox" name="Three Vessel View" id="threevesselview">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Diaphragm
+								  <input type="checkbox" name="Diaphragm" id="diaphragm">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="column checkColumn column-03">
+						<div class="data-get checkboxWrap d-flex">
+							<label class="checklabel">
+								ABDOMEN
+							</label>
+							<div class="radio-list d-flex flex-wrap align-items-center">
+								<label class="customcheckbox">Stomach
+								  <input type="checkbox" name="Stomach" id="stomach">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Bladder
+								  <input type="checkbox" name="Bladder" id="bladder">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Kidneys
+								  <input type="checkbox" name="Kidneys" id="kidneys">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Cord insertion
+								  <input type="checkbox" name="Cord insertion" id="cordinsertion">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">3VC
+								  <input type="checkbox" name="Three Vessel and Cord View" id="threevesselandcordview">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+
+						<div class="data-get checkboxWrap d-flex">
+							<label class="checklabel">
+								Limbs
+							</label>
+							<div class="radio-list d-flex flex-wrap align-items-center">
+								<label class="customcheckbox">Arms
+								  <input type="checkbox" name="Arms" id="arms">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Legs
+								  <input type="checkbox" name="Legs" id="legs">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Hands
+								  <input type="checkbox" name="Hands" id="hands">
+								  <span class="checkmark"></span>
+								</label>
+								<label class="customcheckbox">Feet
+								  <input type="checkbox" name="Feet" id="feet">
+								  <span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex flex-wrap form-row">
+					<div class="data-get calculated w-100px d-flex align-items-end">
+						<label>&nbsp; </label>
+						GA <input class="form-control" type="text" name="Gestational Age Weeks two" id="gestationalageweekstwo"> w 
+						<input class="form-control afterInput" type="text" name="Gestational Age Days two" id="gestationalagedaystwo"> d
+					</div>
+
+					<div class="data-get calculated edd w-100px d-flex align-items-end">
+						<label>EDD </label>
+						<input class="form-control" type="text" name="Estimated Date of Delivery Day1" id="estimateddateofdeliveryday1" value=""> / 
+						<input class="form-control afterInput" type="text" name="Estimated Date of Delivery Month1" id="estimateddateofdeliverymonth1" value=""> /
+						<input class="form-control afterInput" type="text" name="Estimated Date of Delivery Year1" id="estimateddateofdeliveryyear1" value=""> &nbsp;  Based on
+					</div>
+
+					<div class="data-get calculated edd lmp w-100px d-flex align-items-end">
+						<label>LMP </label>
+						<input class="form-control" type="text" name="Last Menstrual Period Day1" id="lastmenstrualperiodday1" value=""> / 
+						<input class="form-control afterInput" type="text" name="Last Menstrual Period Month1" id="lastmenstrualperiodmonth1" value=""> /
+						<input class="form-control afterInput" type="text" name="Last Menstrual Period Year1" id="lastmenstrualperiodyear1" value=""> 
+					</div>
+
+					<div class="data-get calculated edd w-100 w-150 d-flex align-items-end justify-content-end">
+						<div class="crl">
+							<label>CRL</label> 
+							<span class="cm-txt">
+							<input class="form-control" type="text" name="Crown-Rump Length2" id="crown-rumplength2" value="">
+								<span class="cm-txt-in">mm</span>
+							</span> 
+							 
+						</div>
+					</div>
+
+					<div class="data-get calculated edd prevus w-100 w-100px d-flex align-items-end justify-content-end">
+						<label>PREV US </label> 
+						@<input class="form-control afterInput" type="text" name="Previous Ultrasound2" id="previousultrasound2" value=""> w
+					</div>
+					
+				</div>
+
+				<div class="eth-row d-flex flex-wrap">
+					<div class="data-get w-300 ">
+						<label>Ethnicity:</label>
+						<select class="form-control" name="Ethnicity" id="ethnicity">
+							<option>Caucasian</option>
+							<option>African</option>
+							<option>Asian</option>
+							<option>Hispanic</option>
+							<option>Indian</option>
+							<option>Polynesian</option>
+							<option>Other</option>
+							<option>Mixed</option>
+						</select>
+					</div>
+
+					<div class="data-get">
+						<div class="w-100px d-flex align-items-end justify-content-end">
+							<label>PAPP-A:</label> 
+							<input class="form-control afterInput" type="text" name="Pregnancy-Associated Plasma Protein-A" id="pregnancy-associatedplasmaprotein-a" value=""> MoM
+						</div>
+						<div class="w-100px d-flex align-items-end justify-content-end">
+							<label>Free beta hCG:</label> 
+							<input class="form-control afterInput" type="text" name="Free Beta Human Chorionic Gonadotropin" id="freebetahumanchorionicgonadotropin" value=""> MoM
+						</div>
+					</div>
+				</div>
+
+				<div class="counsulled d-flex flex-wrap">
+					<div class="counsulled-value-wrap">
+						<div class="risk-head w-100 d-flex">
+							<div class="value-get data-top data-head">&nbsp;</div>
+							<div class="value-get data-top">T21</div>
+							<div class="value-get data-top">T18</div>
+							<div class="value-get data-top">T13</div>
+						</div>
+						<div class="risk-head w-100 d-flex">
+							<div class="value-get data-head d-flex align-items-center">Background Risk</div>
+							<div class="value-get">
+								<span class="value">
+									1:
+								</span>
+								<input type="text" name="Background Risk T21(1)" id="backgroundriskt21(1)" value="">
+							</div>
+							<div class="value-get">
+								<span class="value">
+									1:
+								</span>
+								<input type="text" name="Background Risk T18(1)" id="backgroundriskt18(1)" value="">
+							</div>
+							<div class="value-get">
+								<span class="value">
+									1:
+								</span>
+								<input type="text" name="Background Risk T13(1)" id="backgroundriskt13(1)" value="">
+							</div>
+						</div>
+						<div class="risk-head w-100 d-flex">
+							<div class="value-get data-head d-flex align-items-center">Adjusted Risk</div>
+							<div class="value-get">
+								<span class="value">
+									1:
+								</span>
+								<input type="text" name="Adjusted Risk T21(1)" id="adjustedriskt21(1)" value="">
+							</div>
+							<div class="value-get">
+								<span class="value">
+									1:
+								</span>
+								<input type="text" name="Adjusted Risk T18(1)" id="adjustedriskt18(1)" value="">
+							</div>
+							<div class="value-get">
+								<span class="value">
+									1:
+								</span>
+								<input type="text" name="Adjusted Risk T13(1)" id="adjustedriskt13(1)" value="">
+							</div>
+						</div>
+					</div>
+
+					<div class="counsulled-right d-flex flex-wrap">
+						<div class="data-get w-100">
+							<label class="customcheckbox">Counselled/Consented
+							  <input type="checkbox" name="Counselled/Consented" id="counselled/consented">
+							  <span class="checkmark"></span>
+							</label>
+						</div>
+						<div class="data-get w-100 w-215">
+							<div class="d-flex justify-content-between align-items-end">
+								<label>Weight</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Weight" id="weight" value="">
+									<span class="cm-txt-in">kg</span>
+								</span>
+							</div>
+
+							<div class="d-flex justify-content-between align-items-end">
+								<label>Height</label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Height" id="height" value="">
+									<span class="cm-txt-in">cm</span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="referrer d-flex flex-wrap">
+					<div class="radio-list d-flex flex-wrap align-items-center p-0">
+						<label class="customcheckbox">Referrer notified
+						  <input type="checkbox" name="Referrer notified" id="referrernotified">
+						  <span class="checkmark"></span>
+						</label>
+					</div>
+
+					<div class="data-get sonographer">
+						<label>Sonographer</label>
+						<input class="form-control" type="text" name="Sonographer" id="sonographer" value="">
+					</div>
+				</div>
+
+				<input type="submit" class="btn btn-rounded" value="Submit">
+				<span id="submitMessage"></span>
+				<!-- form body end -->
+		</div>
+	</div>
+	<script src="assets/js/submitform.js"></script>
+</body>
+</html>

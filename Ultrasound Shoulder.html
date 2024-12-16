@@ -1,0 +1,374 @@
+<!-- form body start -->
+<div class="top-form d-flex justify-content-between align-items-end">
+	<div class="date-feild d-flex flex-wrap align-items-center w-270">
+		<h1>Shoulder Ultrasound</h1>
+		<select class="form-control" type="text" name="Scan" id="scan">
+			<option value="Ultrasound shoulder left" selected>Left</option>
+			<option value="Ultrasound shoulder right">Right</option>
+		</select>
+	</div>
+	<div class="logo">
+		<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/carescanimaginggroup.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2076996743&Signature=N2H%2FA3FEEacyc4Pa2L1r9CLBWGA%3D" alt="" />
+	</div>
+</div>
+
+<div class="d-flex flex-wrap form-row">
+	<div class="data-get name-txt">
+		<label for="patientName">Patient Name:</label>
+		<input class="form-control" type="text" name="Patient Name" id="patientName" value="">
+	</div>
+	<div class="data-get date-feild">
+		<label for="DOB">DOB:</label>
+		<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="DOB" id="DOB" value="">
+	</div>
+	<div class="data-get date-feild">
+		<label for="studyDate">Study Date:</label>
+		<input class="form-control" type="text" placeholder="DD-MM-YYYY" name="Study Date" id="studyDate" value="">
+	</div>
+
+	<div class="get-data d-flex flex-wrap align-items-center">
+		<label>Scan Quality:</label>
+		<div class="radio-list d-flex align-items-center">
+			<label class="customRadio" for="scan-radio-satisfactory">Satisfactory
+				<input type="radio" checked="checked" name="Scan Quality" id="scan-radio-satisfactory"
+					value="Satisfactory">
+				<span class="checkmark"></span>
+			</label>
+			<label class="customRadio" for="scan-radio-suboptimal">Suboptimal
+				<input type="radio" name="Scan Quality" id="scan-radio-suboptimal" value="Suboptimal">
+				<span class="checkmark"></span>
+			</label>
+		</div>
+	</div>
+
+	<div class="data-get sonographer">
+		<label for="sonographer">Sonographer:</label>
+		<input class="form-control" type="text" name="Sonographer" id="sonographer" value="">
+	</div>
+
+	<div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+		<label for="clinical">Clinical: </label>
+		<input class="form-control" type="text" name="Clinical Info" id="clinical" value="">
+	</div>
+
+	<div class="knee-sec w-100">
+		<h4>Long Head of Biceps</h4>
+
+		<div class="shoulder-row d-flex flex-wrap">
+
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Tear</label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<div class="date-feild">
+						<select class="form-control" name="Long Head of Biceps Tear">
+							<option value="No" selected>No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</div>
+					<input class="form-control" type="text" name="Long Head of Biceps Tear Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Tendinosis</label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<div class="date-feild">
+						<select class="form-control" name="Long Head of Biceps Tendinosis">
+							<option value="No" selected>No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</div>
+					<input class="form-control" type="text" name="Long Head of Biceps Tendinosis Comments">
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Tenosinovitis</label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<div class="date-feild">
+						<select class="form-control" name="Long Head of Biceps Tenosinovitis">
+							<option value="No" selected>No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</div>
+					<input class="form-control" type="text" name="Long Head of Biceps Tenosinovitis comments">
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Subluxation/Effusion</label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<div class="date-feild">
+						<select class="form-control" name="Long Head of Biceps Subluxation/Effusion">
+							<option value="No" selected>No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</div>
+					<input class="form-control" type="text" name="Long Head of Biceps Subluxation/Effusion comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-start w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>Subscapularis</strong></label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<textarea class="form-control" name="Subscapularis comments"></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="knee-sec w-100">
+		<h4>Supraspinatus</h4>
+
+		<div class="shoulder-row d-flex flex-wrap">
+			<div class="d-flex flex-wrap align-items-start w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Tear</label>
+					<div class="date-feild w-150">
+						<select class="form-control" name="Supraspinatus Tear">
+							<option value="No" selected>No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</div>
+					<span class="arrow-img">
+						<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/sh-us.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2045460809&Signature=JVHih0tKNUh5LQ58nuzVunKA3%2F4%3D">
+					</span>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<div class="tear-row d-flex flex-wrap align-items-center w-100">
+						<span class="inside-Label">
+							Type
+						</span>
+						<div class="date-feild w-230 mid-data">
+							<select class="form-control" name="Supraspinatus Tear Type">
+								<option value="None" selected>None</option>
+								<option value="Partial thickness">P/T</option>
+								<option value="Full thickness">F/T</option>
+								<option value="Complete">Complete</option>
+							</select>
+						</div>
+						<div class="date-feild w-440">
+							<select class="form-control" name="Supraspinatus Tear Type Location">
+								<option value="None" selected>None</option>
+								<option value="Intrasubstance">Intrasubstance</option>
+								<option value="Articular">Articular</option>
+								<option value="Bursal">Bursal</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="tear-row d-flex flex-wrap align-items-center w-100">
+						<span class="inside-Label">
+							Location
+						</span>
+						<div class="date-feild w-230">
+							<select class="form-control" name="Supraspinatus Tear Location">
+								<option value="None" selected>None</option>
+								<option value="Anterior">Anterior</option>
+								<option value="Mid">Mid</option>
+								<option value="Posterior">Posterior</option>
+								<option value="Insertional">Insertional</option>
+							</select>
+						</div>
+					</div>
+
+
+					<div class="tear-row d-flex flex-wrap align-items-center w-100">
+						<span class="inside-Label">
+							size
+						</span>
+						<div class="w-100px mid-data">
+							<span class="cm-txt afterInput">
+								<input class="form-control auto-insert-x" type="text"
+									name="Supraspinatus Tear Size (mm)" placeholder="mm x mm" value="">
+							</span>
+						</div>
+						<div class="w-100px">
+							From LHBT
+							<span class="cm-txt afterInput">
+								<input class="form-control" type="text" name="Supraspinatus Tear From LHBT (mm)">
+								<span class="cm-txt-in">mm</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Tendinosis</label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="Supraspinatus Tendinosis Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Calcium</label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="Supraspinatus Calcium Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Contour Change</label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="Supraspinatus Contour Change Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Bony Irregularity</label>
+
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="Supraspinatus Bony Irregularity Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label>Muscle Atrophy</label>
+
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="Supraspinatus Muscle Atrophy Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>Subacromial Bursa</strong></label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start w-200px">
+					THICKNESS (N = 1 mm)
+					<span class="cm-txt afterInput">
+						<input class="form-control" type="text" name="Subacromial Bursa Thickness (mm)">
+						<span class="cm-txt-in">mm</span>
+					</span>
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>Dynamic Exam</strong></label>
+
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start">
+					Abduction impingement
+					<div class="date-feild">
+						<select class="form-control" name="Dynamic Exam Abduction impingement">
+							<option value="No" selected>No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</div>
+					<div class="w-100px">
+						<input type="text" class="form-control" name="Dynamic Exam Abduction impingement degrees">
+					</div>
+					degrees
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>lnfraspinatus</strong></label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="lnfraspinatus Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>Teres Minor</strong></label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="Teres Minor Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>Posterior Labrum</strong></label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="Posterior Labrum Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>GH Joint</strong></label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="GH Joint Comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>Rotator Interval</strong></label>
+				</div>
+				<div class="d-flex flex-wrap align-items-center align-items-start justify-content-between interval">
+					<div class="d-flex align-items-center">
+						<label>Thickening </label>
+						<label class="customcheckbox">
+							<input type="checkbox" checked name="Rotator interval thickening">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="d-flex align-items-center">
+						<label>Neovascularity </label>
+						<label class="customcheckbox">
+							<input type="checkbox" checked name="Rotator interval neovascularity">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>CA/CH Ligaments</strong></label>
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<input class="form-control" type="text" name="CA/CH ligaments comments">
+				</div>
+			</div>
+			<div class="d-flex flex-wrap align-items-center w-100">
+				<div class="knee-part d-flex flex-wrap align-items-center justify-content-between">
+					<label><strong>AC Joint</strong></label>
+
+				</div>
+				<div class="input-sec d-flex flex-wrap align-items-center align-items-start justify-content-between">
+					<div class="date-feild align-items-center d-flex">
+						<label>Tender </label>
+						<label class="customcheckbox">
+							<input type="checkbox" checked name="AC joint Tender">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+
+					<input class="form-control" type="text" name="AC joint Comments">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="data-get w-100">
+		<label><strong>Comments:</strong></label>
+		<textarea class="form-control" name="Comments"></textarea>
+	</div>
+	<div class="d-flex flex-wrap form-row justify-content-between w-100 clip-row">
+		<div class="data-get w-215">
+			<label class="setWid">No. of video clips</label>
+			<input class="form-control" type="text" name="No of video clips">
+		</div>
+
+		<div class="data-get w-440">
+			<label>Radiologist</label>
+			<input class="form-control" type="text" name="">
+		</div>
+	</div>
+</div>
+<!-- form body end -->

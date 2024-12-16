@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="assets/images/favicon.ico">
+	<title>QUBS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="form-wrapper">
+	<div id="wrapper">
+		<div class="container">
+			<div class="top-form d-flex justify-content-between align-items-end">
+				<h1>T1 Dating Scan (Single)</h1>
+				<div class="logo">
+					<img src="assets/images/form-logo.png" alt="" />
+				</div>
+			</div>
+			<!-- form body start -->
+			<div class="d-flex flex-wrap form-row dating-scan justify-content-between">
+				<div class="data-get name-txt w-500">
+					<label class="dating-label">Patient Name:</label>
+					<input class="form-control" type="text" name="Patient Name" id="patientName" value="">
+				</div>
+				<div class="data-get date-feild w-680">
+					<label class="dating-label">DOB:</label>
+					<input class="form-control" type="text" placeholder="DD/MM/YYYY" name="DOB" id="DOB" value="">
+				</div>
+				<div class="data-get date-feild w-500">
+					<label class="dating-label">DOS</label>
+					<input class="form-control" type="text" placeholder="DD/MM/YYYY" name="Study Date" id="studyDate"
+						value="">
+				</div>
+
+				<div class="data-get sonographer w-680">
+					<label class="dating-label">Sonographer</label>
+					<input class="form-control" type="text" name="Sonographer" id="sonographer" value="">
+				</div>
+
+				<div class="data-get sonographer w-500 date-feild">
+					<label class="dating-label">LMP Date</label>
+					<input class="form-control" type="text" placeholder="DD/MM/YYYY" name="Last Menstrual Period Date"
+						id="lastmenstrualperioddate" value="">
+				</div>
+
+				<div class="data-get sonographer w-680">
+					<label class="dating-label">GA from LMP</label>
+					<input class="form-control" type="text" name="Gestational Age from Last Menstrual Period"
+						id="gestationalagefromlastmenstrualperioddate" value="">
+				</div>
+
+			</div>
+
+
+			<div class="d-flex flex-wrap form-row datingRow  ">
+				<div class="data-get w-500">
+					<label class="dating-label">Scan Technique:</label>
+					<select class="form-control" type="text" name="Scan Technique" id="scantechnique">
+						<option value="" selected></option>
+						<option value="TA and TV">TA and TV</option>
+						<option value="Transabdominal">Transabdominal</option>
+						<option value="Transvaginal">Transvaginal</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow ">
+				<div class="data-get w-500">
+					<label class="dating-label">No of foetal poles</label>
+					<select class="form-control" name="No of foetal Poles" id="nooffoetalpoles">
+						<option value="" selected></option>
+						<option value="Single">Single</option>
+						<option value="Multiple">Multiple</option>
+					</select>
+					&nbsp;
+					use other worksheet if multiple
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="data-get week-days">
+					<label class="dating-label">CRL</label>
+					<span class="cm-txt w-360">
+						<input class="form-control" type="text" name="CRL (mm)" id="crown-rumplength" value="">
+						<span class="cm-txt-in">mm</span>
+					</span>
+					<span class="cm-txt w-190">
+						<input class="form-control" type="text" name="CRL Weeks" id="crown-rumplengthweeks" value="">
+						<span class="cm-txt-in">Weeks</span>
+					</span>
+					<span class="cm-txt w-190">
+						<input class="form-control" type="text" name="CRL Days" id="crown-rumplengthdays" value="">
+						<span class="cm-txt-in">Days</span>
+					</span>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="data-get week-days">
+					<label class="dating-label">MSD</label>
+					<span class="cm-txt w-360">
+						<input class="form-control" type="text" name="Mean Sac Diametre (mm)" id="meansacdiametre"
+							value="">
+						<span class="cm-txt-in">mm</span>
+					</span>
+					<span class="cm-txt w-190">
+						<input class="form-control" type="text" name="Mean Sac Diametre Weeks" id="meansacdiametreweeks"
+							value="">
+						<span class="cm-txt-in">Weeks</span>
+					</span>
+					<span class="cm-txt w-190">
+						<input class="form-control" type="text" name="Mean Sac Diametre Days" id="meansacdiametredays"
+							value="">
+						<span class="cm-txt-in">Days</span>
+					</span>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="data-get">
+					<label class="dating-label">Fetal Heart Rate</label>
+					<span class="cm-txt w-360">
+						<input class="form-control" type="text" name="Fetal Heart Rate (bpm)" id="fetalheartrate"
+							value="">
+						<span class="cm-txt-in">bpm</span>
+					</span> &nbsp;
+					(normal: 110 - 160 bpm)
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="get-data d-flex flex-wrap align-items-center">
+					<label class="dating-label">Yolk Sac present?</label>
+					<div class="radio-list d-flex align-items-center">
+						<label class="customRadio">Yes
+							<input type="radio" name="Yolk Sac Present" id="yolksacpresentyes" value="Yes">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">No
+							<input type="radio" name="Yolk Sac Present" id="yolksacpresentno" value="No">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="get-data d-flex flex-wrap align-items-center">
+					<label class="dating-label">SCH</label>
+					<div class="radio-list d-flex align-items-center">
+						<label class="customRadio">Yes
+							<input type="radio" name="SCH" id="subchorionichemorrhageyes" value="Yes">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">No
+							<input type="radio" name="SCH" id="subchorionichemorrhageno" value="No">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="data-get w-150">
+					<label>Location</label>
+					<input class="form-control" type="text" name="SCH Location" id="subchorionichemorrhagelocation"
+					value="">
+				</div>
+				<div class="data-get w-150px d-flex align-items-end">
+					<label>Measures:</label>
+					<span class="cm-txt afterInput">
+						<input class="form-control auto-insert-x" type="text" name="SCH Measures (mm)"
+							id="measureandvolume" value="">
+						<span class="cm-txt-in">mm x mm</span>
+					</span> 
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow ">
+				<div class="data-get week-days ">
+					<label class="dating-label">Right ovary vol: </label> 
+					<span class="cm-txt w-215">
+						<input class="form-control" type="text" name="Right ovary volume (ml)"
+							id="rightovarymeasurementandvolumeml" value="">
+						<span class="cm-txt-in">ml</span>
+					</span>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="data-get week-days">
+					<label class="dating-label">Left ovary vol: </label>
+ 
+					<span class="cm-txt w-215">
+						<input class="form-control" type="text" name="Left ovary volume (ml)"
+							id="leftovarymeasurementandvolumeml" value="">
+						<span class="cm-txt-in">ml</span>
+					</span>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow  ">
+				<div class="data-get w-500">
+					<label class="dating-label">Corpus Luteum:</label>
+					<select class="form-control" type="text" name="Corpus Luteum" id="corpusluteum">
+						<option value="" selected></option>
+						<option value="Not seen">Not seen</option>
+						<option value="Right">Right</option>
+						<option value="Left">Left</option>
+					</select>
+				</div>
+			</div>
+
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="data-get week-days">
+					<label class="dating-label">GA (AUA)</label>
+					<span class="cm-txt w-190">
+						<input class="form-control" type="text" name="GA (AUA) Weeks" id="gaauaweeks" value="">
+						<span class="cm-txt-in">Weeks</span>
+					</span>
+					<span class="cm-txt w-190">
+						<input class="form-control" type="text" name="GA (AUA) Days" id="gaauadays" value="">
+						<span class="cm-txt-in">Days</span>
+					</span>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="data-get week-days">
+					<label class="dating-label">EDD (AUA)</label> 
+					<input class="form-control" type="text"  placeholder="DD/MM/YYYY" name="EDD (AUA)" id="eddaua" value=""> 
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow sec-row">
+				<div class="data-get ut_abty w-100">
+					<label class="dating-label">Uterine abnormality</label>
+					<input class="form-control" type="text" name="Uterine abnormality" id="uterineabnormality" value="">
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow sec-row">
+				<div class="data-get ut_abty w-100">
+					<label class="dating-label">Adnexal abnormality</label>
+					<input class="form-control" type="text" name="Adnexal abnormality" id="adnexalabnormality" value="">
+				</div>
+			</div>
+
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="get-data d-flex flex-wrap align-items-center">
+					<label class="dating-label">Free fluid</label>
+					<div class="radio-list d-flex align-items-center">
+						<label class="customRadio">Yes
+							<input type="radio" name="Free Fluid" id="freefluidyes" value="Yes">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">No
+							<input type="radio" name="Free Fluid" id="freefluidno" value="No">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="data-get w-150">
+					<label>Location</label>
+					<input class="form-control" type="text" name="Free Fluid Location" id="freefluidlocation" value="">
+				</div>
+				<div class="data-get w-150px d-flex align-items-end">
+					<label>Volume:</label>
+					<span class="cm-txt afterInput">
+						<input class="form-control" type="text" name="Free Fluid Volume (ml)" id="freefluidvolumeml"
+							value="">
+						<span class="cm-txt-in">ml</span>
+					</span>
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row datingRow">
+				<div class="get-data d-flex flex-wrap align-items-center">
+					<label class="dating-label">D/W Radiologist</label>
+					<div class="radio-list d-flex align-items-center">
+						<label class="customRadio">Yes
+							<input type="radio" name="Radiologist Consulted" id="radiologistconsultedyes" value="Yes">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">No
+							<input type="radio" name="Radiologist Consulted" id="radiologistconsultedno" value="No">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="data-get w-200">
+					<label>Name</label>
+					<input class="form-control" type="text" name="Consulted Radiologist Name" id="radiologistname"
+						value="">
+				</div>
+
+			</div>
+
+
+			<div class="d-flex flex-wrap form-row datingRow ">
+				<div class="get-data d-flex flex-wrap align-items-center">
+					<label class="dating-label">Referrer notified</label>
+					<div class="radio-list d-flex align-items-center">
+						<label class="customRadio">Yes
+							<input type="radio" name="Referrer Notified" id="referrernotifiedyes" value="Yes">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">No
+							<input type="radio" name="Referrer Notified" id="referrernotifiedno" value="No">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="data-get w-200">
+					<label>Name</label>
+					<input class="form-control" type="text" name="Notified Referrer Name" id="referrernotifiedname"
+						value="">
+				</div>
+				<div class="data-get w-150">
+					<label>Time</label>
+					<input class="form-control" type="text" name="Referrer Notified Time" id="referrernotifiedtime"
+						value="">
+				</div>
+			</div>
+
+			<div class="btn-sub">
+				<input type="submit" class="btn btn-rounded" value="Submit">
+				<span id="submitMessage"></span>
+			</div>
+			<!-- form body end -->
+		</div>
+	</div>
+	<script src="assets/js/submitform.js"></script>
+</body>
+
+</html>

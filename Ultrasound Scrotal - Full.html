@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="assets/images/favicon.ico">
+	<title>QUBS</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="form-wrapper">
+	<div id="wrapper">
+		<div class="container">
+			<!-- form body start -->
+			<div class="top-form d-flex justify-content-between align-items-end">
+				<h1>Scrotal Ultrasound</h1>
+				<div class="logo">
+					<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/carescanimaginggroup.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2071547808&Signature=synr1I5sCg9SSiDatCMyK%2B7HwoA%3D"
+						alt="" />
+				</div>
+			</div>
+
+			<div class="d-flex flex-wrap form-row">
+				<div class="data-get name-txt">
+					<label>Patient Name:</label>
+					<input class="form-control" type="text" name="Patient Name" id="patientname" value="">
+				</div>
+				<div class="data-get date-feild">
+					<label>DOB:</label>
+					<input class="form-control" type="text" placeholder="DD/MM/YYYY" name="DOB" id="DOB" value="">
+				</div>
+				<div class="data-get date-feild">
+					<label>Study Date:</label>
+					<input class="form-control" type="text" placeholder="DD/MM/YYYY" name="DOS" id="DOS" value="">
+				</div>
+
+
+				<div class="get-data d-flex flex-wrap align-items-center">
+					<label>Scan Quality:</label>
+					<div class="radio-list d-flex align-items-center">
+						<label class="customRadio">Good
+							<input type="radio" name="Scan Quality" id="good" value="Good">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">Average
+							<input type="radio" name="Scan Quality" id="average" value="Averaged">
+							<span class="checkmark"></span>
+						</label>
+						<label class="customRadio">Poor
+							<input type="radio" name="Scan Quality" id="poor" value="Poor">
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</div>
+
+				<div class="data-get sonographer m-0">
+					<label>Sonographer:</label>
+					<input class="form-control" type="text" name="Sonographer" id="sonographer" value="">
+				</div>
+
+				<div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+					<label>Clinical: </label>
+					<input class="form-control" type="text" name="Clinical" id="clinical" value="">
+				</div>
+
+				<!-- Right Testis -->
+				<div class="kidney-sec w-100">
+					<div class="kidney-row">
+						<span class="img-abs">
+							<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/right-testis.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2119315258&Signature=SCQoFqXbLePyz0HfgUSkJFpGinc%3D"
+								alt="">
+						</span>
+						<h4>Right Testis</h4>
+						<div class="get-data d-flex flex-wrap align-items-center">
+
+							<div class="d-flex flex-wrap form-row w-100">
+								<div class="data-get   d-flex align-items-end">
+									<label class="setWid">Size:</label>
+									<span class="cm-txt afterInput">
+										<input class="form-control auto-insert-double-x" type="text"
+											name="Right testis measurement (mm)" placeholder="mm x mm x mm"
+											id="righttestismeasurement" value="">
+									</span>
+									=
+									<span class="cm-txt afterInput w-100px">
+										<input class="form-control" type="text" name="Right testis volume (ml)"
+											id="righttestisvolume" value="">
+										<span class="cm-txt-in">ml</span>
+									</span>
+								</div>
+							</div>
+
+
+							<div class="d-flex flex-wrap form-row w-100">
+								<label>Texture: </label>
+								<select class="form-control" type="text" name="Right testis texture"
+									id="righttestistexture">
+									<option value="" selected></option>
+									<option value="Homogenous">Homogenous</option>
+									<option value="Heterogenous">Heterogenous</option>
+								</select>
+							</div>
+
+							<div class="d-flex flex-wrap form-row w-100">
+								<label>Vascularity: </label>
+								<select class="form-control" type="text" name="Right testis vascularity"
+									id="righttestisvascularity">
+									<option value="" selected></option>
+									<option value="Normal">Normal</option>
+									<option value="Increased">Increased</option>
+									<option value="Decreased">Decreased</option>
+								</select>
+							</div>
+
+							<div class="data-get w-100">
+								<label>Focal lesion comments:</label>
+								<textarea class="form-control" type="text" name="Right testis comments"
+									id="righttestiscomments" value=""></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Left Testis -->
+				<div class="kidney-sec w-100">
+					<div class="kidney-row">
+						<span class="img-abs">
+							<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/left-testis.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2119316053&Signature=UgOiwQiVKZNA1WDndRsrs9pV%2BTY%3D"
+								alt="">
+						</span>
+						<h4>Left Testis</h4>
+						<div class="get-data d-flex flex-wrap align-items-center">
+
+							<div class="d-flex flex-wrap form-row w-100">
+								<div class="data-get d-flex align-items-end">
+									<label class="setWid">Size:</label>
+									<span class="cm-txt afterInput">
+										<input class="form-control auto-insert-double-x" type="text"
+											name="Left testis measurement (mm)" placeholder="mm x mm x mm"
+											id="lefttestismeasurement" value="">
+									</span>
+									=
+									<span class="cm-txt afterInput w-100px">
+										<input class="form-control" type="text" name="Left testis volume (ml)"
+											id="leftttestisvolume" value="">
+										<span class="cm-txt-in">ml</span>
+									</span>
+								</div>
+							</div>
+
+							<div class="d-flex flex-wrap form-row w-100">
+								<label>Texture: </label>
+								<select class="form-control" type="text" name="Left testis texture"
+									id="lefttestistexture">
+									<option value="" selected></option>
+									<option value="Homogenous">Homogenous</option>
+									<option value="Heterogenous">Heterogenous</option>
+								</select>
+							</div>
+
+							<div class="d-flex flex-wrap form-row w-100">
+								<label>Vascularity: </label>
+								<select class="form-control" type="text" name="Left testis vascularity"
+									id="lefttestisvascularity">
+									<option value="" selected></option>
+									<option value="Normal">Normal</option>
+									<option value="Increased">Increased</option>
+									<option value="Decreased">Decreased</option>
+								</select>
+							</div>
+
+							<div class="data-get w-100">
+								<label>Focal lesion comments:</label>
+								<textarea class="form-control" type="text" name="Left testis comments"
+									id="lefttestiscomments" value=""></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Right Epididymis -->
+				<div class="kidney-sec bladder-sec w-100">
+					<div class="kidney-row">
+						<h4>Right Epididymis</h4>
+						<div class="data-get w-100 left-right-sec d-flex flex-wrap justify-content-between">
+
+							<div class="d-flex flex-wrap align-items-center  ">
+								<label>Head:</label>
+								<label class="customcheckbox">
+									<input type="checkbox" checked name="Right epididymis head">
+									<span class="checkmark"></span>
+								</label>
+								<input class="form-control" type="text" name="Right epididymis head comments" value="">
+							</div>
+
+							<div class="d-flex flex-wrap align-items-center ">
+								<label>Body:</label>
+								<label class="customcheckbox">
+									<input type="checkbox" checked name="Right epididymis body">
+									<span class="checkmark"></span>
+								</label> <input class="form-control" type="text" name="Right epididymis body comments"
+									value="">
+
+							</div>
+
+							<div class="d-flex flex-wrap align-items-center  ">
+								<label>Tail:</label>
+								<label class="customcheckbox">
+									<input type="checkbox" checked name="Right epididymis tail">
+									<span class="checkmark"></span>
+								</label> <input class="form-control" type="text" name="Right epididymis tail comments"
+									value="">
+
+							</div>
+
+						</div>
+						<div class="d-flex flex-wrap form-row w-100">
+							<label>Vascularity: </label>
+							<select class="form-control" type="text" name="Right epididymis vascularity"
+								id="rightepididymisvascularity">
+								<option value="" selected></option>
+								<option value="Normal">Normal</option>
+								<option value="Increased">Increased</option>
+								<option value="Decreased">Decreased</option>
+							</select>
+						</div>
+
+						<div class="data-get w-100">
+							<label>Focal lesion comments:</label>
+							<textarea class="form-control" type="text" name="Right epididymis comments"
+								id="rightepididymiscomments" value=""></textarea>
+						</div>
+
+					</div>
+
+
+				</div>
+
+				<!-- Left Epididymis -->
+				<div class="kidney-sec bladder-sec w-100">
+					<div class="kidney-row">
+						<h4>Left Epididymis</h4>
+						<div class="data-get w-100 left-right-sec d-flex flex-wrap justify-content-between">
+
+							<div class="d-flex flex-wrap align-items-center  ">
+								<label>Head:</label>
+								<label class="customcheckbox">
+									<input type="checkbox" checked name="Left epididymis head">
+									<span class="checkmark"></span>
+								</label>
+								<input class="form-control" type="text" name="Left epididymis head comments" value="">
+							</div>
+
+							<div class="d-flex flex-wrap align-items-center ">
+								<label>Body:</label>
+								<label class="customcheckbox">
+									<input type="checkbox" checked name="Left epididymis body">
+									<span class="checkmark"></span>
+								</label> <input class="form-control" type="text" name="Left epididymis body comments"
+									value="">
+
+							</div>
+
+							<div class="d-flex flex-wrap align-items-center  ">
+								<label>Tail:</label>
+								<label class="customcheckbox">
+									<input type="checkbox" checked name="Left epididymis tail">
+									<span class="checkmark"></span>
+								</label> <input class="form-control" type="text" name="Left epididymis tail comments"
+									value="">
+
+							</div>
+
+						</div>
+						<div class="d-flex flex-wrap form-row w-100">
+							<label>Vascularity: </label>
+							<select class="form-control" type="text" name="Left epididymis vascularity"
+								id="lefteepididymisvascularity">
+								<option value="" selected></option>
+								<option value="Normal">Normal</option>
+								<option value="Increased">Increased</option>
+								<option value="Decreased">Decreased</option>
+							</select>
+						</div>
+
+						<div class="data-get w-100">
+							<label>Focal lesion comments:</label>
+							<textarea class="form-control" type="text" name="Left epididymis comments"
+								id="leftepididymiscomments" value=""></textarea>
+						</div>
+
+					</div>
+ 
+				</div>
+
+ 
+				<div class="kidney-sec bladder-sec w-100">
+					<div class="kidney-row">
+						<h4>Others: </h4>
+						<div class="w-100 get-data d-flex flex-wrap align-items-center">
+							<div class="data-get d-flex justify-content-between align-items-center w-150">
+								<label>Hydrocoele: </label>
+								<select class="form-control" type="text" name="Hydrocoele" id="hydrocoele">
+									<option value="" selected></option>
+									<option value="No">No</option>
+									<option value="Yes">Yes</option>
+								</select>
+							</div>
+
+							<div class="data-get d-flex justify-content-between align-items-center w-150">
+								<label>If Yes, Vol: </label>
+								<span class="cm-txt">
+									<input class="form-control" type="text" name="Hydrocoele volume (ml)" value="">
+									<span class="cm-txt-in">ml</span>
+								</span>
+							</div>
+
+						</div>
+						<div class="w-100 get-data d-flex flex-wrap align-items-center">
+
+
+							<div class="data-get d-flex flex-wrap align-items-center">
+								<label>Varicocoele:</label>
+								<div class="radio-list d-flex align-items-center">
+									<label class="customcheckbox">R:
+										<input type="checkbox" checked="checked" name="Varicocoele Right"
+											id="varicocoeleright">
+										<span class="checkmark"></span>
+									</label>
+									<label class="customcheckbox">L:
+										<input type="checkbox" name="Varicocoele Left" id="varicocoeleleft">
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+							<div class="data-get  d-flex  ">
+								<label>Hernia:</label>
+								<input class="form-control" type="text" name="Hernia comments" value="">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="data-get w-100 summary">
+					<div class="head-sum d-flex align-items-center flex-wrap">
+						<h4>Summary</h4>
+					</div>
+					<textarea class="form-control" type="text" name="Summary Comments" id="Summary" value=""></textarea>
+				</div>
+
+			</div>
+
+			<input type="submit" class="btn btn-rounded" value="Submit">
+			<span id="submitMessage"></span>
+			<!-- form body end -->
+		</div>
+	</div>
+	<script src="assets/js/submitform.js"></script>
+</body>
+
+</html>
