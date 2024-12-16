@@ -1928,6 +1928,14 @@ img {
   margin-left: 22px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
 .gap-18 {
   gap: 18px;
 }
@@ -2020,6 +2028,20 @@ img {
 
 .wrist-ultrasound .flex-justify-between {
   justify-content: space-between;
+}
+
+.bone-mineral-density-scan select.form-control {
+  width: fit-content !important;
+  max-width: 100%;
+}
+
+.bone-mineral-density-scan select#conclusion-progress {
+  margin-left: 0;
+}
+
+.bone-mineral-density-scan .inputboxgroup label {
+  min-width: 220px;
+  text-align: right;
 }
 
 @media screen and (max-width: 1579px) {
@@ -2134,6 +2156,10 @@ img {
   .elbow-ultrasound .selectboxgroup label {
     min-width: 120px;
   }
+
+  .bone-mineral-density-scan .inputboxgroup label {
+    min-width: 172px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2199,6 +2225,10 @@ img {
   .elbow-ultrasound .title-checkbox {
     width: fit-content;
     flex-wrap: nowrap;
+  }
+
+  .bone-mineral-density-scan .inputboxgroup label {
+    text-align: left;
   }
 }
 
