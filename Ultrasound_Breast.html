@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound breast-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form">
+            <div>
+                <h1>Breast Ultrasound</h1>
+                <div class="d-flex">
+                    <h1>Side</h1>
+                    <div class="data-get">
+                    <select
+                        class="form-control"
+                        name="wrist-direction"
+                        id="wrist-direction"
+                    >
+                        <option>Left</option>
+                        <option>Right</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="assets/images/logo.webp" alt="logo image" />
+            </div>
+        </div>
+
+          <div class="section">
+            <div class="d-flex flex-wrap flex-justify-between">
+              <div class="data-get name-txt">
+                <label>Patient Name:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Patient Name"
+                  id="patientName"
+                  value=""
+                />
+              </div>
+              <div class="data-get date-feild">
+                <label>DOB:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="DD-MM-YYYY"
+                  name="DOB"
+                  id="DOB"
+                  value=""
+                />
+              </div>
+              <div class="data-get date-feild">
+                <label>Study Date:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="DD-MM-YYYY"
+                  name="Study Date"
+                  id="studyDate"
+                  value=""
+                />
+              </div>
+            </div>
+
+            <div
+            class="data-get w-100 left-right-sec d-flex flex-wrap section gap-50"
+          >
+            <div class="d-flex flex-wrap align-items-center">
+              <label>Prev Surgery</label>
+              <input
+                class="form-control ml-23"
+                type="text"
+                name="prev-surgery"
+                value=""
+              />
+            </div>
+
+            <div class="d-flex flex-wrap align-items-center flex-grow">
+              <label>Sonographer</label>
+              <input
+                class="form-control flex-grow"
+                type="text"
+                name="sonographer"
+                value=""
+              />
+            </div>
+          </div>
+            <div
+              class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+            >
+              <label>Clinical:</label>
+              <input
+                class="form-control full-w"
+                type="text"
+                name="Clinical Info"
+                id="clinical"
+                value=""
+              />
+            </div>
+
+          </div>
+
+          <div class="section">
+            <div class="cartoid-wrap w-100 d-flex align-items-start flex-wrap justify-content-between">
+              <div class="left-sec w-half">
+                <h4>Right</h4>
+  
+                <div class="img-sec">
+                  <img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/right-sec.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=1983953798&Signature=a9YpI6WMv38mHu%2FRSf4tNThz%2Biw%3D"
+                    alt="">
+                </div>
+  
+                <div class="data-get w-100">
+                  <label>Comments:</label>
+                  <textarea class="form-control" name="Right Comments"></textarea>
+                </div>
+  
+                <div
+                  class="data-get d-flex flex-wrap align-items-center w-100 justify-content-between checxkopt">
+                  <label>Vertebral flow antegrade</label>
+                  <label class="customcheckbox">
+                    <input type="checkbox" checked name="Right Vertebral flow antegrade">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+  
+                <div
+                  class="data-get d-flex flex-wrap align-items-center w-100 justify-content-between checxkopt">
+                  <label>B-mode and velocities concordant</label>
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="Right B-mode and velocities concordant">
+                    <span class="checkmark"></span>
+  
+                  </label>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="cart_label">
+                    Plaque
+                  </label>
+                  <div class="date-feild w-440">
+                    <select class="form-control" name="Right Plaque">
+                      <option value="None" selected>None</option>
+                      <option value="Hypoechoeic">Hypoechoeic</option>
+                      <option value="Echogenic">Echogenic</option>
+                      <option value="Calcified">Calcified</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="cart_label">
+                    Surface
+                  </label>
+                  <div class="date-feild w-440">
+                    <select class="form-control" name="Right Surface">
+                      <option value="Smooth" selected>Smooth</option>
+                      <option value="Irregular">Irregular</option>
+                      <option value="Ulcerated">Ulcerated</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center w-270">
+                  <label class="w-182-label">ICA stenosis </label>
+                  <input class="form-control" type="text" name="Right ICA stenosis (%)">
+                  &nbsp; % (from table)
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center w-270">
+                  <label class="w-182-label">ICA/CCA ratio</label>
+                  <input class="form-control" type="text" name="Right ICA/CCA ratio"> &nbsp;
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center w-270">
+                  <label class="w-182-label">CCA stenosis</label>
+                  <input class="form-control" type="text" name="Right CCA stenosis"> &nbsp;
+                  % (estimate) ECA
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="w-182-label">
+                    ECA stenosis
+                  </label>
+                  <div class="date-feild w-440">
+                    <select class="form-control" name="Right ECA stenosis">
+                      <option value="None" selected>None</option>
+                      <option value="Mild">Mild</option>
+                      <option value="Moderate">Moderate</option>
+                      <option value="Severe">Severe</option>
+                      <option value="N/A">N/A</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="w-182-label">
+                    if ICA >?50%
+                  </label>
+                  <div class="">
+                    <div class="data-get w-100 w-120">
+                      <label>Bifurcation to angle mandible</label>
+                      <span class="cm-txt afterInput">
+                        <input class="form-control" type="text"
+                          name="Right Bifurcation to angle mandible (cm)">
+                        <span class="cm-txt-in">cm</span>
+                      </span>
+                    </div>
+                    <div class="data-get w-100 w-120">
+                      <label>NASCET reduction</label>
+                      <span class="cm-txt afterInput">
+                        <input class="form-control" type="text" name="Right NASCET reduction (%)">
+                        <span class="cm-txt-in">%</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sec w-half">
+                <h4>Left</h4>
+  
+                <div class="img-sec">
+                  <img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/right-sec.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=1983953798&Signature=a9YpI6WMv38mHu%2FRSf4tNThz%2Biw%3D"
+                    alt="">
+                </div>
+  
+                <div class="data-get w-100">
+                  <label>Comments:</label>
+                  <textarea class="form-control" name="Left Comments"></textarea>
+                </div>
+  
+                <div
+                  class="data-get d-flex flex-wrap align-items-center w-100 justify-content-between checxkopt">
+                  <label>Vertebral flow antegrade</label>
+                  <label class="customcheckbox">
+                    <input type="checkbox" checked name="Left Vertebral flow antegrade">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+  
+                <div
+                  class="data-get d-flex flex-wrap align-items-center w-100 justify-content-between checxkopt">
+                  <label>B-mode and velocities concordant</label>
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="Left B-mode and velocities concordant">
+                    <span class="checkmark"></span>
+  
+                  </label>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="cart_label">
+                    Plaque
+                  </label>
+                  <div class="date-feild w-440">
+                    <select class="form-control" name="Left Plaque">
+                      <option value="None" selected>None</option>
+                      <option value="Hypoechoeic">Hypoechoeic</option>
+                      <option value="Echogenic">Echogenic</option>
+                      <option value="Calcified">Calcified</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="cart_label">
+                    Surface
+                  </label>
+                  <div class="date-feild w-440">
+                    <select class="form-control" name="Left Surface">
+                      <option value="Smooth" selected>Smooth</option>
+                      <option value="Irregular">Irregular</option>
+                      <option value="Ulcerated">Ulcerated</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center w-270">
+                  <label class="w-182-label">ICA stenosis </label>
+                  <input class="form-control" type="text" name="Left ICA stenosis (%)">
+                  &nbsp; % (from table)
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center w-270">
+                  <label class="w-182-label">ICA/CCA ratio</label>
+                  <input class="form-control" type="text" name="Left ICA/CCA ratio"> &nbsp;
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center w-270">
+                  <label class="w-182-label">CCA stenosis</label>
+                  <input class="form-control" type="text" name="Left CCA stenosis"> &nbsp;
+                  % (estimate) ECA
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="w-182-label">
+                    ECA stenosis
+                  </label>
+                  <div class="date-feild w-440">
+                    <select class="form-control" name="Left ECA stenosis">
+                      <option value="None" selected>None</option>
+                      <option value="Mild">Mild</option>
+                      <option value="Moderate">Moderate</option>
+                      <option value="Severe">Severe</option>
+                      <option value="N/A">N/A</option>
+                    </select>
+                  </div>
+                </div>
+  
+                <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+                  <label class="w-182-label">
+                    if ICA >?50%
+                  </label>
+                  <div class="">
+                    <div class="data-get w-100 w-120">
+                      <label>Bifurcation to angle mandible</label>
+                      <span class="cm-txt afterInput">
+                        <input class="form-control" type="text"
+                          name="Left Bifurcation to angle mandible (cm)">
+                        <span class="cm-txt-in">cm</span>
+                      </span>
+                    </div>
+                    <div class="data-get w-100 w-120">
+                      <label>NASCET reduction</label>
+                      <span class="cm-txt afterInput">
+                        <input class="form-control" type="text" name="Left NASCET reduction (%)">
+                        <span class="cm-txt-in">%</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="data-get w-100">
+            <label>Comments</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="wrist-ultrasound-comment"
+              id="wrist-ultrasound-comment"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="data-get w-100 left-right-sec d-flex flex-wrap section normal-form-group gap-50"
+          >
+            <div class="d-flex flex-wrap align-items-center">
+              <label>No. of video clips</label>
+              <input
+                class="form-control"
+                type="text"
+                name="number-of-video-clips"
+                value=""
+              />
+            </div>
+
+            <div class="d-flex flex-wrap align-items-center">
+              <label>Sonographer</label>
+              <input
+                class="form-control"
+                type="text"
+                name="sonographer"
+                value=""
+              />
+            </div>
+          </div>
+
+          <input type="submit" class="btn btn-rounded" value="Submit" />
+          <span id="submitMessage"></span>
+        </div>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>
