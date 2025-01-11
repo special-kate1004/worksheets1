@@ -2418,6 +2418,10 @@ img {
   gap: 100px;
 }
 
+.h-200 {
+  height: 200px !important;
+}
+
 .d-flex {
   display: flex;
 }
@@ -2532,9 +2536,240 @@ img {
   margin-left: 23px !important;
 }
 
+.breast-ultrasound .right-sec img,
+.left-sec img {
+  padding: 80px;
+}
+
+.breast-ultrasound .w-half {
+  width: 50%;
+  max-width: 50%;
+  border: none;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.grid-col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.flex-grow {
+  flex-grow: 1;
+  width: auto !important;
+}
+
+.form-control.flex-grow {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-125,
+.w-125.form-control {
+  width: 125px;
+}
+
+.breast-ultrasound .left-sec label .breast-ultrasound .right-sec label {
+  width: auto;
+}
+
+.w-fit-content {
+  width: fit-content;
+  min-width: auto !important;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.mr-16 {
+  margin-right: -16px;
+}
+
+.m-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.grid-col-1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.breast-ultrasound .left-sec.w-half {
+  padding: 15px 35px 25px 0px;
+}
+
+.breast-ultrasound .right-sec.w-half {
+  padding: 15px 0px 25px 35px;
+}
+
+textarea#breast-ultrasound-summary {
+  height: 223px;
+}
+
+.breast-ultrasound .data-get.w-100 label {
+  margin-bottom: 16px;
+}
+
+.breast-ultrasound .top-form select {
+  width: 300px;
+}
+
+.min-w-auto {
+  min-width: auto !important;
+}
+
+.min-w-185 {
+  min-width: 185px !important;
+}
+
+.min-w-270 {
+  min-width: 280px !important;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.data-grid {
+  display: grid;
+}
+
+.grid-col-1 {
+  grid-template-columns: 1fr;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-80 {
+  gap: 80px;
+}
+
+.w-50 {
+  min-width: 50px !important;
+  display: inline-block !important;
+}
+
+.ml-23- {
+  margin-left: -23px;
+}
+
+.morphology-ultrasound .customcheckbox {
+  padding: 0;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1644px) {
+  .morphology-ultrasound .checkboxlist .d-flex.gap-20 {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .morphology-ultrasound .checkboxlist {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .morphology-ultrasound .checkboxlist .d-flex.gap-20 {
+    flex-direction: row;
+  }
+
+  .morphology-ultrasound .checkboxlist {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .morphology-ultrasound .checkboxlist .d-flex.gap-20 {
+    flex-direction: column;
+  }
+
+  .morphology-ultrasound .radio-list {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .morphology-ultrasound .grid-col-1-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .morphology-ultrasound .checkboxlist label {
+    width: fit-content;
+  }
+  .morphology-ultrasound .checkboxlist .customcheckbox {
+    width: fit-content;
+  }
+
+  .morphology-ultrasound .d-flex.week-days.gap-10 {
+    margin-bottom: 10px;
+  }
+
+  .morphology-ultrasound .d-flex.week-days.gap-10:last-child {
+    margin-left: 50px;
+  }
+
+  .morphology-ultrasound .gap-30 {
+    gap: 20px;
+  }
+
+  .morphology-ultrasound .min-w-185 {
+    min-width: 110px !important;
+  }
+
+  .morphology-ultrasound .one-line select.form-control {
+    width: 160px !important;
+  }
+
+  .morphology-ultrasound .biometrics .first,
+  .morphology-ultrasound .biometrics .last {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 1579px) {
   .wrist-ultrasound .name-txt .form-control {
     width: 400px;
+  }
+
+  .breast-ultrasound .left-sec .grid-col-3,
+  .breast-ultrasound .right-sec .grid-col-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .breast-ultrasound .left-sec .form-control.w-125,
+  .breast-ultrasound .right-sec .form-control.w-125 {
+    width: calc(100% - 94px) !important;
+  }
+
+  .breast-ultrasound .left-sec select.form-control,
+  .breast-ultrasound .right-sec select.form-control {
+    width: 100%;
   }
 }
 
@@ -2670,6 +2905,17 @@ img {
   .elbow-ultrasound .selectboxgroup .data-get {
     margin-bottom: 0px;
   }
+
+  .breast-ultrasound .w-half {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .breast-ultrasound .w-half img {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 609px) {
@@ -2717,6 +2963,10 @@ img {
 
   .bone-mineral-density-scan .inputboxgroup label {
     text-align: left;
+  }
+
+  .ml-23 {
+    margin-left: 0 !important;
   }
 }
 

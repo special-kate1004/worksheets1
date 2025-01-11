@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound morphology-ultrasound">
+    <div id="wrapper">
+         <div class="container">
+            <!-- form body start -->
+
+            <div class="top-form d-flex justify-content-between align-items-end">
+            <div class="d-flex">
+                <h1>Early Morphology Ultrasound (13 - 17 Weeks)</h1>
+                
+            </div>
+            <div class="logo">
+                <img src="assets/images/logo.webp" alt="logo image" />
+            </div>
+            </div>
+
+            <div class="section">
+                <div class="d-flex flex-wrap flex-justify-between">
+                    <div class="data-get name-txt">
+                        <label>Patient Name:</label>
+                        <input
+                        class="form-control"
+                        type="text"
+                        name="Patient Name"
+                        id="patientName"
+                        value=""
+                        />
+                    </div>
+                    <div class="data-get date-feild">
+                        <label>DOB:</label>
+                        <input
+                        class="form-control"
+                        type="text"
+                        placeholder="DD-MM-YYYY"
+                        name="DOB"
+                        id="DOB"
+                        value=""
+                        />
+                    </div>
+                    <div class="data-get date-feild">
+                        <label>Study Date:</label>
+                        <input
+                        class="form-control"
+                        type="text"
+                        placeholder="DD-MM-YYYY"
+                        name="Study Date"
+                        id="studyDate"
+                        value=""
+                        />
+                    </div>
+                </div>
+    
+                <div
+                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+                >
+                <label>Clinical:</label>
+                <input
+                    class="form-control full-w"
+                    type="text"
+                    name="Clinical Info"
+                    id="clinical"
+                    value=""
+                />
+                </div>
+
+                <div
+                class="data-get d-flex w-100 align-items-center"
+                >
+                <label>Calculated:</label>
+                
+                <div class="data-get w-100 ml-23 left-right-sec d-flex flex-wrap section normal-form-group gap-50">
+
+                    <div class="d-flex flex-wrap align-items-center  ">
+                        <label class="w-50">GA</label>
+                        <input class="form-control" type="text" name="GA" value="">
+                    </div>
+    
+                    <div class="d-flex flex-wrap align-items-center ">
+                        <label class="w-50">EDD</label>
+                        <input class="form-control" type="text" name="EDD"
+                            value="">
+                    </div>
+
+                    <div class="d-flex flex-grow flex-wrap align-items-center ">
+                        <label class="min-w-auto">Sonographer</label>
+                        <input class="form-control flex-grow" type="text" name="sonographer"
+                            value="">
+                    </div>
+    
+                </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="title-checkbox data-get d-flex flex-wrap align-items-center justify-content-start">
+                    <label><strong>Biometrics</strong></label>
+                </div>
+                <div class="data-grid grid-col-1-2 gap-80 align-items-start">
+                    <div class="biometrics d-grid grid-col-1 gap-20">
+                        
+                        <div class="d-flex gap-30 first">
+                            <div class="d-flex week-days">
+                                <label class="w-50">BPD</label>
+                                <span class="cm-txt w-190">
+                                    <input class="form-control" type="text" name="BPD" id="BPD" value="">
+                                    <span class="cm-txt-in">mm</span>
+                                </span>
+                            </div>
+                            <div class="week-days">
+                                <label class="w-50">FHR</label>
+                                <span class="cm-txt w-190">
+                                    <input class="form-control" type="text" name="FHR" id="FHR" value="">
+                                    <span class="cm-txt-in">mm</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <label class="w-50">HC</label>
+                            <span class="cm-txt w-190">
+                                <input class="form-control" type="text" name="HC" id="HC" value="">
+                                <span class="cm-txt-in">mm</span>
+                            </span>
+                        </div>
+                        <div class="d-flex">
+                            <label class="w-50">AC</label>
+                            <span class="cm-txt w-190">
+                                <input class="form-control" type="text" name="AC" id="gaauaweeks" value="">
+                                <span class="cm-txt-in">mm</span>
+                            </span>
+                        </div>
+                        <div class="d-flex">
+                            <label class="w-50">FL</label>
+                            <span class="cm-txt w-190">
+                                <input class="form-control" type="text" name="FL" id="gaauaweeks" value="">
+                                <span class="cm-txt-in">mm</span>
+                            </span>
+                        </div>
+                        <div class="d-flex">
+                            <label class="w-50">CRL</label>
+                            <span class="cm-txt w-190">
+                                <input class="form-control" type="text" name="CRL" id="gaauaweeks" value="">
+                                <span class="cm-txt-in">mm</span>
+                            </span>
+                        </div>
+                        <div class="d-flex last">
+                            <label class="w-50">AUA</label>
+                            <div class="d-flex week-days gap-10">
+                                <span class="cm-txt w-190">
+                                    <input class="form-control" type="text" name="AUA" id="gaauaweeks" value="">
+                                </span>
+                                <label class="w-50 m">w</label>
+                            </div>
+                            <div class="d-flex week-days gap-10">
+                                <span class="cm-txt w-190">
+                                    <input class="form-control" type="text" name="AUA" id="gaauaweeks" value="">
+                                </span>
+                                <label class="w-50">d</label>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="get-data d-flex flex-wrap align-items-center">
+                            <label>Nuchal fold thickened?</label>
+                            <div class="radio-list d-flex align-items-center">
+                                <label class="customRadio" for="scan-quality-good">Yes
+                                    <input type="radio"  name="Nuchal-fold-thickened" id="scan-quality-good" value="yes">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="customRadio" for="scan-radio-avg">No
+                                    <input type="radio" checked="checked" name="Nuchal-fold-thickened" id="scan-radio-avg" value="no">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="get-data d-flex flex-wrap align-items-center">
+                            <label>Nasal bone</label>
+                            <div class="radio-list d-flex align-items-center">
+                                <label class="customRadio" for="scan-quality-good">Present
+                                    <input type="radio" checked="checked" name="nasal-bone" id="scan-quality-good" value="present">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="customRadio" for="scan-radio-avg">Absent
+                                    <input type="radio" name="nasal-bone" id="scan-radio-avg" value="absent">
+                                    <span class="checkmark"></span>
+                                </label>
+                        
+                            </div>
+                        </div>
+                        <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line m-0">
+                            <label class="min-w-185">Placental position:</label>
+                            <input class="form-control" type="text" name="Placental-position" value="">
+                        </div>
+
+                        <div class="d-flex">
+                            <label class="min-w-185">Placenta to os:</label>
+                            <span class="cm-txt w-190">
+                                <input class="form-control" type="text" name="Placenta-to-os" id="Placenta-to-os" value="">
+                                <span class="cm-txt-in">cm</span>
+                            </span>
+                        </div>
+                        <div class="d-flex">
+                            <label class="min-w-185">Cervix length:</label>
+                            <span class="cm-txt w-190">
+                                <input class="form-control" type="text" name="Cervix-length" id="Cervix-length" value="">
+                                <span class="cm-txt-in">cm</span>
+                            </span>
+                        </div>
+                        <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line m-0">
+                            <label class="min-w-185">Amniotic fluid vol:</label>
+                            <div class="date-feild w-190">
+                                <select class="form-control" name="Amniotic-fluid-vol">
+                                    <option value="Satisfactory" selected="">Satisfactory</option>
+                                    <option value="Increased">Increased</option>
+                                    <option value="Decreased">Decreased</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="get-data d-flex flex-wrap align-items-center">
+                            <label>Scan Quality:</label>
+                            <div class="radio-list d-flex align-items-center">
+                                <label class="customRadio" for="scan-quality-good">Good
+                                    <input type="radio" checked="checked" name="scan-quality" id="scan-quality-good" value="good">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="customRadio" for="scan-radio-avg">Average
+                                    <input type="radio" name="scan-quality" id="scan-radio-avg" value="average">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="customRadio" for="scan-radio-poor">Poor
+                                    <input type="radio" name="scan-quality" id="scan-radio-poor" value="poor">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="data-grid grid-col-2 gap-100 align-items-start checkboxlist">
+                            <div class="data-grid grid-col-1 gap-50">
+                                <div class="data-get d-flex gap-20 flex-justify-between">
+                                    <div class="w-125">HEAD</div> 
+                                    <div class="d-grid grid-col-1 gap-20">
+                                        <div class="d-flex customcheckbox mb-">
+                                            <div class="min-w-270">Skull/ossification</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="head-skull/ossification">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Choroid</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="head-choroid">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Falx</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="head-falx">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Intracranial translucency</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="head-intracranial-translucency">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-get d-flex gap-20 flex-justify-between">
+                                    <div class="w-125">FACE</div> 
+                                    <div class="d-grid grid-col-1 gap-20">
+                                        <div class="d-flex customcheckbox mb-">
+                                            <div class="min-w-270">Orbit</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="face-Orbit">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">profile</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="face-profile">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">NB</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="face-NB">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Mandible</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="face-mandible">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-get d-flex gap-20 flex-justify-between">
+                                    <div class="w-125">SPINE</div> 
+                                    <div class="d-grid grid-col-1 gap-20">
+                                        <div class="d-flex customcheckbox mb-">
+                                            <div class="min-w-270">Vertebrae</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="spine-vertebrae">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Skin line</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="spine-skin-line">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="data-get d-flex gap-20 flex-justify-between">
+                                    <div class="w-125">Chest</div> 
+                                    <div class="d-grid grid-col-1 gap-20">
+                                        <div class="d-flex customcheckbox mb-">
+                                            <div class="min-w-270">Situs</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox"  name="chest-situs">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">4 chamber view</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="chest-4-chamber-view">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">3VV</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox"  name="chest-3VV">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Diaphram</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="chest-diaphram">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-grid grid-col-1 gap-50">
+                                <div class="data-get d-flex gap-20 flex-justify-between">
+                                    <div class="w-125">Abdomen</div> 
+                                    <div class="d-grid grid-col-1 gap-20">
+                                        <div class="d-flex customcheckbox mb-">
+                                            <div class="min-w-270">Stomach</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="abdomen-stomach">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Kidneys</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="abdomen-didneys">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Bladder</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="abdomen-bladder">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">3VC</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="abdomen-bladder-3VC">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Cord insertion</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="abdomen-bladder-cord-insertion">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="data-get d-flex gap-20 flex-justify-between">
+                                    <div class="w-125">Limbs</div> 
+                                    <div class="d-grid grid-col-1 gap-20">
+                                        <div class="d-flex customcheckbox mb-">
+                                            <div class="min-w-270">Arms</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="limbs-arms">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Legs</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="limbs-legs">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Hands</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" name="limbs-hands">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="d-flex customcheckbox">
+                                            <div class="min-w-270">Feet</div> 
+                                            <label class="customcheckbox">
+                                                <input type="checkbox" checked name="limbs-feet">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-get w-100">
+                <label class="mb-8">Conclusion:</label>
+                <textarea class="form-control h-200" type="text" name="morphology-ultrasound-comment"
+                    id="wrist-ultrasound-comment" value=""></textarea>
+            </div>
+
+            <input type="submit" class="btn btn-rounded mt-40" value="Submit" />
+            <span id="submitMessage"></span>
+        </div>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>
