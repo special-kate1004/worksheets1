@@ -1,107 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="icon" href="assets/images/favicon.ico" />
     <title>QUBS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
-  </head>
-  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+</head>
+
+<body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
     <div id="wrapper">
-         <div class="container">
+        <div class="container">
             <!-- form body start -->
 
             <div class="top-form d-flex justify-content-between align-items-end">
-            <div class="d-flex">
-                <h1>Elbow Ultrasound</h1>
-                <div class="data-get">
-                <select
-                    class="form-control"
-                    name="wrist-direction"
-                    id="wrist-direction"
-                >
-                    <option>Left</option>
-                    <option>Right</option>
-                </select>
+                <div class="d-flex">
+                    <h1>Ultrasound Elbow</h1>
+                    <div class="data-get">
+                        <select class="form-control" name="Scan" id="wrist-direction">
+                            <option value="Ultrasound elbow" selected></option>
+                            <option value="Ultrasound elbow left">Left</option>
+                            <option value="Ultrasound elbow right">Right</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="logo">
-                <img src="assets/images/logo.webp" alt="logo image" />
-            </div>
+                <div class="logo">
+                    <img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/carescanimaginggroup.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2076996743&Signature=N2H%2FA3FEEacyc4Pa2L1r9CLBWGA%3D"
+                        alt="" />
+                </div>
             </div>
 
             <div class="section">
                 <div class="d-flex flex-wrap flex-justify-between">
                     <div class="data-get name-txt">
                         <label>Patient Name:</label>
-                        <input
-                        class="form-control"
-                        type="text"
-                        name="Patient Name"
-                        id="patientName"
-                        value=""
-                        />
+                        <input class="form-control" type="text" name="Patient Name" id="patientName" value="" />
                     </div>
                     <div class="data-get date-feild">
                         <label>DOB:</label>
-                        <input
-                        class="form-control"
-                        type="text"
-                        placeholder="DD-MM-YYYY"
-                        name="DOB"
-                        id="DOB"
-                        value=""
-                        />
+                        <input class="form-control" type="text" placeholder="DD-MM-YYYY" name="DOB" id="DOB" value="" />
                     </div>
                     <div class="data-get date-feild">
                         <label>Study Date:</label>
-                        <input
-                        class="form-control"
-                        type="text"
-                        placeholder="DD-MM-YYYY"
-                        name="Study Date"
-                        id="studyDate"
-                        value=""
-                        />
+                        <input class="form-control" type="text" placeholder="DD-MM-YYYY" name="Study Date"
+                            id="studyDate" value="" />
                     </div>
                 </div>
-    
-                <div
-                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-                >
-                <label>Clinical:</label>
-                <input
-                    class="form-control full-w"
-                    type="text"
-                    name="Clinical Info"
-                    id="clinical"
-                    value=""
-                />
+
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Clinical:</label>
+                    <input class="form-control full-w" type="text" name="Clinical Info" id="clinical" value="" />
                 </div>
-    
+
                 <div class="joint-effusion d-flex flex-wrap align-items-center w-100 gap-100">
                     <div class="title-checkbox data-get d-flex flex-wrap align-items-center justify-content-start">
-                        <label>Joint effusion</label> 
+                        <label>Joint effusion</label>
                         <label class="data-get customcheckbox ml-13">
                             <input type="checkbox" checked name="joint-effusion">
                             <span class="checkmark"></span>
                         </label>
                     </div>
 
-                    <div class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-between gap-50">
+                    <div
+                        class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-between gap-50">
                         <div class="d-flex align-items-center gap-18">
                             <label class="customcheckbox">
                                 <input type="checkbox" name="joint-effusion-mild">
@@ -132,7 +101,7 @@
                 <div class="title-checkbox data-get d-flex flex-wrap align-items-center justify-content-start">
                     <label><strong>Lateral</strong></label>
                     <div class="d-flex customcheckbox ml-22">
-                        <div>CETO</div> 
+                        <div>CETO</div>
                         <label class="customcheckbox">
                             <input type="checkbox" checked name="lateral-ceto">
                             <span class="checkmark"></span>
@@ -173,7 +142,7 @@
                     </div>
                     <div class="d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>
-                           Tender
+                            Tender
                         </label>
                         <div class="date-feild w-190">
                             <select class="form-control" name="lateral-tender">
@@ -183,52 +152,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-wrap">
-                    <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line">
-                        <label>Tear Type</label>
-                        <div class="date-feild w-190">
-                            <select class="form-control tear-type" name="lateral-tear">
-                                <option value="no" selected="">Partial Thickness</option>
-                                <option value="yes">Full Thickness</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="data-get d-flex tear-type-size">
-                        <label>Size</label>
-                        <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
-                            <span class="cm-txt-in">mm</span>
-                        </span>
-                        <span class="x-symbol">X</span>
-                        <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
-                            <span class="cm-txt-in">mm</span>
-                        </span>
-                    </div>
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Radial Nerve</label>
+                    <input class="form-control full-w" type="text" name="lateral-radial-nerve" id="clinical" value="" />
                 </div>
-                <div
-                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-                >
-                <label>Radial Nerve</label>
-                <input
-                    class="form-control full-w"
-                    type="text"
-                    name="lateral-radial-nerve"
-                    id="clinical"
-                    value=""
-                />
-                </div>
-                <div
-                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-                >
-                <label>Post Int Nerve</label>
-                <input
-                    class="form-control full-w"
-                    type="text"
-                    name="lateral-post-int-nerve"
-                    id="clinical"
-                    value=""
-                />
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Post Int Nerve</label>
+                    <input class="form-control full-w" type="text" name="lateral-post-int-nerve" id="clinical"
+                        value="" />
                 </div>
             </div>
 
@@ -236,14 +167,15 @@
                 <div class="title-checkbox data-get d-flex flex-wrap align-items-center justify-content-start">
                     <label><strong>Medial</strong></label>
                     <div class="d-flex customcheckbox ml-22">
-                        <div>CFTO</div> 
+                        <div>CFTO</div>
                         <label class="customcheckbox">
                             <input type="checkbox" checked name="medial-cfto">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                 </div>
-                <div class="selectboxgroup d-flex d-flex flex-wrap align-items-center herina-row one-line justify-content-between">
+                <div
+                    class="selectboxgroup d-flex d-flex flex-wrap align-items-center herina-row one-line justify-content-between">
                     <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>Tear</label>
                         <div class="date-feild w-190">
@@ -277,7 +209,7 @@
                     </div>
                     <div class="d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>
-                           Tender
+                            Tender
                         </label>
                         <div class="date-feild w-190">
                             <select class="form-control" name="medial-tender">
@@ -287,43 +219,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-wrap">
-                    <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line">
-                        <label>Tear Type</label>
-                        <div class="date-feild w-190">
-                            <select class="form-control tear-type" name="lateral-tear">
-                                <option value="no" selected="">Partial Thickness</option>
-                                <option value="yes">Full Thickness</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="data-get d-flex tear-type-size">
-                        <label>Size</label>
-                        <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
-                            <span class="cm-txt-in">mm</span>
-                        </span>
-                        <span class="x-symbol">X</span>
-                        <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
-                            <span class="cm-txt-in">mm</span>
-                        </span>
-                    </div>
-                </div>
             </div>
 
             <div class="section">
                 <div class="title-checkbox data-get d-flex flex-wrap align-items-center justify-content-start">
                     <label><strong>Anterior</strong></label>
                     <div class="d-flex customcheckbox ml-22">
-                        <div>Biceps Insertion</div> 
+                        <div>Biceps Insertion</div>
                         <label class="customcheckbox">
                             <input type="checkbox" checked name="medial-cfto">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                 </div>
-                <div class="selectboxgroup d-flex d-flex flex-wrap align-items-center herina-row one-line justify-content-between">
+                <div
+                    class="selectboxgroup d-flex d-flex flex-wrap align-items-center herina-row one-line justify-content-between">
                     <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>Tear</label>
                         <div class="date-feild w-190">
@@ -357,7 +267,7 @@
                     </div>
                     <div class="d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>
-                           Tender
+                            Tender
                         </label>
                         <div class="date-feild w-190">
                             <select class="form-control" name="lateral-tender">
@@ -373,60 +283,31 @@
                 <div class="data-get d-flex flex-wrap align-items-center justify-content-start">
                     <label><strong>Posterior</strong></label>
                 </div>
-                <div
-                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-                >
-                <label>Triceps Insertion</label>
-                <input
-                    class="form-control full-w"
-                    type="text"
-                    name="posterior-triceps-insertion"
-                    id="clinical"
-                    value=""
-                />
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Triceps Insertion</label>
+                    <input class="form-control full-w" type="text" name="posterior-triceps-insertion" id="clinical"
+                        value="" />
                 </div>
-                <div
-                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-                >
-                <label>Olecranon Bursa</label>
-                <input
-                    class="form-control full-w"
-                    type="text"
-                    name="posterior-olecranon-bursa"
-                    id="clinical"
-                    value=""
-                />
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Olecranon Bursa</label>
+                    <input class="form-control full-w" type="text" name="posterior-olecranon-bursa" id="clinical"
+                        value="" />
                 </div>
-                <div
-                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-                >
-                <label>Posterior Recess</label>
-                <input
-                    class="form-control full-w"
-                    type="text"
-                    name="posterior-recess"
-                    id="clinical"
-                    value=""
-                />
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Posterior Recess</label>
+                    <input class="form-control full-w" type="text" name="posterior-recess" id="clinical" value="" />
                 </div>
-                <div
-                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-                >
-                <label>Ulnar Nerve</label>
-                <input
-                    class="form-control full-w"
-                    type="text"
-                    name="posterior-ulnar-nerve"
-                    id="clinical"
-                    value=""
-                />
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Ulnar Nerve</label>
+                    <input class="form-control full-w" type="text" name="posterior-ulnar-nerve" id="clinical"
+                        value="" />
                 </div>
             </div>
 
             <div class="data-get w-100">
                 <label>Comments</label>
-                <textarea class="form-control" type="text" name="wrist-ultrasound-comment"
-                    id="wrist-ultrasound-comment" value=""></textarea>
+                <textarea class="form-control" type="text" name="ultrasound-elbow-comment" id="wrist-ultrasound-comment"
+                    value=""></textarea>
             </div>
 
             <div class="data-get w-100 left-right-sec d-flex flex-wrap section normal-form-group gap-50">
@@ -438,8 +319,7 @@
 
                 <div class="d-flex flex-wrap align-items-center ">
                     <label>Sonographer</label>
-                    <input class="form-control" type="text" name="sonographer"
-                        value="">
+                    <input class="form-control" type="text" name="sonographer" value="">
                 </div>
 
             </div>
@@ -448,8 +328,9 @@
             <span id="submitMessage"></span>
         </div>
         <!-- form body end -->
-      </div>
+    </div>
     </div>
     <script src="assets/js/submitform.js"></script>
-  </body>
+</body>
+
 </html>

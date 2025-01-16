@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+</head>
+
+<body class="form-wrapper trimester-pg wrist-ultrasound">
+    <div id="wrapper">
+        <div class="container">
+            <!-- form body start -->
+
+            <div class="top-form d-flex justify-content-between align-items-end">
+                <div class="d-flex">
+                    <h1>Ultrasound Wrist</h1>
+                    <div class="data-get">
+                        <select class="form-control" name="Scan">
+                            <option value="Ultrasound wrist" selected></option>
+                            <option value="Ultrasound wrist left">Left</option>
+                            <option value="Ultrasound wrist right">Right</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="logo">
+                    <img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/carescanimaginggroup.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2076996743&Signature=N2H%2FA3FEEacyc4Pa2L1r9CLBWGA%3D"
+                        alt="" />
+                </div>
+            </div>
+
+            <div class="section section-1">
+                <div class="d-flex flex-wrap flex-justify-between">
+                    <div class="data-get name-txt">
+                        <label for="patientName">Patient Name:</label>
+                        <input class="form-control" type="text" name="Patient Name" id="patientName" value="" />
+                    </div>
+                    <div class="data-get date-feild">
+                        <label for="DOB">DOB:</label>
+                        <input class="form-control" type="text" placeholder="DD-MM-YYYY" name="DOB" id="DOB" value="" />
+                    </div>
+                    <div class="data-get date-feild">
+                        <label for="studyDate">Study Date:</label>
+                        <input class="form-control" type="text" placeholder="DD-MM-YYYY" name="Study Date"
+                            id="studyDate" value="" />
+                    </div>
+                </div>
+
+                <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+                    <label>Clinical:</label>
+                    <input class="form-control full-w" type="text" name="Clinical Info" id="clinical" value="" />
+                </div>
+
+                <div class="data-get">
+                    <label>Trauma</label>
+                    <select class="form-control" name="trauma" id="trauma">
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="section dorsal-aspect-comp-section">
+                <div class="comp-item-header grid-column-3">
+
+
+                    <label>Dorsal Aspect</label>
+                    <label>NAD</label>
+                    <label>Comments</label>
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-4">
+                        <label>Comp 1</label>
+                        <label>APL</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 1 APL NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal aspect comp 1 APL NAD comment" value="" />
+                    </div>
+                    <div class="grid-column-4">
+                        <label></label>
+                        <label>EPB</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 1 EPB NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal aspect comp 1 EPB NAD comment" value="" />
+                    </div>
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-4">
+                        <label>Comp 2</label>
+                        <label>ECRL</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 2 ECRL NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal aspect comp 2 ECRL NAD comment" value="" />
+                    </div>
+                    <div class="grid-column-4">
+                        <label></label>
+                        <label>ECRB</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 2 ECRB NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal aspect comp 2 ECRB NAD comment" value="" />
+                    </div>
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-4">
+                        <label>Comp 3</label>
+                        <label>EPL</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 3 EPL NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal aspect comp 3 EPL NAD comment" value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-4">
+                        <label>Comp 4</label>
+                        <label>EDL</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 4 EDL NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal aspect comp 4 EDL NAD comment" value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-4">
+                        <label>Comp 5</label>
+                        <label>EDM</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 5 EDM NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal aspect comp 5 EDM NAD comment" value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-4">
+                        <label>Comp 6</label>
+                        <label>ECU</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="Dorsal aspect comp 6 ECU NAD" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="Dorsal Aspect Comp 6 ECU NAD comment" value="" />
+                    </div>
+
+                </div>
+
+
+
+                <div class="select-box-group">
+                    <div class="data-get">
+                        <label>Joint Effusion</label>
+                        <select class="form-control" name="Dorsal aspect joint effusion" id="joint-effusion">
+                            <option value="" selected></option>
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="data-get d-flex">
+                        <label>Ganglion</label>
+                        <select class="form-control ml-23" name="Dorsal aspect ganglion seen" id="ganglion-seen">
+                            <option value="" selected></option>
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                        <input class="form-control flex-grow" type="text" name="ganglion-text" value="" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section volar-aspect-section">
+                <div class="grid-column-3 comp-item-header">
+                    <label>Volar Aspect</label>
+                    <label>NAD</label>
+                    <label>Comments</label>
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>FCU</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect fcu nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect fcu nad comment" value="" />
+                    </div>
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>Flex Dig Sup Tendons</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect flex dig sub tendons nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect flex dig sub tendons nad comment"
+                            value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>Flex Dig Prof Tendons</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect flex dig prof tendons nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect flex dig sub tendons nad comment"
+                            value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>FCR</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect fcr nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect fcr nad comment" value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>FPL</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect fpl nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect fpl nad comment" value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>Median Nerve</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect median nerve nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect median nerve nad comment" value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>Ulnar Nerve</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect ulnar nerve nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect ulnar nerve nad comment" value="" />
+                    </div>
+
+                </div>
+                <div class="comp-item">
+                    <div class="grid-column-3">
+                        <label>Flexor Retinaculum</label>
+                        <label class="customcheckbox">
+                            <input type="checkbox" name="volar aspect flexor retinaculum nad" />
+                            <span class="checkmark"></span>
+                        </label>
+                        <input class="form-control" type="text" name="volar aspect flexor retinaculum nad comment"
+                            value="" />
+                    </div>
+
+                </div>
+
+                <div class="select-box-group">
+                    <div class="data-get">
+                        <label>Joint Effusion</label>
+                        <select class="form-control" name="Volar aspect joint effusion" id="joint-effusion">
+                            <option value="" selected></option>
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="data-get d-flex">
+                        <label>Ganglion</label>
+                        <select class="form-control ml-23" name="Dorsal aspect ganglion seen" id="ganglion-seen">
+                            <option value="" selected></option>
+                            <option value="No">No</option>
+                            <option value="Yes">Yes</option>
+                        </select>
+                        <input class="form-control flex-grow" type="text" name="ganglion-text" value="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-get w-100">
+                <label>Comments</label>
+                <textarea class="form-control" type="text" name="wrist-ultrasound-comment" id="wrist-ultrasound-comment"
+                    value=""></textarea>
+            </div>
+
+            <div
+                class="data-get w-100 left-right-sec d-flex flex-wrap justify-content-between section normal-form-group">
+
+                <div class="d-flex flex-wrap align-items-center  ">
+                    <label>No. of video clips</label>
+                    <input class="form-control" type="text" name="number-of-video-clips" value="">
+                </div>
+
+                <div class="d-flex flex-wrap align-items-center ">
+                    <label>Sonographer</label>
+                    <input class="form-control" type="text" name="sonographer" value="">
+                </div>
+
+                <div class="d-flex flex-wrap align-items-center  ">
+                    <label>Radiologist</label>
+                    <input class="form-control" type="text" name="radiologist" value="">
+                </div>
+            </div>
+
+            <input type="submit" class="btn btn-rounded" value="Submit" />
+            <span id="submitMessage"></span>
+        </div>
+        <!-- form body end -->
+    </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+</body>
+
+</html>

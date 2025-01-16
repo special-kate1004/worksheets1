@@ -2680,9 +2680,40 @@ textarea#breast-ultrasound-summary {
   margin-top: 40px;
 }
 
+.section .form-wrapper select.form-control {
+  height: 44px !important;
+}
+
+.elbow-ultrasound .tear-type {
+  min-width: 240px;
+}
+
+.elbow-ultrasound .tear-type-size label {
+  min-width: 110px;
+  text-align: right;
+  margin-top: 7px;
+}
+
+.elbow-ultrasound .x-symbol {
+  padding-left: 20px;
+  margin-top: 7px;
+}
+
 @media screen and (max-width: 1644px) {
   .morphology-ultrasound .checkboxlist .d-flex.gap-20 {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .elbow-ultrasound .selectboxgroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .elbow-ultrasound .selectboxgroup label {
+    min-width: 170px;
   }
 }
 
@@ -2719,6 +2750,23 @@ textarea#breast-ultrasound-summary {
 }
 
 @media screen and (max-width: 576px) {
+  .elbow-ultrasound .tear-type-size label {
+    text-align: left;
+  }
+
+  .elbow-ultrasound .tear-type-size .form-control {
+    width: 100px;
+  }
+
+  .elbow-ultrasound .tear-type-size .x-symbol {
+    padding-right: 20px;
+  }
+
+  .volar-aspect-section .select-box-group .data-get.d-flex,
+  .dorsal-aspect-comp-section .select-box-group .data-get.d-flex {
+    flex-direction: column;
+  }
+
   .morphology-ultrasound .checkboxlist label {
     width: fit-content;
   }
