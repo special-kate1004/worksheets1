@@ -30,8 +30,8 @@
                 <div class="data-get">
                 <select
                     class="form-control"
-                    name="wrist-direction"
-                    id="wrist-direction"
+                    name="elbow-direction"
+                    id="elbow-direction"
                 >
                     <option>Left</option>
                     <option>Right</option>
@@ -187,21 +187,21 @@
                     <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>Tear Type</label>
                         <div class="date-feild w-190">
-                            <select class="form-control tear-type" name="lateral-tear">
-                                <option value="no" selected="">Partial Thickness</option>
-                                <option value="yes">Full Thickness</option>
+                            <select class="form-control tear-type" name="lateral-tear-type">
+                                <option value="Partial Thickness" selected="">Partial Thickness</option>
+                                <option value="Full Thickness">Full Thickness</option>
                             </select>
                         </div>
                     </div>
                     <div class="data-get d-flex tear-type-size">
                         <label>Size</label>
                         <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
+                            <input class="form-control" type="text" name="tear-size-width" id="tear-size-width" value="">
                             <span class="cm-txt-in">mm</span>
                         </span>
                         <span class="x-symbol">X</span>
                         <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
+                            <input class="form-control" type="text" name="tear-size-height" id="tear-size-height" value="">
                             <span class="cm-txt-in">mm</span>
                         </span>
                     </div>
@@ -291,21 +291,21 @@
                     <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>Tear Type</label>
                         <div class="date-feild w-190">
-                            <select class="form-control tear-type" name="lateral-tear">
-                                <option value="no" selected="">Partial Thickness</option>
-                                <option value="yes">Full Thickness</option>
+                            <select class="form-control tear-type" name="medial-tear-type">
+                                <option value="Partial Thickness" selected="">Partial Thickness</option>
+                                <option value="Full Thickness">Full Thickness</option>
                             </select>
                         </div>
                     </div>
                     <div class="data-get d-flex tear-type-size">
                         <label>Size</label>
                         <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
+                            <input class="form-control" type="text" name="medial-tear-size-width" id="medial-tear-size-width" value="">
                             <span class="cm-txt-in">mm</span>
                         </span>
                         <span class="x-symbol">X</span>
                         <span class="cm-txt w-190">
-                            <input class="form-control" type="text" name="BPD" id="BPD" value="">
+                            <input class="form-control" type="text" name="medial-tear-size-height" id="medial-tear-size-height" value="">
                             <span class="cm-txt-in">mm</span>
                         </span>
                     </div>
@@ -318,7 +318,7 @@
                     <div class="d-flex customcheckbox ml-22">
                         <div>Biceps Insertion</div> 
                         <label class="customcheckbox">
-                            <input type="checkbox" checked name="medial-cfto">
+                            <input type="checkbox" checked name="Biceps Insertion">
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -327,7 +327,7 @@
                     <div class="data-get d-flex flex-wrap align-items-center flex-wrap one-line">
                         <label>Tear</label>
                         <div class="date-feild w-190">
-                            <select class="form-control" name="lateral-tear">
+                            <select class="form-control" name="Anterior-tear">
                                 <option value="no" selected="">No</option>
                                 <option value="yes">Yes</option>
                             </select>
@@ -338,7 +338,7 @@
                             Tendinosis
                         </label>
                         <div class="date-feild w-190">
-                            <select class="form-control" name="lateral-tendinosis">
+                            <select class="form-control" name="Anterior-tear-tendinosis">
                                 <option value="no" selected="">No</option>
                                 <option value="yes">Yes</option>
                             </select>
@@ -349,7 +349,7 @@
                             Neovascularity
                         </label>
                         <div class="date-feild w-190">
-                            <select class="form-control" name="lateral-neovascularity ">
+                            <select class="form-control" name="Anterior-tear-neovascularity ">
                                 <option value="no" selected="">No</option>
                                 <option value="yes">Yes</option>
                             </select>
@@ -360,7 +360,7 @@
                            Tender
                         </label>
                         <div class="date-feild w-190">
-                            <select class="form-control" name="lateral-tender">
+                            <select class="form-control" name="Anterior-tear-tender">
                                 <option value="no" selected="">No</option>
                                 <option value="yes">Yes</option>
                             </select>
@@ -381,7 +381,7 @@
                     class="form-control full-w"
                     type="text"
                     name="posterior-triceps-insertion"
-                    id="clinical"
+                    id="posterior-triceps-insertion"
                     value=""
                 />
                 </div>
@@ -393,7 +393,7 @@
                     class="form-control full-w"
                     type="text"
                     name="posterior-olecranon-bursa"
-                    id="clinical"
+                    id="posterior-olecranon-bursa"
                     value=""
                 />
                 </div>
@@ -405,7 +405,7 @@
                     class="form-control full-w"
                     type="text"
                     name="posterior-recess"
-                    id="clinical"
+                    id="posterior-recess"
                     value=""
                 />
                 </div>
@@ -417,7 +417,7 @@
                     class="form-control full-w"
                     type="text"
                     name="posterior-ulnar-nerve"
-                    id="clinical"
+                    id="posterior-ulnar-nerve"
                     value=""
                 />
                 </div>
@@ -425,8 +425,8 @@
 
             <div class="data-get w-100">
                 <label>Comments</label>
-                <textarea class="form-control" type="text" name="wrist-ultrasound-comment"
-                    id="wrist-ultrasound-comment" value=""></textarea>
+                <textarea class="form-control" type="text" name="elbow-ultrasound-comment"
+                    id="elbow-ultrasound-comment" value=""></textarea>
             </div>
 
             <div class="data-get w-100 left-right-sec d-flex flex-wrap section normal-form-group gap-50">
