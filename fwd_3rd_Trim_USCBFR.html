@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+            <div>
+                <h1>3rd Trimester ULTRASOUND
+                </h1>
+            </div>              
+            <div class="logo">
+                <img src="assets/images/logo.webp" alt="logo image" />
+            </div>
+        </div>
+ 
+          <div class="section">
+            <div
+            class="data-get w-100 left-right-sec d-flex flex-wrap section gap-50"
+          >
+            <div class="date-feild">
+                <label>Date:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="DD-MM-YYYY"
+                  name="Date"
+                  id="date"
+                  value=""
+                />
+              </div>
+
+            <div class="d-flex flex-wrap align-items-center flex-grow">
+              <label>Sonographer</label>
+              <input
+                class="form-control flex-grow ml-23"
+                type="text"
+                name="sonographer"
+                value=""
+              />
+            </div>
+            </div>
+            <div class="data-get w-100">
+                <label>Patient Details:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="patient-details"
+                id="patient-details"
+                value=""
+                ></textarea>
+            </div>
+          </div>
+
+          <div class="section">
+            
+            <div class="data-get calculated edd w-100px d-flex align-items-end">
+              <label class="mr-5">EDD </label>
+              <input class="form-control" type="text" name="Estimated Date of Delivery Day" id="estimateddateofdeliveryday" value=""> / 
+              <input class="form-control afterInput" type="text" name="Estimated Date of Delivery Month" id="estimateddateofdeliverymonth" value=""> /
+              <input class="form-control afterInput mr-15" type="text" name="Estimated Date of Delivery Year" id="estimateddateofdeliveryyear">
+              based on (the LMP/ the previous US/ dates provided/ IVF transfer date) 
+            </div>
+            <div class="data-get calculated edd w-100px d-flex align-items-end">
+              <label class="mr-25">Assumed Gestational Age : </label>
+              <input class="form-control" type="text" name="Assumed Gestational Age weeks" id="estimateddateofdeliveryday" value=""> weeks 
+              <input class="form-control afterInput" type="text" name="Assumed Gestational Age days" id="estimateddateofdeliverymonth" value=""> days
+            </div>
+
+            <div class="data-get w-100 left-right-sec d-flex flex-wrap section normal-form-group gap-50">
+
+              <div class="d-flex flex-wrap align-items-center  ">
+                  <label class="mr-5">Placenta: </label>
+                  <input class="form-control" type="text" name="number-of-video-clips" value="">
+              </div>
+
+              <div class="d-flex flex-wrap align-items-center ">
+                  <label>Distance from internal os:</label>
+                  <input class="form-control" type="text" name="sonographer" value="">
+              </div>
+
+            </div>
+
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label >Presentation:</label>
+              <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio min-w-60" for="scan-quality-good">Cephalic
+                      <input type="radio" checked="checked" name="Heartbeat" id="scan-quality-good" value="seen">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="scan-radio-avg">Breech
+                      <input type="radio" name="Heartbeat" id="scan-radio-avg" value="not seen">
+                      <span class="checkmark"></span>
+                  </label>
+                  <input class="form-control wd-100 ml-15" type="text" name="Heartbeat bmp" id="estimateddateofdeliveryday" value=""> type
+
+              </div>
+            </div>
+
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label >Cervix:</label>
+              <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio min-w-60" for="scan-quality-good">normal
+                      <input type="radio" checked="checked" name="Heartbeat" id="scan-quality-good" value="seen">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="scan-radio-avg">abnormal
+                      <input type="radio" name="Heartbeat" id="scan-radio-avg" value="not seen">
+                      <span class="checkmark"></span>
+                  </label>
+                  <input class="form-control wd-100 ml-10" type="text" name="Heartbeat bmp" id="estimateddateofdeliveryday" value="">
+                  <label class="customRadio" for="scan-radio-avg">Not well seen
+                    <input type="radio" name="Heartbeat" id="scan-radio-avg" value="not seen">
+                    <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="section">
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label >Heartbeat:</label>
+              <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio min-w-60" for="scan-quality-good">Seen
+                      <input type="radio" checked="checked" name="Heartbeat" id="scan-quality-good" value="seen">
+                      <span class="checkmark"></span>
+                  </label>
+                  <input class="form-control wd-100 ml-15" type="text" name="Heartbeat bmp" id="estimateddateofdeliveryday" value=""> bpm
+
+                  <label class="customRadio" for="scan-radio-avg">Not seen
+                      <input type="radio" name="Heartbeat" id="scan-radio-avg" value="not seen">
+                      <span class="checkmark"></span>
+                  </label>
+                  
+              </div>
+            </div>
+            <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+            >
+            <label>Gestational Sac:</label>
+            <input
+                class="form-control full-w"
+                type="text"
+                name="Gestational Sac"
+                id="clinical"
+                value=""
+            />
+            </div>
+            <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+            >
+            <label>Yolk Sac:</label>
+            <input
+                class="form-control full-w"
+                type="text"
+                name="Yolk Sac"
+                id="clinical"
+                value=""
+            />
+            </div>
+            <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-end">
+              <label class="mr-5">Foetal Pole </label>
+              <input class="form-control" type="text" name="Foetal Pole mm" id="estimateddateofdeliveryday" value=""> mm =  
+              <br class="mobile-view"><br>
+              <input class="form-control afterInput" type="text" name="Foetal Pole weeks" id="estimateddateofdeliverymonth" value=""> w
+              <input class="form-control afterInput mr-15 ml-15" type="text" name="Foetal Pole days" id="estimateddateofdeliveryyear"> d &nbsp;=
+              <br class="mobile-view"><br>
+              <input class="form-control afterInput mr-15" type="text" name="Foetal Pole edd" id="estimateddateofdeliveryyear"> Edd
+            </div>
+          </div>
+          
+          <div class="section">
+            <div class="data-get w-100">
+              <label>Comment:</label>
+              <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+              ></textarea>
+          </div>
+          </div>
+          
+
+          <input type="submit" class="btn btn-rounded" value="Submit" />
+          <span id="submitMessage"></span>
+        </div>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

@@ -176,7 +176,7 @@ form {
   color: #1b76ff;
 }
 .align-items-end {
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 
 /*- - - - - - - - - - START :: FORM PAGES CSS - - - - - -- - - - - */
@@ -2390,6 +2390,51 @@ img {
   margin-bottom: 71px;
 }
 
+.mobile-view {
+  display: none;
+}
+
+.min-w-auto {
+  min-width: auto !important;
+}
+
+.min-w-185 {
+  min-width: 185px !important;
+}
+
+.min-w-270 {
+  min-width: 280px !important;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.data-grid {
+  display: grid;
+}
+
+.grid-col-1 {
+  grid-template-columns: 1fr;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-80 {
+  gap: 80px;
+}
+
+.w-50 {
+  min-width: 50px !important;
+  display: inline-block !important;
+}
+
+.ml-23- {
+  margin-left: -23px;
+}
+
 .ml-13 {
   margin-left: 13px;
 }
@@ -2404,6 +2449,41 @@ img {
 
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.mr-45 {
+  margin-right: 45px !important;
+}
+
+.mr-15 {
+  margin-right: 15px !important;
+}
+
+.ml-15 {
+  margin-left: 15px !important;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.mr-5 {
+  margin-right: 5px !important;
+}
+.mr-25 {
+  margin-right: 25px !important;
+}
+
+.mr-0 {
+  margin-right: 0px !important;
+}
+
+.wd-100 {
+  width: 100px !important;
+}
+
+.min-w-60 {
+  min-width: 60px !important;
 }
 
 .gap-18 {
@@ -2424,6 +2504,10 @@ img {
 
 .d-flex {
   display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
 }
 
 .grid-column-4 {
@@ -2627,47 +2711,6 @@ textarea#breast-ultrasound-summary {
   width: 300px;
 }
 
-.min-w-auto {
-  min-width: auto !important;
-}
-
-.min-w-185 {
-  min-width: 185px !important;
-}
-
-.min-w-270 {
-  min-width: 280px !important;
-}
-
-.flex-grow {
-  flex-grow: 1;
-}
-
-.data-grid {
-  display: grid;
-}
-
-.grid-col-1 {
-  grid-template-columns: 1fr;
-}
-
-.gap-30 {
-  gap: 30px;
-}
-
-.gap-80 {
-  gap: 80px;
-}
-
-.w-50 {
-  min-width: 50px !important;
-  display: inline-block !important;
-}
-
-.ml-23- {
-  margin-left: -23px;
-}
-
 .morphology-ultrasound .customcheckbox {
   padding: 0;
 }
@@ -2749,7 +2792,21 @@ textarea#breast-ultrasound-summary {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .mobile-view {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 576px) {
+  .d-mobile-block {
+    display: block;
+  }
+
+  .d-mobile-block .form-control {
+    margin-left: 0;
+  }
+
   .elbow-ultrasound .tear-type-size label {
     text-align: left;
   }
