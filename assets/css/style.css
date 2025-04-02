@@ -2869,7 +2869,16 @@ textarea#breast-ultrasound-summary {
 
   .breast-ultrasound .left-sec .form-control.w-125,
   .breast-ultrasound .right-sec .form-control.w-125 {
-    width: calc(100% - 94px) !important;
+    width: 100% !important;
+  }
+
+  .breast-ultrasound .cartoid-wrap .data-get {
+    margin-bottom: 0;
+  }
+
+  .breast-ultrasound .cartoid-wrap .mr-25 {
+    margin-right: 0 !important;
+    margin-bottom: 10px;
   }
 
   .breast-ultrasound .left-sec select.form-control,
