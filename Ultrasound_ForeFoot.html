@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+            <div>
+                <h1>FOREFOOT ULTRASOUND
+                </h1>
+                <label>INTERIM SONOGRAPHER REPORT ONLY
+                </label>
+            </div>              
+            <div class="logo">
+                <img src="assets/images/logo.webp" alt="logo image" />
+            </div>
+        </div>
+ 
+        <div class="section">
+          <div class="data-get w-100 left-right-sec d-flex flex-wrap section gap-50">
+            <div class="d-flex flex-wrap align-items-center flex-grow">
+              <label>Patient Name</label>
+              <input
+                class="form-control flex-grow ml-23"
+                type="text"
+                name="patient-name"
+                value=""
+              />
+            </div>
+
+            <div class="date-feild">
+              <label>Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Date"
+                id="date"
+                value=""
+              />
+            </div>
+          </div>
+        
+          <div
+          class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+          <label>Sonographer:</label>
+          <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+          />
+          </div>
+
+          <div class="checkboxgroup d-flex flex-wrap align-items-center align-items-start gap-100 ml-8-">
+            <div class="d-flex gap-50">
+              <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox">
+                    <input type="checkbox" name="position right">
+                    <span class="checkmark"></span>
+                </label>
+                <label>RIGHT</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox">
+                    <input type="checkbox" name="position left">
+                    <span class="checkmark"></span>
+                </label>
+                <label>LEFT</label>
+            </div>
+            </div>
+            <div class="d-flex gap-50">
+              <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox">
+                    <input type="checkbox" name="normality normal">
+                    <span class="checkmark"></span>
+                </label>
+                <label>NORMAL</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox">
+                  <input type="checkbox" name="normality abnormal">
+                  <span class="checkmark"></span>
+              </label>
+              <label>ABNORMAL</label>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section dorsal-aspect-comp-section overflow-x-scroll pb-10 bordered-grid transform-none">
+          <div class="comp-item-header grid-column-6">
+              <label></label>
+              <label>1st MTPJ </label>
+              <label>2nd MTPJ</label>
+              <label>3rd MTPJ</label>
+              <label>4th MTPJ</label>
+              <label>5th MTPJ</label>
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-6">
+                  <label>Effusion</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"  name="1st MTPJ Effusion" value="yes"/>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="2nd MTPJ Bony Effusion" value="yes"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="3rd MTPJ Effusion" value="yes"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="4th MTPJ Effusion" value="yes"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="5th MTPJ  Effusion" value="yes"/>
+                    <span class="checkmark"></span>
+                  </label>
+              </div>
+              
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Bony Irregularity</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st MTPJ Bony Irregularity" value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd MTPJ Bony Irregularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd MTPJ Bony Irregularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th MTPJ Bony Irregularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th MTPJ Bony Irregularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Increased Vascularity</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st MTPJ Increased Vascularity" value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd MTPJ Increased Vascularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd MTPJ Increased Vascularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th MTPJ Increased Vascularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th MTPJ Increased Vascularity" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Synovium</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st MTPJ Synovium" value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd MTPJ Synovium" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd MTPJ Synovium" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th MTPJ Synovium" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th MTPJ Synovium" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Ganglion</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st MTPJ Ganglion" value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd MTPJ Ganglion" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd MTPJ Ganglion" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th MTPJ Ganglion" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th MTPJ Ganglion" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Extensor Dig. T.</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st MTPJ Extensor Dig. T." value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd MTPJ Extensor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd MTPJ Extensor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th MTPJ Extensor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th MTPJ Extensor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Flexor Dig. T.</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st MTPJ Flexor Dig. T." value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd MTPJ Flexor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd MTPJ Flexor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th MTPJ Flexor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th MTPJ Flexor Dig. T." value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Adventitial Bursa</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st Adventitial Bursa" value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Adventitial Bursa" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Adventitial Bursa" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Adventitial Bursa" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th Adventitial Bursa" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+                <label>Plantar Plate Tear</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="1st Plantar Plate Tear" value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Plantar Plate Tear" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Plantar Plate Tear" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Plantar Plate Tear" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th Plantar Plate Tear" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+            
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6 overflow-x-hidden">
+              <label class="text-align-right">Location</label>
+            <div class="get-data d-flex flex-wrap align-items-center justify-content-center">
+              <div class="radio-list d-flex align-items-center p-0 flex-wrap justify-content-center">
+                  <label class="customRadio" for="1st MTPJ location M">M
+                      <input type="radio" checked="checked" name="1st MTPJ location" id="1st MTPJ location M" value="M">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="1st MTPJ location C">C
+                      <input type="radio" name="1st MTPJ location" id="1st MTPJ location C" value="C">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="1st MTPJ location L">L
+                      <input type="radio" name="1st MTPJ location" id="1st MTPJ location L" value="L">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+            </div>
+            <div class="get-data d-flex flex-wrap align-items-center justify-content-center">
+              <div class="radio-list d-flex align-items-center flex-wrap justify-content-center">
+                  <label class="customRadio" for="2nd MTPJ location M">M
+                      <input type="radio" checked="checked" name="2nd MTPJ location" id="2nd MTPJ location M" value="M">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="2nd MTPJ location C">C
+                      <input type="radio" name="2nd MTPJ location" id="2nd MTPJ location C" value="C">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="2nd MTPJ location L">L
+                      <input type="radio" name="2nd MTPJ location" id="2nd MTPJ location L" value="L">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+            </div>
+            <div class="get-data d-flex flex-wrap align-items-center  justify-content-center">
+              <div class="radio-list d-flex align-items-center flex-wrap justify-content-center">
+                  <label class="customRadio" for="3rd MTPJ location M">M
+                      <input type="radio" checked="checked" name="3rd MTPJ location" id="3rd MTPJ location M" value="M">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="3rd MTPJ location C">C
+                      <input type="radio" name="3rd MTPJ location" id="3rd MTPJ location C" value="C">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="3rd MTPJ location L">L
+                      <input type="radio" name="3rd MTPJ location" id="3rd MTPJ location L" value="L">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+            </div>
+            <div class="get-data d-flex flex-wrap align-items-center justify-content-center">
+              <div class="radio-list d-flex align-items-center justify-content-center flex-wrap">
+                  <label class="customRadio" for="4th MTPJ location M">M
+                      <input type="radio" checked="checked" name="4th MTPJ location" id="4th MTPJ location M" value="good">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="4th MTPJ location C">C
+                      <input type="radio" name="4th MTPJ location" id="4th MTPJ location C" value="average">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="4th MTPJ location L">L
+                      <input type="radio" name="4th MTPJ location" id="4th MTPJ location L" value="poor">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+            </div>
+            <div class="get-data d-flex flex-wrap align-items-center justify-content-center">
+              <div class="radio-list d-flex align-items-center flex-wrap justify-content-center gap-10">
+                  <label class="customRadio" for="5th MTPJ location M">M
+                      <input type="radio" checked="checked" name="5th MTPJ location" id="5th MTPJ location M" value="good">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="5th MTPJ location C">C
+                      <input type="radio" name="5th MTPJ location" id="5th MTPJ location C" value="average">
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio" for="5th MTPJ location L">L
+                      <input type="radio" name="5th MTPJ location" id="5th MTPJ location L" value="poor">
+                      <span class="checkmark"></span>
+                  </label>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+              <label class="text-align-right">Size (mm)
+              </label>
+              <input
+                class="form-control max-w-200 m-auto"
+                type="text"
+                name="1st MTPJ size"
+                value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="2nd MTPJ size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="3rd MTPJ size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="4th MTPJ size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="5th MTPJ size"
+                  value=""
+              />
+            </div>
+          </div>
+
+          <label class="d-flex justify-content-end text-italic"><br>※ M - Medial &nbsp;&nbsp; C - Centre &nbsp;&nbsp;L - Lateral &nbsp;</label>
+        </div>
+
+        <div class="section dorsal-aspect-comp-section overflow-x-scroll pb-10 bordered-grid transform-none">
+          <div class="comp-item-header grid-column-5">
+              <label></label>
+              <label>1st Interspace</label>
+              <label class="desktop-view">2nd Interspace</label><label class="mobile-view">2nd</label>
+              <label class="desktop-view">3rd Interspace</label><label class="mobile-view">3rd</label>
+              <label class="desktop-view">4th Interspace</label><label class="mobile-view">4th</label>
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-5">
+                  <label>Morton’s neuroma</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"  name="Morton’s neuroma 1st Interspace" value="yes"/>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="Morton’s neuroma 2nd Interspace" value="yes"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="Morton’s neuroma 3rd Interspace" value="yes"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="Morton’s neuroma 4th Interspace" value="yes"/>
+                    <span class="checkmark"></span>
+                  </label>
+                 
+              </div>
+              
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-5">
+                <label>Intermetatarsal Bursitis</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Intermetatarsal Bursitis 1st Interspace" value="yes"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="Intermetatarsal Bursitis 2nd Interspace" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="Intermetatarsal Bursitis 3rd Interspace" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="Intermetatarsal Bursitis 4th Interspace" value="yes"/>
+                  <span class="checkmark"></span>
+                </label>
+                
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments</label>
+            <textarea class="form-control" type="text" name="lower-leg-calf-ultrasound"
+                id="lower-leg-calf-ultrasound" value=""></textarea>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+        </div>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

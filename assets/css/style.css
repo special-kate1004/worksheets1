@@ -662,7 +662,7 @@ form {
   margin-top: 16px;
 }
 .p-0 {
-  padding: 0;
+  padding: 0 !important;
 }
 .referrer {
   padding-top: 90px;
@@ -2394,6 +2394,10 @@ img {
   display: none;
 }
 
+.text-align-right {
+  text-align: right;
+}
+
 .min-w-auto {
   min-width: auto !important;
 }
@@ -2404,6 +2408,10 @@ img {
 
 .min-w-270 {
   min-width: 280px !important;
+}
+
+.max-w-200 {
+  max-width: 200px;
 }
 
 .flex-grow {
@@ -2467,6 +2475,10 @@ img {
   margin-left: 10px !important;
 }
 
+.ml-8- {
+  margin-left: -8px !important;
+}
+
 .mr-5 {
   margin-right: 5px !important;
 }
@@ -2490,6 +2502,10 @@ img {
   gap: 18px;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
 .gap-50 {
   gap: 50px;
 }
@@ -2502,6 +2518,10 @@ img {
   height: 200px !important;
 }
 
+.text-italic {
+  font-style: italic;
+}
+
 .d-flex {
   display: flex;
 }
@@ -2510,11 +2530,137 @@ img {
   justify-content: center;
 }
 
+.grid-column-3-1 {
+  display: grid;
+  grid-template-columns: 170px 120px 1fr;
+  margin: 5px 0;
+  align-items: center;
+}
+
 .grid-column-4 {
   display: grid;
   grid-template-columns: 100px 150px 150px 1fr;
   margin: 5px 0;
   align-items: center;
+}
+
+.grid-column-4-1 {
+  display: grid;
+  grid-template-columns: 170px 120px 520px 1fr;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.grid-column-4-1 .customcheckbox,
+.grid-column-3-1 .customcheckbox,
+.grid-column-6 .customcheckbox {
+  transform: translateX(-20%) !important;
+}
+
+.grid-column-6 {
+  display: grid;
+  grid-template-columns: 170px 1fr 1fr 1fr 1fr 1fr;
+  margin: 5px 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.grid-column-5 {
+  display: grid;
+  grid-template-columns: 270px 1fr 1fr 1fr 1fr;
+  margin: 5px 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.bordered-grid .comp-item {
+  border-bottom: 1px dotted gray;
+  padding: 10px 0;
+}
+
+.overflow-x-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1330px) {
+  .grid-column-6 .radio-list {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    width: fit-content;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1132px) {
+  .grid-column-4-1 {
+    grid-template-columns: 150px 69px 490px 1fr;
+  }
+
+  .grid-column-3-1 {
+    grid-template-columns: 150px 69px 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-column-5 {
+    display: grid;
+    grid-template-columns: 170px 1fr 1fr 1fr 1fr;
+    margin: 5px 0;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .comp-item-header {
+    margin-top: 36px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .grid-column-4-1 {
+    grid-template-columns: 120px 69px 410px 1fr;
+  }
+
+  .grid-column-3-1 {
+    grid-template-columns: 120px 69px 1fr;
+  }
+
+  .grid-column-5 {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr;
+    margin: 5px 0;
+    align-items: center;
+  }
+
+  .grid-column-6 {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px 0;
+    align-items: center;
+  }
+
+  .grid-column-6 .radio-list .customRadio {
+    padding-left: 20px;
+  }
+
+  .grid-column-6 .radio-list .customRadio .checkmark {
+    width: 16px;
+    height: 16px;
+  }
+
+  .grid-column-6 .customRadio input:checked ~ .checkmark:after {
+    top: 2px;
+    left: 2px;
+  }
+
+  .grid-column-6 input.form-control {
+    padding: 2px;
+  }
 }
 
 .grid-column-3 {
@@ -2528,9 +2674,16 @@ img {
   transform: translateX(40%);
 }
 
-.comp-item-header label:nth-child(2),
-.comp-item-header label:nth-child(3) {
+.transform-none .comp-item div label:nth-child(2) {
+  transform: none !important;
+}
+
+.comp-item-header label {
   text-align: center;
+}
+
+.comp-item-header label:nth-child(1) {
+  text-align: left;
 }
 
 .comp-item .customcheckbox {
@@ -2679,6 +2832,10 @@ img {
   margin-bottom: 0 !important;
 }
 
+.m-auto {
+  margin: auto !important;
+}
+
 .gap-20 {
   gap: 20px;
 }
@@ -2721,6 +2878,10 @@ textarea#breast-ultrasound-summary {
 
 .mt-40 {
   margin-top: 40px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
 }
 
 .section .form-wrapper select.form-control {
@@ -2794,7 +2955,10 @@ textarea#breast-ultrasound-summary {
 
 @media screen and (max-width: 768px) {
   .mobile-view {
-    display: block;
+    display: block !important;
+  }
+  .desktop-view {
+    display: none !important;
   }
 }
 
