@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body class="form-wrapper">
+    <div id="wrapper">
+      <div class="container">
+        <div class="top-form d-flex justify-content-between align-items-end">
+          <h1>NUCHAL ULTRASOUND</h1>
+          <div class="logo">
+            <img
+              src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/carescanimaginggroup.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2071547808&Signature=synr1I5sCg9SSiDatCMyK%2B7HwoA%3D"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- form body start -->
+        <div class="d-flex flex-wrap form-row">
+          <div
+            class="d-flex flex-wrap form-row dating-scan justify-content-between"
+          >
+            <div class="data-get name-txt w-500">
+              <label class="dating-label">Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild w-680">
+              <label class="dating-label">DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD/MM/YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild w-500">
+              <label class="dating-label">DOS</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD/MM/YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+
+            <div class="data-get sonographer w-680">
+              <label class="dating-label">Sonographer</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Sonographer"
+                id="sonographer"
+                value=""
+              />
+            </div>
+
+            <div
+              class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+            >
+              <label>Clinical: </label>
+              <input
+                class="form-control"
+                type="text"
+                name="Clinical"
+                id="clinical"
+                value=""
+              />
+            </div>
+
+            <div class="data-get sonographer w-500 date-feild">
+              <label class="dating-label"> Expected EDD</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD/MM/YYYY"
+                name="EDD"
+                id="edd"
+                value=""
+              />
+            </div>
+
+            <div class="data-get d-flex flex-wrap align-items-end mb-0 sm-mt-0">
+              based on
+              <div class="radio-list d-flex align-items-center gap-10">
+                <label class="customRadio min-w-60" for="edd_method_LMP"
+                  >the LMP
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="edd_method"
+                    id="edd_method_LMP"
+                    value="LMP"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="customRadio" for="edd_method-prevUS"
+                  >the previous US
+                  <input
+                    type="radio"
+                    name="edd_method"
+                    id="edd_method-prevUS"
+                    value="prev US"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="customRadio" for="edd_method-IVF">
+                  IVF transfer date
+                  <input
+                    type="radio"
+                    name="edd_method"
+                    id="edd_method-IVF"
+                    value="IVF"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="data-get calculated edd w-100px d-flex align-items-end">
+              <label class="mr-0">Expected GA: </label>
+              <input
+                class="form-control"
+                type="text"
+                name="Assumed Gestational Age weeks"
+                id="estimateddateofdeliveryday"
+                value=""
+              />
+              w
+              <input
+                class="form-control afterInput"
+                type="text"
+                name="Assumed Gestational Age days"
+                id="estimateddateofdeliverymonth"
+                value=""
+              />
+              days
+            </div>
+            <div
+              class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+            >
+              <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox pr-25">
+                  <input type="checkbox" name="3 Point ID Check" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>3 Point ID Check</label>
+              </div>
+              <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox pr-25">
+                  <input type="checkbox" name="Verbal Consent" />
+                  <span class="checkmark"></span>
+                </label>
+                <label>Verbal Consent</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="biometrics-sec">
+            <h4>Biometry</h4>
+            <div class="d-flex flex-wrap form-row datingRow">
+              <div class="data-get week-days">
+                <label class="small-label">CRL:</label>
+                <span class="cm-txt w-100px">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="biometry CRL"
+                    id="biparietaldiameter"
+                    value=""
+                  />
+                </span>
+                <span>cm =</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="CRL w"
+                    id="biparietaldiameterweeks"
+                    value=""
+                  />
+                </span>
+                <span>w</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="CRL d"
+                    id="biparietaldiameterdays"
+                    value=""
+                  />
+                </span>
+                <span>d</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap align-items-center mt-20">
+              <div class="radio-list d-flex align-items-center p-0">
+                <label class="customRadio"
+                  >Concordant with
+                  <input
+                    type="radio"
+                    name="crl_edd_relation"
+                    value="concordant"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio"
+                  >establishes EDD
+                  <input
+                    type="radio"
+                    name="crl_edd_relation"
+                    value="establishes"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row datingRow">
+              <div class="data-get week-days">
+                <label class="small-label">BPD: </label>
+                <span class="cm-txt w-100px">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="BPD"
+                    id="biparietaldiameter"
+                    value=""
+                  />
+                </span>
+                <span>cm =</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="BPD w"
+                    id="biparietaldiameterweeks"
+                    value=""
+                  />
+                </span>
+                <span>w</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="BPD d"
+                    id="biparietaldiameterdays"
+                    value=""
+                  />
+                </span>
+                <span>d</span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row datingRow">
+              <div class="data-get week-days">
+                <label class="small-label">HC:</label>
+                <span class="cm-txt w-100px">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="HC"
+                    id="biparietaldiameter"
+                    value=""
+                  />
+                </span>
+                <span>cm =</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="HC w"
+                    id="biparietaldiameterweeks"
+                    value=""
+                  />
+                </span>
+                <span>w</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="HC d"
+                    id="biparietaldiameterdays"
+                    value=""
+                  />
+                </span>
+                <span>d</span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row datingRow">
+              <div class="data-get week-days">
+                <label class="small-label">AC:</label>
+                <span class="cm-txt w-100px">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="AC"
+                    id="biparietaldiameter"
+                    value=""
+                  />
+                </span>
+                <span>cm =</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="AC w"
+                    id="biparietaldiameterweeks"
+                    value=""
+                  />
+                </span>
+                <span>w</span>
+                <span class="cm-txt w-190">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="AC d"
+                    id="biparietaldiameterdays"
+                    value=""
+                  />
+                </span>
+                <span>d</span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row datingRow">
+              <div class="data-get week-days">
+                <label class="small-label">Fetal HR:</label>
+                <span class="cm-txt w-100px">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Fetal HR"
+                    id="biparietaldiameter"
+                    value=""
+                  />
+                </span>
+                <span>bpm</span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row datingRow">
+              <div class="data-get week-days">
+                <label class="small-label">NT</label>
+                <span class="cm-txt w-100px">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="NT"
+                    id="biparietaldiameter"
+                    value=""
+                  />
+                </span>
+                <span>mm</span>
+                <span class="text-italic"
+                  >appropriate between CRL 45 - 84mm (11w1d -13w6d)</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="quality-row d-flex flex-wrap justify-content-between max-w-1100px"
+          >
+            <div class="qty-column">
+              <div class="data-get checkboxWrap d-flex mb-8">
+                <label class="checklabel"> Body </label>
+                <div class="radio-list d-flex flex-wrap align-items-center">
+                  <label class="customcheckbox"
+                    >Stomach
+                    <input type="checkbox" name="Stomach" id="4chamberview" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Kidneys
+                    <input type="checkbox" name="Kidneys" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Bladder
+                    <input type="checkbox" name="Bladder" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Nasal bone seen/not seen
+                    <input type="checkbox" name="Nasal bone seen/not seen" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get checkboxWrap d-flex mb-8">
+                <label class="checklabel"> Head </label>
+                <div class="radio-list d-flex flex-wrap align-items-center">
+                  <label class="customcheckbox"
+                    >Cranium
+                    <input type="checkbox" name="Cranium" id="4chamberview" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Choroid plexus
+                    <input type="checkbox" name="Choroid" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get checkboxWrap d-flex">
+                <label class="checklabel"> Heart </label>
+                <div class="radio-list d-flex flex-wrap align-items-center">
+                  <label class="customcheckbox"
+                    >Situs
+                    <input type="checkbox" name="Situs" id="4chamberview" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="qty-column">
+              <div class="data-get checkboxWrap d-flex mb-8">
+                <label class="checklabel"> Limbs / Spine </label>
+                <div class="radio-list d-flex flex-wrap align-items-center">
+                  <label class="customcheckbox"
+                    >Right Upper limbs
+                    <input
+                      type="checkbox"
+                      name="Right Upper limbs"
+                      id="4chamberview"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Left Upper limbs
+                    <input
+                      type="checkbox"
+                      name="Left Upper limbs"
+                      id="4chamberview"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Right Lower limbs
+                    <input type="checkbox" name="Right Lower limbs" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Left Lower limbs
+                    <input type="checkbox" name="Left Lower limbs" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Spine
+                    <input type="checkbox" name="Spine" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Skin line
+                    <input type="checkbox" name="Skin line" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get checkboxWrap d-flex">
+                <label class="checklabel"> Umbilical Cord </label>
+                <div class="radio-list d-flex flex-wrap align-items-center">
+                  <label class="customcheckbox"
+                    >3VC
+                    <input type="checkbox" name="3VC" id="4chamberview" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox"
+                    >Cord insertion
+                    <input
+                      type="checkbox"
+                      name="Cord insertion"
+                      id="4chamberview"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="biometrics-sec">
+            <div class="thirs-sec">
+              <h4>Maternal</h4>
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">Cervix:</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Cervix"
+                      id="biparietaldiameter"
+                      value=""
+                    />
+                  </span>
+                  <span>mm</span>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">Uterus:</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Uterus"
+                      id="biparietaldiameter"
+                      value=""
+                    />
+                  </span>
+                  <span>mm</span>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">Ovaries:</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Ovaries"
+                      id="biparietaldiameter"
+                      value=""
+                    />
+                  </span>
+                  <span>mm</span>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">Umbilical artery PI: Right</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control mr-25"
+                      type="text"
+                      name="Umbilical artery PI: Right"
+                      id="biparietaldiameter"
+                      value=""
+                    />
+                  </span>
+                  <span>Left</span>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Umbilical artery PI: Left"
+                      id="biparietaldiameter"
+                      value=""
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section data-get w-100 datingRow">
+            <h4>Comments</h4>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comments"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

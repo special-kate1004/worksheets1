@@ -35,46 +35,90 @@
                 <img src="assets/images/logo.webp" alt="logo image" />
             </div>
         </div>
- 
-        <div class="section">
-          <div class="data-get w-100 left-right-sec d-flex flex-wrap section gap-50">
-            <div class="d-flex flex-wrap align-items-center flex-grow">
-              <label>Patient Name</label>
-              <input
-                class="form-control flex-grow ml-23"
-                type="text"
-                name="patient-name"
-                value=""
-              />
-            </div>
 
-            <div class="date-feild">
-              <label>Date:</label>
+        <div
+            class="d-flex flex-wrap form-row dating-scan justify-content-between"
+          >
+            <div class="data-get name-txt w-500">
+              <label class="dating-label">Patient Name:</label>
               <input
                 class="form-control"
                 type="text"
-                placeholder="DD-MM-YYYY"
-                name="Date"
-                id="date"
+                name="Patient Name"
+                id="patientName"
                 value=""
               />
             </div>
+            <div class="data-get date-feild w-680">
+              <label class="dating-label">DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD/MM/YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+
+            <div class="data-get sonographer w-500">
+              <label class="dating-label">Sonographer</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Sonographer"
+                id="sonographer"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild w-680">
+              <label class="dating-label">DOS:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD/MM/YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+
+            
+
+            <div
+              class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+            >
+              <label>Clinical: </label>
+              <input
+                class="form-control"
+                type="text"
+                name="Clinical"
+                id="clinical"
+                value=""
+              />
+            </div>
+
+            
           </div>
-        
-          <div
-          class="data-get clinical d-flex justify-content-between w-100 align-items-center"
-          >
-          <label>Sonographer:</label>
-          <input
-              class="form-control full-w"
-              type="text"
-              name="Sonographer"
-              id="clinical"
-              value=""
-          />
-          </div>
+ 
+        <div class="section">
+          
 
           <div class="checkboxgroup d-flex flex-wrap align-items-center align-items-start gap-100 ml-8-">
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="3 Point ID Check" />
+                <span class="checkmark"></span>
+              </label>
+              <label>3 Point ID Check</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Verbal Consent" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Verbal Consent</label>
+            </div>
             <div class="d-flex gap-50">
               <div class="d-flex align-items-center gap-18">
                 <label class="customcheckbox">
@@ -111,8 +155,508 @@
         </div>
 
         <div class="section dorsal-aspect-comp-section overflow-x-scroll pb-10 bordered-grid transform-none">
-          <div class="comp-item-header grid-column-6">
+          <div class="comp-item-header grid-column-7">
+              <label><strong>Dorsal Aspect</strong></label>
+              <label>NAD</label>
+              <label>1st</label>
+              <label>2nd</label>
+              <label>3rd</label>
+              <label>4th</label>
+              <label>5th</label>
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-7">
+                  <label>Joint Effusion</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"  name="Effusion Nad"/>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="1st Effusion"/>
+                    <span class="checkmark"></span>
+                </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="2nd Effusion"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="3rd Effusion"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="4th Effusion"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="5th  Effusion"/>
+                    <span class="checkmark"></span>
+                  </label>
+              </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+                <label>Synovitis</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Synovitis Nad"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="1st Synovitis"/>
+                  <span class="checkmark"></span>
+              </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Synovitis"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Synovitis"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Synovitis"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th  Synovitis"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+                <label>Degenerative Changes</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Degenerative Changes Nad"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="1st Degenerative Changes"/>
+                  <span class="checkmark"></span>
+              </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Degenerative Changes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Degenerative Changes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Degenerative Changes"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th  Degenerative Changes"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+                <label>Metatarsal Periosteal Thickening</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Metatarsal Periosteal Thickening Nad"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="1st Metatarsal Periosteal Thickening"/>
+                  <span class="checkmark"></span>
+              </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Metatarsal Periosteal Thickening"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Metatarsal Periosteal Thickening"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Metatarsal Periosteal Thickening"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th  Metatarsal Periosteal Thickening"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+                <label>Extensor Tendon Abnormality</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Extensor Tendon Abnormality Nad"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="1st Extensor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+              </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Extensor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Extensor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Extensor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th  Extensor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+
+          <div class="data-get w-100">
+            <textarea class="form-control" type="text" name="doral aspect comment"
+                value=""></textarea>
+          </div>
+        </div>
+
+        <div class="section overflow-x-scroll dorsal-aspect-comp-section overflow-x-scroll pb-10 bordered-grid transform-none">
+          <div class="comp-item-header grid-column-7">
+              <label><strong>Plantar Aspect</strong></label>
+              <label>NAD</label>
+              <label>1st</label>
+              <label>2nd</label>
+              <label>3rd</label>
+              <label>4th</label>
+              <label>5th</label>
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-7">
+                  <label>Plantar plate tear</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"  name="Plantar plate tear Nad"/>
+                      <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="1st Plantar plate tear"/>
+                    <span class="checkmark"></span>
+                </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="2nd Plantar plate tear"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="3rd Plantar plate tear"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="4th Plantar plate tear"/>
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customcheckbox">
+                    <input type="checkbox"  name="5th  Plantar plate tear"/>
+                    <span class="checkmark"></span>
+                  </label>
+              </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+              <label class="text-align-right">Size (mm)
+              </label>
               <label></label>
+              <input
+                class="form-control max-w-200 m-auto"
+                type="text"
+                name="1st Plantar plate tear size"
+                value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="2nd Plantar plate tear size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="3rd Plantar plate tear size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="4th Plantar plate tear size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="5th Plantar plate tear size"
+                  value=""
+              />
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+              <label class="text-align-right">complete / partial
+              </label>
+              <label></label>
+              <div class="radio-list d-flex flex-wrap align-items-center justify-content-center">
+                <label class="customRadio "
+                  >C
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="1st plantar plate tear complete/partial"
+                    value="Complete"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="customRadio"
+                  >P
+                  <input
+                    type="radio"
+                    name="1st plantar plate tear complete/partial"
+                    value="Partial"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                
+              </div>
+              <div class="radio-list d-flex flex-wrap align-items-center justify-content-center">
+                <label class="customRadio "
+                  >C
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="2nd plantar plate tear complete/partial"
+                    value="Complete"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="customRadio"
+                  >P
+                  <input
+                    type="radio"
+                    name="2nd plantar plate tear complete/partial"
+                    value="Partial"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                
+              </div>
+              <div class="radio-list d-flex flex-wrap align-items-center justify-content-center">
+                <label class="customRadio "
+                  >C
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="3rd plantar plate tear complete/partial"
+                    value="Complete"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="customRadio"
+                  >P
+                  <input
+                    type="radio"
+                    name="3rd plantar plate tear complete/partial"
+                    value="Partial"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                
+              </div>
+              <div class="radio-list d-flex flex-wrap align-items-center justify-content-center">
+                <label class="customRadio "
+                  >C
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="4th plantar plate tear complete/partial"
+                    value="Complete"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="customRadio"
+                  >P
+                  <input
+                    type="radio"
+                    name="4th plantar plate tear complete/partial"
+                    value="Partial"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                
+              </div>
+              <div class="radio-list d-flex flex-wrap align-items-center justify-content-center">
+                <label class="customRadio "
+                  >C
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="5th plantar plate tear complete/partial"
+                    value="Complete"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="customRadio"
+                  >P
+                  <input
+                    type="radio"
+                    name="5th plantar plate tear complete/partial"
+                    value="Partial"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+                <label>Adventitial Bursal Effusion</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Adventitial Bursal Effusion Nad"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="1st Adventitial Bursal Effusion"/>
+                  <span class="checkmark"></span>
+              </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Adventitial Bursal Effusion"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Adventitial Bursal Effusion"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Adventitial Bursal Effusion"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th  Adventitial Bursal Effusion"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+              <label class="text-align-right">Size (mm)
+              </label>
+              <label></label>
+              <input
+                class="form-control max-w-200 m-auto"
+                type="text"
+                name="1st Adventitial Bursal Effusion size"
+                value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="2nd Adventitial Bursal Effusion size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="3rd Adventitial Bursal Effusion size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="4th Adventitial Bursal Effusion size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="5th Adventitial Bursal Effusion size"
+                  value=""
+              />
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-7">
+                <label>Flexor Tendon Abnormality</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Flexor Tendon Abnormality Nad"/>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="1st Flexor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+              </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="2nd Flexor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="3rd Flexor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="4th Flexor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customcheckbox">
+                  <input type="checkbox"  name="5th  Flexor Tendon Abnormality"/>
+                  <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+          <div class="comp-item">
+        <div class="grid-column-7">
+          <label class="text-align-right">Size (mm)
+          </label>
+          <label></label>
+          <input
+            class="form-control max-w-200 m-auto"
+            type="text"
+            name="1st Flexor Tendon Abnormality size"
+            value=""
+          />
+          <input
+              class="form-control max-w-200 m-auto"
+              type="text"
+              name="2nd Flexor Tendon Abnormality size"
+              value=""
+          />
+          <input
+              class="form-control max-w-200 m-auto"
+              type="text"
+              name="3rd Flexor Tendon Abnormality size"
+              value=""
+          />
+          <input
+              class="form-control max-w-200 m-auto"
+              type="text"
+              name="4th Flexor Tendon Abnormality size"
+              value=""
+          />
+          <input
+              class="form-control max-w-200 m-auto"
+              type="text"
+              name="5th Flexor Tendon Abnormality size"
+              value=""
+          />
+        </div>
+          </div>
+
+          <div class="data-get w-100">
+            <textarea class="form-control" type="text" name="doral aspect comment"
+                value=""></textarea>
+          </div>
+        </div>
+
+        <div class="section dorsal-aspect-comp-section pb-10 bordered-grid transform-none">
+          <div class="comp-item-header grid-column-6">
+              <label><strong>MTPJ Findings</strong></label>
               <label>1st MTPJ </label>
               <label>2nd MTPJ</label>
               <label>3rd MTPJ</label>
@@ -123,23 +667,23 @@
               <div class="grid-column-6">
                   <label>Effusion</label>
                   <label class="customcheckbox">
-                      <input type="checkbox"  name="1st MTPJ Effusion" value="yes"/>
+                      <input type="checkbox"  name="1st MTPJ Effusion"/>
                       <span class="checkmark"></span>
                   </label>
                   <label class="customcheckbox">
-                    <input type="checkbox"  name="2nd MTPJ Bony Effusion" value="yes"/>
+                    <input type="checkbox"  name="2nd MTPJ Bony Effusion"/>
                     <span class="checkmark"></span>
                   </label>
                   <label class="customcheckbox">
-                    <input type="checkbox"  name="3rd MTPJ Effusion" value="yes"/>
+                    <input type="checkbox"  name="3rd MTPJ Effusion"/>
                     <span class="checkmark"></span>
                   </label>
                   <label class="customcheckbox">
-                    <input type="checkbox"  name="4th MTPJ Effusion" value="yes"/>
+                    <input type="checkbox"  name="4th MTPJ Effusion"/>
                     <span class="checkmark"></span>
                   </label>
                   <label class="customcheckbox">
-                    <input type="checkbox"  name="5th MTPJ  Effusion" value="yes"/>
+                    <input type="checkbox"  name="5th MTPJ  Effusion"/>
                     <span class="checkmark"></span>
                   </label>
               </div>
@@ -149,23 +693,23 @@
             <div class="grid-column-6">
                 <label>Bony Irregularity</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st MTPJ Bony Irregularity" value="yes"/>
+                    <input type="checkbox"  name="1st MTPJ Bony Irregularity"/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd MTPJ Bony Irregularity" value="yes"/>
+                  <input type="checkbox"  name="2nd MTPJ Bony Irregularity"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd MTPJ Bony Irregularity" value="yes"/>
+                  <input type="checkbox"  name="3rd MTPJ Bony Irregularity"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th MTPJ Bony Irregularity" value="yes"/>
+                  <input type="checkbox"  name="4th MTPJ Bony Irregularity"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th MTPJ Bony Irregularity" value="yes"/>
+                  <input type="checkbox"  name="5th MTPJ Bony Irregularity"/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -174,23 +718,23 @@
             <div class="grid-column-6">
                 <label>Increased Vascularity</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st MTPJ Increased Vascularity" value="yes"/>
+                    <input type="checkbox"  name="1st MTPJ Increased Vascularity"/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd MTPJ Increased Vascularity" value="yes"/>
+                  <input type="checkbox"  name="2nd MTPJ Increased Vascularity"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd MTPJ Increased Vascularity" value="yes"/>
+                  <input type="checkbox"  name="3rd MTPJ Increased Vascularity"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th MTPJ Increased Vascularity" value="yes"/>
+                  <input type="checkbox"  name="4th MTPJ Increased Vascularity"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th MTPJ Increased Vascularity" value="yes"/>
+                  <input type="checkbox"  name="5th MTPJ Increased Vascularity"/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -200,23 +744,23 @@
             <div class="grid-column-6">
                 <label>Synovium</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st MTPJ Synovium" value="yes"/>
+                    <input type="checkbox"  name="1st MTPJ Synovium"/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd MTPJ Synovium" value="yes"/>
+                  <input type="checkbox"  name="2nd MTPJ Synovium"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd MTPJ Synovium" value="yes"/>
+                  <input type="checkbox"  name="3rd MTPJ Synovium"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th MTPJ Synovium" value="yes"/>
+                  <input type="checkbox"  name="4th MTPJ Synovium"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th MTPJ Synovium" value="yes"/>
+                  <input type="checkbox"  name="5th MTPJ Synovium"/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -226,23 +770,23 @@
             <div class="grid-column-6">
                 <label>Ganglion</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st MTPJ Ganglion" value="yes"/>
+                    <input type="checkbox"  name="1st MTPJ Ganglion"/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd MTPJ Ganglion" value="yes"/>
+                  <input type="checkbox"  name="2nd MTPJ Ganglion"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd MTPJ Ganglion" value="yes"/>
+                  <input type="checkbox"  name="3rd MTPJ Ganglion"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th MTPJ Ganglion" value="yes"/>
+                  <input type="checkbox"  name="4th MTPJ Ganglion"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th MTPJ Ganglion" value="yes"/>
+                  <input type="checkbox"  name="5th MTPJ Ganglion"/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -252,23 +796,23 @@
             <div class="grid-column-6">
                 <label>Extensor Dig. T.</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st MTPJ Extensor Dig. T." value="yes"/>
+                    <input type="checkbox"  name="1st MTPJ Extensor Dig. T."/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd MTPJ Extensor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="2nd MTPJ Extensor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd MTPJ Extensor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="3rd MTPJ Extensor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th MTPJ Extensor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="4th MTPJ Extensor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th MTPJ Extensor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="5th MTPJ Extensor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -278,23 +822,23 @@
             <div class="grid-column-6">
                 <label>Flexor Dig. T.</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st MTPJ Flexor Dig. T." value="yes"/>
+                    <input type="checkbox"  name="1st MTPJ Flexor Dig. T."/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd MTPJ Flexor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="2nd MTPJ Flexor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd MTPJ Flexor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="3rd MTPJ Flexor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th MTPJ Flexor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="4th MTPJ Flexor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th MTPJ Flexor Dig. T." value="yes"/>
+                  <input type="checkbox"  name="5th MTPJ Flexor Dig. T."/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -304,23 +848,23 @@
             <div class="grid-column-6">
                 <label>Adventitial Bursa</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st Adventitial Bursa" value="yes"/>
+                    <input type="checkbox"  name="1st Adventitial Bursa"/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd Adventitial Bursa" value="yes"/>
+                  <input type="checkbox"  name="2nd Adventitial Bursa"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd Adventitial Bursa" value="yes"/>
+                  <input type="checkbox"  name="3rd Adventitial Bursa"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th Adventitial Bursa" value="yes"/>
+                  <input type="checkbox"  name="4th Adventitial Bursa"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th Adventitial Bursa" value="yes"/>
+                  <input type="checkbox"  name="5th Adventitial Bursa"/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -330,23 +874,23 @@
             <div class="grid-column-6">
                 <label>Plantar Plate Tear</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="1st Plantar Plate Tear" value="yes"/>
+                    <input type="checkbox"  name="1st Plantar Plate Tear"/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="2nd Plantar Plate Tear" value="yes"/>
+                  <input type="checkbox"  name="2nd Plantar Plate Tear"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="3rd Plantar Plate Tear" value="yes"/>
+                  <input type="checkbox"  name="3rd Plantar Plate Tear"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="4th Plantar Plate Tear" value="yes"/>
+                  <input type="checkbox"  name="4th Plantar Plate Tear"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="5th Plantar Plate Tear" value="yes"/>
+                  <input type="checkbox"  name="5th Plantar Plate Tear"/>
                   <span class="checkmark"></span>
                 </label>
             </div>
@@ -475,33 +1019,43 @@
           </div>
 
           <label class="d-flex justify-content-end text-italic"><br>※ M - Medial &nbsp;&nbsp; C - Centre &nbsp;&nbsp;L - Lateral &nbsp;</label>
+        
+          <div class="data-get w-100">
+            <textarea class="form-control" type="text" name="MTPJ comment"
+                value=""></textarea>
+          </div>
         </div>
 
         <div class="section dorsal-aspect-comp-section overflow-x-scroll pb-10 bordered-grid transform-none">
-          <div class="comp-item-header grid-column-5">
-              <label></label>
-              <label>1st Interspace</label>
+          <div class="comp-item-header grid-column-6">
+              <label>INTERSPACES</label>
+              <label>NAD</label>
+              <label class="desktop-view">1st Interspace</label><label class="mobile-view">1st</label>
               <label class="desktop-view">2nd Interspace</label><label class="mobile-view">2nd</label>
               <label class="desktop-view">3rd Interspace</label><label class="mobile-view">3rd</label>
               <label class="desktop-view">4th Interspace</label><label class="mobile-view">4th</label>
           </div>
           <div class="comp-item">
-              <div class="grid-column-5">
+              <div class="grid-column-6">
                   <label>Morton’s neuroma</label>
                   <label class="customcheckbox">
-                      <input type="checkbox"  name="Morton’s neuroma 1st Interspace" value="yes"/>
+                    <input type="checkbox"  name="Morton’s neuroma NAD"/>
+                    <span class="checkmark"></span>
+                </label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"  name="Morton’s neuroma 1st Interspace"/>
                       <span class="checkmark"></span>
                   </label>
                   <label class="customcheckbox">
-                    <input type="checkbox"  name="Morton’s neuroma 2nd Interspace" value="yes"/>
+                    <input type="checkbox"  name="Morton’s neuroma 2nd Interspace"/>
                     <span class="checkmark"></span>
                   </label>
                   <label class="customcheckbox">
-                    <input type="checkbox"  name="Morton’s neuroma 3rd Interspace" value="yes"/>
+                    <input type="checkbox"  name="Morton’s neuroma 3rd Interspace"/>
                     <span class="checkmark"></span>
                   </label>
                   <label class="customcheckbox">
-                    <input type="checkbox"  name="Morton’s neuroma 4th Interspace" value="yes"/>
+                    <input type="checkbox"  name="Morton’s neuroma 4th Interspace"/>
                     <span class="checkmark"></span>
                   </label>
                  
@@ -509,34 +1063,106 @@
               
           </div>
           <div class="comp-item">
-            <div class="grid-column-5">
+            <div class="grid-column-6">
+              <label class="text-align-right">Size (mm)
+              </label>
+              <label></label>
+              <input
+                class="form-control max-w-200 m-auto"
+                type="text"
+                name="1st interspace Morton’s neuroma size"
+                value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="2nd interspace Morton’s neuroma size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="3rd interspace Morton’s neuroma size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="4th interspace Morton’s neuroma size"
+                  value=""
+              />
+              
+            </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
                 <label>Intermetatarsal Bursitis</label>
                 <label class="customcheckbox">
-                    <input type="checkbox"  name="Intermetatarsal Bursitis 1st Interspace" value="yes"/>
+                  <input type="checkbox"  name="Intermetatarsal Bursitis NAD"/>
+                  <span class="checkmark"></span>
+              </label>
+                <label class="customcheckbox">
+                    <input type="checkbox"  name="Intermetatarsal Bursitis 1st Interspace"/>
                     <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="Intermetatarsal Bursitis 2nd Interspace" value="yes"/>
+                  <input type="checkbox"  name="Intermetatarsal Bursitis 2nd Interspace"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="Intermetatarsal Bursitis 3rd Interspace" value="yes"/>
+                  <input type="checkbox"  name="Intermetatarsal Bursitis 3rd Interspace"/>
                   <span class="checkmark"></span>
                 </label>
                 <label class="customcheckbox">
-                  <input type="checkbox"  name="Intermetatarsal Bursitis 4th Interspace" value="yes"/>
+                  <input type="checkbox"  name="Intermetatarsal Bursitis 4th Interspace"/>
                   <span class="checkmark"></span>
                 </label>
                 
             </div>
+          </div>
+          <div class="comp-item">
+            <div class="grid-column-6">
+              <label class="text-align-right">Size (mm)
+              </label>
+              <label></label>
+              <input
+                class="form-control max-w-200 m-auto"
+                type="text"
+                name="1st interspace Intermetatarsal bursitis size"
+                value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="2nd interspace Intermetatarsal bursitis size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="3rd interspace Intermetatarsal bursitis size"
+                  value=""
+              />
+              <input
+                  class="form-control max-w-200 m-auto"
+                  type="text"
+                  name="4th interspace Intermetatarsal bursitis size"
+                  value=""
+              />
+              
+            </div>
+          </div>
+          <div class="data-get w-100">
+            <textarea class="form-control" type="text" name="interspace comment"
+                value=""></textarea>
           </div>
         </div>
 
         <div class="section">
           <div class="data-get w-100">
             <label>Comments</label>
-            <textarea class="form-control" type="text" name="lower-leg-calf-ultrasound"
-                id="lower-leg-calf-ultrasound" value=""></textarea>
+            <textarea class="form-control" type="text" name="forefoot comments"
+                 value=""></textarea>
           </div>
         </div>
 

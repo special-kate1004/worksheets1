@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+            <div>
+                <h1>  Follicle Tracking ULTRASOUND</h1>
+            </div>              
+            <div class="logo">
+                <img src="assets/images/logo.webp" alt="logo image" />
+            </div>
+        </div>
+ 
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="3 Point ID Check" />
+                <span class="checkmark"></span>
+              </label>
+              <label>3 Point ID Check</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Verbal Consent" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Verbal Consent</label>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="section">
+          <h4>Day of Cycle</h4>
+          <div class="data-get d-flex flex-wrap align-items-center w-100">
+            <div class="radio-list d-flex align-items-center p-0">
+              <label class="customRadio min-w-60"
+                >Natural Cycle
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="Day of Cycle"
+                  value="Natural Cycle"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="data-get d-flex flex-wrap align-items-center w-100">
+            <div class="radio-list d-flex align-items-center p-0">
+             
+
+              <label class="customRadio"
+                >Stimulated Cycle
+                <input
+                  type="radio"
+                  name="Day of Cycle"
+                  value="Natural Cycle"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label>Type of Stimulation:
+                <input
+                  class="form-control wd-100 ml-15"
+                  type="text"
+                  name="Day of Cycle Type of Stimulation"
+                  id="estimateddateofdeliveryday"
+                  value=""
+                />
+              </label>
+              
+             
+            </div>
+          </div>
+          <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+            <label>Parity:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="day of cycle"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
+            <label>LMP:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="LMP"
+              id="clinical"
+              value=""
+            />
+          </div>
+        </div>
+
+        <div class="section">
+          <h4>UTERUS</h4>
+          <div class="data-get d-flex flex-wrap align-items-center w-100">
+            <div class="radio-list d-flex align-items-center p-0">
+              <label class="customRadio min-w-60"
+                >Anteverted
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="UTERUS"
+                  value="Anteverted"
+                />
+                <span class="checkmark"></span>
+              </label>
+            
+              <label class="customRadio min-w-60"
+                >Reverted
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="UTERUS"
+                  value="Reverted"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio min-w-60"
+              >Axial
+              <input
+                type="radio"
+                checked="checked"
+                name="UTERUS"
+                value="Axial"
+              />
+              <span class="checkmark"></span>
+            </label>
+            </div>
+          </div>
+          <div class="data-get d-flex flex-wrap align-items-center w-100">
+            <label>Free Fluid</label>
+            <div class="radio-list d-flex align-items-center p-0">
+              <label class="customRadio min-w-60"
+                >Yes
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="Free Fluid"
+                  value="Yes"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio min-w-60"
+                >No
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="Free Fluid"
+                  value="No"
+                />
+                <span class="checkmark"></span>
+              </label>
+            
+             
+            </div>
+          </div>
+          <div class="data-get w-100">
+            <label>Uterus Comments:</label>
+            <textarea
+            class="form-control"
+            type="text"
+            name="Uterus Comments"
+            id="Notes"
+            value=""
+            ></textarea>
+          </div>
+
+          <h4 class="mt-20">Endometrium:</h4>
+          <div class="d-flex flex-wrap">
+            <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-end mr-45">
+              <label class="mr-5 sm-w-auto">Thickness:  </label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Endometrium Thickness"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+              
+            </div>
+            
+            <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-end">
+              <label class="mr-5 sm-w-auto">Type:  </label>
+              <input class="form-control afterInput" type="text" name="Endometrium type" value="">
+            </div>
+          </div>
+          <div>
+            <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-end mr-45">
+              <label class="mr-5 sm-w-auto">Length:  </label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Endometrium Length"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+              
+            </div>
+          </div>
+
+          <h4 class="mt-40">CERVIX:</h4>
+            <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-end mr-45">
+              <label class="mr-5 sm-w-auto">Length:  </label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="CERVIX Length"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+          </div>
+        </div>
+
+
+        <div class="d-flex justify-content-between flex-wrap gap-50">
+          <div class="d-flex flex-col gap-10">
+            <h4>Rt Ovary</h4>
+               <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-center mr-45">
+                 <label class="mr-5">Size:  </label>
+                 <br class="mobile-view"><br>
+                 <span class="cm-txt">
+                   <input
+                     class="form-control"
+                     type="text"
+                     name="RT Ovary size L"
+                     value=""
+                   />
+                   <span class="cm-txt-in">cm</span>
+                 </span>x
+                 <span class="cm-txt">
+                   <input
+                     class="form-control"
+                     type="text"
+                     name="RT Ovary size W"
+                     value=""
+                   />
+                   <span class="cm-txt-in">cm</span>
+                 </span>x
+                 <span class="cm-txt">
+                   <input
+                     class="form-control"
+                     type="text"
+                     name="RT Ovary size H"
+                     value=""
+                   />
+                   <span class="cm-txt-in">cm</span>
+                 </span>
+                  =
+                  <span class="cm-txt">
+                   <input
+                     class="form-control"
+                     type="text"
+                     name="RT Ovary volumn"
+                     value=""
+                   />
+                   <span class="cm-txt-in">cc</span>
+                 </span>
+   
+               </div>
+   
+               <div class="data-get d-flex flex-wrap align-items-center w-100">
+                 <label>Mobility</label>
+                 <div class="radio-list d-flex align-items-center p-0">
+                   <label class="customRadio min-w-60"
+                     >Yes
+                     <input
+                       type="radio"
+                       checked="checked"
+                       name="RT Mobility"
+                       value="Yes"
+                     />
+                     <span class="checkmark"></span>
+                   </label>
+                   <label class="customRadio min-w-60"
+                     >No
+                     <input
+                       type="radio"
+                       checked="checked"
+                       name="RT Mobility"
+                       value="No"
+                     />
+                     <span class="checkmark"></span>
+                   </label>
+                 
+                  
+                 </div>
+               </div>
+   
+               <div class="data-get d-flex flex-wrap align-items-center w-100">
+                 <label>Tender</label>
+                 <div class="radio-list d-flex align-items-center p-0">
+                   <label class="customRadio min-w-60"
+                     >Yes
+                     <input
+                       type="radio"
+                       checked="checked"
+                       name="RT Tender"
+                       value="Yes"
+                     />
+                     <span class="checkmark"></span>
+                   </label>
+                   <label class="customRadio min-w-60"
+                     >No
+                     <input
+                       type="radio"
+                       checked="checked"
+                       name="RT Tender"
+                       value="No"
+                     />
+                     <span class="checkmark"></span>
+                   </label>
+                 
+                  
+                 </div>
+               </div>
+               
+               <label class="mr-5 sm-w-auto">Total Number of Follicles:  </label>
+   
+               <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-center">
+                 <label class="mr-5 sm-w-auto">Follicles  </label>
+                 <input class="form-control afterInput" type="text" name="Rt Ovary Total No Follicles" id="estimateddateofdeliverymonth" value="">
+                 
+               </div>
+             <div class="data-get w-100">
+               <label>Follicles Comments:</label>
+               <textarea
+               class="form-control"
+               type="text"
+               name="Rt Ovary Follicles Comments"
+               id="Notes"
+               value=""
+               ></textarea>
+           </div>
+           </div>
+   
+           <div class="d-flex flex-col gap-10">
+             <h4>Lt Ovary</h4>
+                <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-center mr-45">
+                  <label class="mr-5">Size:  </label>
+                  <br class="mobile-view"><br>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="LT Ovary size L"
+                      value=""
+                    />
+                    <span class="cm-txt-in">cm</span>
+                  </span>x
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="LT Ovary size W"
+                      value=""
+                    />
+                    <span class="cm-txt-in">cm</span>
+                  </span>x
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="LT Ovary size H"
+                      value=""
+                    />
+                    <span class="cm-txt-in">cm</span>
+                  </span>
+                   =
+                   <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="LT Ovary volumn"
+                      value=""
+                    />
+                    <span class="cm-txt-in">cc</span>
+                  </span>
+    
+                </div>
+    
+                <div class="data-get d-flex flex-wrap align-items-center w-100">
+                  <label>Mobility</label>
+                  <div class="radio-list d-flex align-items-center p-0">
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="LT Mobility"
+                        value="Yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customRadio min-w-60"
+                      >No
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="LT Mobility"
+                        value="No"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  
+                   
+                  </div>
+                </div>
+    
+                <div class="data-get d-flex flex-wrap align-items-center w-100">
+                  <label>Tender</label>
+                  <div class="radio-list d-flex align-items-center p-0">
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="LT Tender"
+                        value="Yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customRadio min-w-60"
+                      >No
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="LT Tender"
+                        value="No"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  
+                   
+                  </div>
+                </div>
+                
+                <label class="mr-5 sm-w-auto">Total Number of Follicles:  </label>
+    
+                <div class="data-get d-mobile-block calculated edd w-100px d-flex align-items-center">
+                  <label class="mr-5 sm-w-auto">Follicles  </label>
+                  <input class="form-control afterInput" type="text" name="LT Ovary Total No Follicles" id="estimateddateofdeliverymonth" value="">
+                  
+                </div>
+              <div class="data-get w-100">
+                <label>Follicles Comments:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="LT Ovary Follicles Comments"
+                id="Notes"
+                value=""
+                ></textarea>
+            </div>
+            </div>
+        </div>
+ 
+          <div class="section">
+            <div class="data-get w-100">
+              <label>Comments:</label>
+              <textarea
+              class="form-control"
+              type="text"
+              name="Comments"
+              id="Notes"
+              value=""
+              ></textarea>
+          </div>
+          </div>
+          
+
+          <input type="submit" class="btn btn-rounded" value="Submit" />
+          <span id="submitMessage"></span>
+        </div>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

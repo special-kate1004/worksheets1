@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body class="form-wrapper trimester-pg2">
+    <div id="wrapper">
+      <div class="container">
+        <div class="top-form d-flex justify-content-between align-items-end">
+          <h1>2nd Trimester Morphology Ultrasound</h1>
+          <div class="logo">
+            <img src="assets/images/form-logo.png" alt="" />
+          </div>
+        </div>
+        <!-- form body start -->
+        <div
+          class="d-flex flex-wrap form-row dating-scan justify-content-between"
+        >
+          <div class="data-get name-txt w-500">
+            <label class="dating-label">Patient Name:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="Patient Name"
+              id="patientName"
+              value=""
+            />
+          </div>
+          <div class="data-get date-feild w-680">
+            <label class="dating-label">DOB:</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="DD/MM/YYYY"
+              name="DOB"
+              id="DOB"
+              value=""
+            />
+          </div>
+          <div class="data-get date-feild w-500">
+            <label class="dating-label">DOS</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="DD/MM/YYYY"
+              name="Study Date"
+              id="studyDate"
+              value=""
+            />
+          </div>
+
+          <div class="data-get sonographer w-680">
+            <label class="dating-label">Sonographer</label>
+            <input
+              class="form-control"
+              type="text"
+              name="Sonographer"
+              id="sonographer"
+              value=""
+            />
+          </div>
+
+          <div class="data-get sonographer w-500 date-feild">
+            <label class="dating-label">EDD</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="DD/MM/YYYY"
+              name="EDD"
+              id="edd"
+              value=""
+            />
+          </div>
+
+          <div class="data-get d-flex flex-wrap align-items-end mb-0 sm-mt-0">
+            based on
+            <div class="radio-list d-flex align-items-center gap-10">
+              <label class="customRadio min-w-60" for="edd_method_LMP"
+                >the LMP
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="edd_method"
+                  id="edd_method_LMP"
+                  value="LMP"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio" for="edd_method-prevUS"
+                >the previous US
+                <input
+                  type="radio"
+                  name="edd_method"
+                  id="edd_method-prevUS"
+                  value="prev US"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio" for="edd_method-provided-dates"
+                >dates provided
+                <input
+                  type="radio"
+                  name="edd_method"
+                  id="edd_method-provided-dates"
+                  value="dates provided"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio" for="edd_method-IVF">
+                IVF transfer date
+                <input
+                  type="radio"
+                  name="edd_method"
+                  id="edd_method-IVF"
+                  value="IVF"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Clinical: </label>
+            <input
+              class="form-control"
+              type="text"
+              name="Clinical"
+              id="clinical"
+              value=""
+            />
+          </div>
+
+          <div class="data-get calculated edd w-100px d-flex align-items-end">
+            <label class="mr-0">Gestational Age: </label>
+            <input
+              class="form-control"
+              type="text"
+              name="Assumed Gestational Age weeks"
+              id="estimateddateofdeliveryday"
+              value=""
+            />
+            w
+            <input
+              class="form-control afterInput"
+              type="text"
+              name="Assumed Gestational Age days"
+              id="estimateddateofdeliverymonth"
+              value=""
+            />
+            days
+          </div>
+
+          <div class="w-570 d-mob-bk">
+            <label>Previously Established GA: </label>
+            <input
+              class="form-control sm-m-0"
+              type="text"
+              name="Previously Established Gestational Age"
+              id="gestationalage"
+              value=""
+            />
+          </div>
+        </div>
+
+        <div
+          class="checkboxgroup w-100 d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50 mt-20"
+        >
+          <div class="d-flex align-items-center gap-18">
+            <label class="customcheckbox pr-25">
+              <input type="checkbox" name="3 Point ID Check" />
+              <span class="checkmark"></span>
+            </label>
+            <label>3 Point ID Check</label>
+          </div>
+          <div class="d-flex align-items-center gap-18">
+            <label class="customcheckbox pr-25">
+              <input type="checkbox" name="Verbal Consent" />
+              <span class="checkmark"></span>
+            </label>
+            <label>Verbal Consent</label>
+          </div>
+        </div>
+
+        <div
+          class="column-struct column-struct-02 d-flex flex-wrap justify-content-between"
+        >
+          <div class="column column-01 biometric-left">
+            <h3>Biometrics</h3>
+            <div class="data-get sm-col w-130">
+              <div>
+                <label>FHR</label>
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="FHR"
+                    id="fhr"
+                    value=""
+                  />
+                  <span class="cm-txt-in">bpm</span>
+                </span>
+              </div>
+            </div>
+            <div class="data-get sm-col w-130">
+              <div>
+                <label>BPD</label>
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Biparietal Diameter"
+                    id="biparietaldiameter"
+                    value=""
+                  />
+                  <span class="cm-txt-in">mm</span>
+                </span>
+              </div>
+            </div>
+            <div class="data-get sm-col w-130">
+              <div>
+                <label>HC</label>
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Head Circumference"
+                    id="headcircumference"
+                    value=""
+                  />
+                  <span class="cm-txt-in">mm</span>
+                </span>
+              </div>
+            </div>
+            <div class="data-get sm-col w-130">
+              <div>
+                <label>AC</label>
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Abdominal Circumference"
+                    id="abdominalcircumference"
+                  />
+                  <span class="cm-txt-in">mm</span>
+                </span>
+              </div>
+            </div>
+            <div class="data-get sm-col w-130">
+              <div>
+                <label>FL</label>
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Femur Length"
+                    id="femurlength"
+                    value=""
+                  />
+                  <span class="cm-txt-in">mm</span>
+                </span>
+              </div>
+            </div>
+            <div class="data-get sm-col w-130">
+              <div>
+                <label>AUA</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Age Ultrasound Adjusted (Weeks)"
+                  id="ageultrasoundddjustedweek"
+                  value=""
+                />
+                w
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Age Ultrasound Adjusted (Days)"
+                  id="ageultrasoundadjustedday"
+                  value=""
+                />
+                d
+              </div>
+            </div>
+            <div class="data-get w-130 d-flex">
+              <label>Concordant with dates?</label>
+              <div class="radio-list d-flex align-items-center">
+                <label class="customRadio"
+                  >Yes
+                  <input type="radio" name="Concordant with dates?" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio"
+                  >No
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="Concordant with dates?"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <br />
+            <div class="data-get sm-col w-130">
+              <div>
+                <label>Fetal HR</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="fetal HR"
+                  value=""
+                />
+                bpm
+              </div>
+            </div>
+            <div class="data-get w-130 d-flex">
+              <label>Nuchal fold thickened?</label>
+              <div class="radio-list d-flex align-items-center">
+                <label class="customRadio"
+                  >Yes
+                  <input
+                    type="radio"
+                    name="Nuchal fold thickened"
+                    id="nftYes"
+                    value="Yes"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio"
+                  >No
+                  <input
+                    type="radio"
+                    name="Nuchal fold thickened"
+                    id="nftNo"
+                    checked="checked"
+                    value="No"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="data-get w-130 d-flex">
+              <label>Nasal bone</label>
+              <div class="radio-list d-flex align-items-center">
+                <label class="customRadio"
+                  >Yes
+                  <input
+                    type="radio"
+                    name="Nasal Bone"
+                    id="nasalbone"
+                    value="Yes"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio"
+                  >No
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="Nasal Bone"
+                    id="nasalbone"
+                    value="No"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+            <div class="data-get sm-col2 w-130">
+              <div>
+                <label>Lat v</label>
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Lateral ventricles"
+                    id="lateralventricles"
+                    value=""
+                  />
+                  <span class="cm-txt-in">mm</span>
+                </span>
+              </div>
+            </div>
+            <div class="data-get sm-col2 w-130">
+              <label>Cerebellum</label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Cerebellum"
+                  id="cerebellum"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+            </div>
+            <br />
+            <div class="data-get w-300 label-225">
+              <label>Placental position:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Placental position"
+                id="placentalposition"
+                value=""
+              />
+            </div>
+            <div class="data-get w-215 label-225">
+              <label>Cord insertion:</label>
+              <select
+                class="form-control"
+                name="Cord insertion"
+                id="cordinsertion"
+              >
+                <option>Central</option>
+                <option>Eccestric</option>
+                <option>Marginal (see below)</option>
+                <option>Velamentous</option>
+                <option>Other (see below)</option>
+              </select>
+            </div>
+
+            <div class="data-get cervix-label w-130">
+              <label>Placenta clear of the os by</label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Placenta clear of the os by"
+                  id="placentaclearoftheosby"
+                  value=""
+                />
+                <span class="cm-txt-in">cm</span>
+              </span>
+              (n = >2)
+            </div>
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label class="customcheckbox">
+                Os Clear
+                <input type="checkbox" name="Os Clear" id="lungs" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="data-get w-300 label-225">
+              <label>Cervix length:</label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Cervix length"
+                  id="cervixlength"
+                  value=""
+                />
+                <span class="cm-txt-in">cm</span>
+              </span>
+            </div>
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label class="customcheckbox">
+                Closed
+                <input type="checkbox" name="cervix closed?" id="lungs" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label class="customcheckbox">
+                Clear or aberrant vessels?
+                <input
+                  type="checkbox"
+                  name="Clear or aberrant vessels?"
+                  id="lungs"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label class="customcheckbox">
+                Low Lying (&lt;2cm)
+                <input
+                  type="checkbox"
+                  name="low lying less than 2cm"
+                  id="lungs"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label class="customcheckbox">
+                Previa
+                <input type="checkbox" name="previa" id="lungs" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="data-get w-215 label-225">
+              <label>Amniotic fluid vol:</label>
+              <select
+                class="form-control"
+                name="Amniotic fluid vol"
+                id="amnioticfluidvol"
+              >
+                <option>Satisfactory</option>
+                <option>Increased</option>
+                <option>Decreased</option>
+              </select>
+            </div>
+            <div class="data-get w-215 label-225">
+              <label>No of vessels in umbilical cord:</label>
+              <select
+                class="form-control"
+                name="No of vessels in umbilical cord"
+                id="noofvesselsinumbilicalcord"
+              >
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="data-get w-130 label-225">
+              <label>Deepest pocket:</label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Deepest procket"
+                  id="deepestpocket"
+                  value=""
+                />
+                <span class="cm-txt-in">cm</span>
+              </span>
+            </div>
+            <div class="data-get d-flex flex-wrap align-items-center">
+              <label class="customcheckbox">
+                <strong>Maternal Adnexae</strong>
+                <input type="checkbox" name="Maternal Adnexae" id="lungs" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="data-get w-100 datingRow">
+              <textarea
+                class="form-control"
+                type="text"
+                name="Maternal Adnexae comments"
+                value=""
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="biometric-right">
+            <div class="data-get d-flex">
+              <label>Scan Quality:</label>
+              <div class="radio-list d-flex align-items-center">
+                <label class="customRadio" for="scan-radio-satisfactory"
+                  >Satisfactory
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="Scan Quality"
+                    id="scan-radio-satisfactory"
+                    value="Satisfactory"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio" for="scan-radio-average"
+                  >Average
+                  <input
+                    type="radio"
+                    name="Scan Quality"
+                    id="scan-radio-average"
+                    value="Average"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio" for="scan-radio-poor"
+                  >Poor
+                  <input
+                    type="radio"
+                    name="Scan Quality"
+                    id="scan-radio-poor"
+                    value="Poor"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="quality-row d-flex flex-wrap justify-content-between">
+              <div class="qty-column">
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> HEAD </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Calvarium
+                      <input type="checkbox" name="Calvarium" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Cisterna magna
+                      <input type="checkbox" name="Cisterna magna" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Nuchal fold
+                      <input type="checkbox" name="Nuchal fold" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Falx
+                      <input type="checkbox" name="Falx" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Lateral Ventricles
+                      <input
+                        type="checkbox"
+                        name="Lateral Ventricles"
+                        id="lateralventricles"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Choroid
+                      <input type="checkbox" name="Choroid" id="choroid" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >CSP
+                      <input
+                        type="checkbox"
+                        name="Cavum Septum Pellucidum"
+                        id="cavumseptumpellucidum"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Cerebellum Translucency
+                      <input
+                        type="checkbox"
+                        name="Cerebellum Translucency"
+                        id="cerebellumtranslucency"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> FACE </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Orbit/Lenses
+                      <input
+                        type="checkbox"
+                        name="Orbit/Lenses"
+                        id="orbit/lenses"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Palate
+                      <input type="checkbox" name="Palate" id="palate" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Mandible
+                      <input type="checkbox" name="Mandible" id="mandible" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Nose/Lips
+                      <input type="checkbox" name="Nose/Lips" id="nose/lips" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Nasal Bone
+                      <input type="checkbox" name="Nasal bone" id="nasalbone" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Profile
+                      <input type="checkbox" name="Profile" id="profile" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> SPINE </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Axial
+                      <input type="checkbox" name="Axial" id="axial" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Sagittal
+                      <input type="checkbox" name="Sagittal" id="sagittal" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Coronal
+                      <input type="checkbox" name="Coronal" id="coronal" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Skin Line
+                      <input type="checkbox" name="Skin Line" id="skinline" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> CHEST </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Diaphragm
+                      <input type="checkbox" name="Diaphragm" id="diaphragm" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Lungs
+                      <input type="checkbox" name="Lungs" id="lungs" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> Gender </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label>Seen ?</label>
+                    <div class="radio-list d-flex align-items-center">
+                      <label class="customRadio"
+                        >Yes
+                        <input
+                          type="radio"
+                          name="gender seen"
+                          id="nasalbone"
+                          value="Yes"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="customRadio"
+                        >No
+                        <input
+                          type="radio"
+                          checked="checked"
+                          name="gender seen"
+                          id="nasalbone"
+                          value="No"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="radio-list d-flex align-items-center">
+                      <label class="customRadio"
+                        >M
+                        <input
+                          type="radio"
+                          name="gender seen M/F?"
+                          id="nasalbone"
+                          value="M"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="customRadio"
+                        >F
+                        <input
+                          type="radio"
+                          checked="checked"
+                          name="gender seen M/F?"
+                          id="nasalbone"
+                          value="F"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> Patient </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <div class="radio-list d-flex align-items-center flex-wrap">
+                      <label class="customRadio"
+                        >told
+                        <input type="radio" name="patient" value="told" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="customRadio"
+                        >not told
+                        <input
+                          type="radio"
+                          checked="checked"
+                          name="patient"
+                          value="not told"
+                        />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="qty-column">
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> HEART </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >4 Chamber View
+                      <input
+                        type="checkbox"
+                        name="4 Chamber View"
+                        id="4chamberview"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Situs & Orientation
+                      <input type="checkbox" name="Situs & Orientation" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >IVS
+                      <input
+                        type="checkbox"
+                        name="Interventricular Septum"
+                        id="interventricularseptum"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Septum / AV valves
+                      <input
+                        type="checkbox"
+                        name="Atrioventricular Valve"
+                        id="atrioventricularvalve"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >LVOT
+                      <input
+                        type="checkbox"
+                        name="Left Ventricular Outflow Tract"
+                        id="leftventricularoutflowtract"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >RVOT
+                      <input
+                        type="checkbox"
+                        name="Right Ventricular Outflow Tract"
+                        id="rightventricularoutflowtract"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >3VV
+                      <input
+                        type="checkbox"
+                        name="3 Vessel View"
+                        id="3vesselview"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >3VT
+                      <input type="checkbox" name="3VT" id="3vesselview" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Arrow
+                      <input type="checkbox" name="Arrow" id="arrow" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Aortic Arch
+                      <input
+                        type="checkbox"
+                        name="Aortic Arch"
+                        id="aorticarch"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Ductus Arch
+                      <input
+                        type="checkbox"
+                        name="Ductus Arch"
+                        id="ductusarch"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> HEART with Colour </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Septum colour
+                      <input
+                        type="checkbox"
+                        name="Septum colour"
+                        id="atrioventricularvalve"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >LVOT/RVOT colour
+                      <input
+                        type="checkbox"
+                        name="LVOT/RVOT colour"
+                        id="leftventricularoutflowtract"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customcheckbox"
+                      >Arches colour
+                      <input
+                        type="checkbox"
+                        name="Arches colour"
+                        id="3vesselview"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Arrow
+                      <input type="checkbox" name="Arrow" id="3vesselview" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> Abdomen </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Renal arteries
+                      <input
+                        type="checkbox"
+                        name="Renal arteries"
+                        id="Renal arteries"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Stomach
+                      <input type="checkbox" name="Stomach" id="stomach" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Cord Insertion
+                      <input
+                        type="checkbox"
+                        name="Cord Insertion"
+                        id="cordinsertion"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Kidneys
+                      <input type="checkbox" name="Kidneys" id="kidneys" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Bladder
+                      <input type="checkbox" name="Bladder" id="bladder" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Abdo wall
+                      <input
+                        type="checkbox"
+                        name="Abdominal wall"
+                        id="abdominalwall"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >3VC
+                      <input
+                        type="checkbox"
+                        name="3 Vessel and Cord"
+                        id="3vesselandcord"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> Extremities </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Upper limbs
+                      <input
+                        type="checkbox"
+                        name="Upper limbs"
+                        id="Upper limbs"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Lower limbs
+                      <input
+                        type="checkbox"
+                        name="Lower limbs"
+                        id="Lower limbs"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customcheckbox"
+                      >Humeri
+                      <input type="checkbox" name="Humeri" id="humeri" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Radius/Ulna
+                      <input
+                        type="checkbox"
+                        name="Radius ulna"
+                        id="radius ulna"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Hands
+                      <input type="checkbox" name="Hands" id="Hands" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Fingers
+                      <input type="checkbox" name="Fingers" id="fingers" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Tibia/Fibula
+                      <input
+                        type="checkbox"
+                        name="Tibia Fibula"
+                        id="tibiafibula"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Foot/Toes/Axis
+                      <input
+                        type="checkbox"
+                        name="Foot Toes Axis"
+                        id="foottoesaxis"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="data-get checkboxWrap d-flex">
+                  <label class="checklabel"> Umbilical Cord </label>
+                  <div class="radio-list d-flex flex-wrap align-items-center">
+                    <label class="customcheckbox"
+                      >Placental insertion
+                      <input
+                        type="checkbox"
+                        name="Placental insertion"
+                        id="Placental insertion"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="customcheckbox"
+                      >Abdo wall insertion
+                      <input
+                        type="checkbox"
+                        name="Abdo wall insertion"
+                        id="Abdo wall insertion"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customcheckbox"
+                      >3 vessels
+                      <input type="checkbox" name="3 vessels" id="3 vessels" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="data-get w-100 comments-row">
+          <label>Comments:</label>
+          <textarea name="Comments" class="form-control"></textarea>
+        </div>
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

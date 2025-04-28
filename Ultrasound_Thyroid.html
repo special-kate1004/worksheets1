@@ -1,563 +1,1130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="assets/images/favicon.ico">
-	<title>QUBS</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-</head>
+  <body class="form-wrapper">
+    <div id="wrapper">
+      <div class="container">
+        <div class="top-form d-flex justify-content-between align-items-end">
+          <h1>Thyroid Ultrasound</h1>
+          <div class="logo">
+            <img src="assets/images/form-logo.png" alt="" />
+          </div>
+        </div>
 
-<body class="form-wrapper">
-	<div id="wrapper">
-		<div class="container">
-			<div class="top-form d-flex justify-content-between align-items-end">
-				<h1>Thyroid Ultrasound </h1>
-				<div class="logo">
-					<img src="assets/images/form-logo.png" alt="" />
-				</div>
-			</div>
+        <div
+          class="d-flex flex-wrap form-row dating-scan justify-content-between"
+        >
+          <div class="data-get name-txt">
+            <label>Patient Name:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="Patient Name"
+              id="patientname"
+              value=""
+            />
+          </div>
+          <div class="data-get date-feild">
+            <label>DOB:</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="DD/MM/YYYY"
+              name="DOB"
+              id="DOB"
+              value=""
+            />
+          </div>
+          <div class="data-get date-feild">
+            <label>Study Date:</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="DD/MM/YYYY"
+              name="DOS"
+              id="DOS"
+              value=""
+            />
+          </div>
 
-			<div class="d-flex flex-wrap form-row dating-scan justify-content-between">
-				<div class="data-get name-txt">
-					<label>Patient Name:</label>
-					<input class="form-control" type="text" name="Patient Name" id="patientname" value="">
-				</div>
-				<div class="data-get date-feild">
-					<label>DOB:</label>
-					<input class="form-control" type="text" placeholder="DD/MM/YYYY" name="DOB" id="DOB" value="">
-				</div>
-				<div class="data-get date-feild">
-					<label>Study Date:</label>
-					<input class="form-control" type="text" placeholder="DD/MM/YYYY" name="DOS" id="DOS" value="">
-				</div>
+          <div class="get-data d-flex flex-wrap align-items-center">
+            <label>Scan Quality:</label>
+            <div class="radio-list d-flex align-items-center">
+              <label class="customRadio"
+                >Good
+                <input
+                  type="radio"
+                  name="Scan Quality"
+                  id="good"
+                  value="Good"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio"
+                >Average
+                <input
+                  type="radio"
+                  name="Scan Quality"
+                  id="average"
+                  value="Averaged"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio"
+                >Poor
+                <input
+                  type="radio"
+                  name="Scan Quality"
+                  id="poor"
+                  value="Poor"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
 
+          <div class="data-get sonographer m-0">
+            <label>Sonographer:</label>
+            <input
+              class="form-control"
+              type="text"
+              name="Sonographer"
+              id="sonographer"
+              value=""
+            />
+          </div>
 
-				<div class="get-data d-flex flex-wrap align-items-center">
-					<label>Scan Quality:</label>
-					<div class="radio-list d-flex align-items-center">
-						<label class="customRadio">Good
-							<input type="radio" name="Scan Quality" id="good" value="Good">
-							<span class="checkmark"></span>
-						</label>
-						<label class="customRadio">Average
-							<input type="radio" name="Scan Quality" id="average" value="Averaged">
-							<span class="checkmark"></span>
-						</label>
-						<label class="customRadio">Poor
-							<input type="radio" name="Scan Quality" id="poor" value="Poor">
-							<span class="checkmark"></span>
-						</label>
-					</div>
-				</div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Clinical: </label>
+            <input
+              class="form-control"
+              type="text"
+              name="Clinical"
+              id="clinical"
+              value=""
+            />
+          </div>
+        </div>
 
-				<div class="data-get sonographer m-0">
-					<label>Sonographer:</label>
-					<input class="form-control" type="text" name="Sonographer" id="sonographer" value="">
-				</div>
+        <div
+          class="lobe-sec d-flex flex-wrap justify-content-between align-items-start"
+        >
+          <div class="w-half d-flex flex-wrap w-100">
+            <h4>Right Lobe</h4>
 
-				<div class="data-get clinical d-flex justify-content-between w-100 align-items-center">
-					<label>Clinical: </label>
-					<input class="form-control" type="text" name="Clinical" id="clinical" value="">
-				</div>
-			</div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="data-get w-150px d-flex align-items-end">
+                <label>Size:</label>
+                <span class="cm-txt afterInput">
+                  <input
+                    class="form-control auto-insert-double-x"
+                    type="text"
+                    name="Right lobe measurement (mm)"
+                    placeholder="mm x mm x mm"
+                    id="rightlobemeasurement"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="data-get w-150px d-flex align-items-end">
+                <label>Volume:</label>
+                <span class="cm-txt afterInput">
+                  <input
+                    class="form-control auto-insert-double-x"
+                    type="text"
+                    name="Right lobe Volume (ml)"
+                    placeholder="LxWxHx0.52"
+                    id="rightlobemeasurement"
+                    value=""
+                  />
+                </span>
+                cc (normal per lobe 9 &plusmn; 3 cc)
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="data-get w-150px d-flex align-items-end">
+                <label>Isthmus:</label>
+                <span class="cm-txt afterInput">
+                  <input
+                    class="form-control auto-insert-double-x"
+                    type="text"
+                    name="Right lobe Isthmus"
+                    placeholder=""
+                    id="rightlobemeasurement"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="get-data d-flex flex-wrap align-items-center">
+                <label>Retrosternal extension:</label>
+                <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio"
+                    >Yes (see below)
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="Right lobe Retrosternal extension"
+                      id="yes"
+                      value="Yes"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >No
+                    <input
+                      type="radio"
+                      name="Right lobe Retrosternal extension"
+                      id="no"
+                      value="No"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="get-data d-flex flex-wrap align-items-center">
+                <label>Tracheal deviation:</label>
+                <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio"
+                    >Yes (see below)
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="right Tracheal deviation"
+                      id="yes"
+                      value="Yes"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >No
+                    <input
+                      type="radio"
+                      name="right Tracheal deviation"
+                      id="no"
+                      value="No"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100 w-215">
+              <div
+                class="data-get d-flex flex-wrap align-items-center flex-wrap"
+              >
+                <label> Texture: </label>
+                <div class="date-feild">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Right lobe texture"
+                    id="rightlobetexture"
+                  >
+                    <option value="" selected></option>
+                    <option value="Homogenous">Homogenous</option>
+                    <option value="Heterogenous">Heterogenous</option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="data-get d-flex flex-wrap align-items-center flex-wrap"
+              >
+                <label> Vascularity: </label>
+                <div class="date-feild">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Right lobe vascularity"
+                    id="rightlobevascularity"
+                  >
+                    <option value="" selected></option>
+                    <option value="Normal">Normal</option>
+                    <option value="Increased">Increased</option>
+                    <option value="Decreased">Decreased</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
-			<div class="lobe-sec d-flex flex-wrap justify-content-between align-items-start">
-				<div class="w-half d-flex flex-wrap w-100">
-					<h4>Right Lobe</h4>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="get-data d-flex flex-wrap align-items-center">
+                <label>Nodules:</label>
+                <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio"
+                    >Yes (see below)
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="Right lobe nodules"
+                      id="yes"
+                      value="Yes"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >No
+                    <input
+                      type="radio"
+                      name="Right lobe nodules"
+                      id="no"
+                      value="No"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
 
-					<div class="d-flex flex-wrap form-row w-100">
-						<div class="data-get w-150px d-flex align-items-end">
-							<label>Size:</label>
-							<span class="cm-txt afterInput">
-								<input class="form-control auto-insert-double-x" type="text"
-									name="Right lobe measurement (mm)" placeholder="mm x mm x mm"
-									id="rightlobemeasurement" value="">
-							</span>
-							=
-							<span class="cm-txt afterInput w-100px">
-								<input class="form-control" type="text" name="Right lobe Volume (ml)"
-									id="rightlobevolume" value="">
-								<span class="cm-txt-in">ml</span>
-							</span>
-						</div>
+            <div class="lobe-img">
+              <img
+                src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/right-lobe.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2119319594&Signature=XqukZ3ufWHGvDmHpQoMf0HfWAMY%3D"
+                alt=""
+              />
+            </div>
+          </div>
 
-						
-					</div>
-					<div class="d-flex flex-wrap form-row w-100 w-215">
-						<div class="data-get d-flex flex-wrap align-items-center flex-wrap">
-							<label>
-								Texture:
-							</label>
-							<div class="date-feild">
+          <div class="w-half d-flex flex-wrap w-100">
+            <h4>Left Lobe</h4>
 
-								<select class="form-control" type="text" name="Right lobe texture"
-									id="rightlobetexture">
-									<option value="" selected></option>
-									<option value="Homogenous">Homogenous</option>
-									<option value="Heterogenous">Heterogenous</option>
-								</select>
-							</div>
-						</div>
-						<div class="data-get d-flex flex-wrap align-items-center flex-wrap">
-							<label>
-								Vascularity:
-							</label>
-							<div class="date-feild">
-								<select class="form-control" type="text" name="Right lobe vascularity"
-									id="rightlobevascularity">
-									<option value="" selected></option>
-									<option value="Normal">Normal</option>
-									<option value="Increased">Increased</option>
-									<option value="Decreased">Decreased</option>
-								</select>
-							</div>
-						</div>
-					</div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="data-get w-150px d-flex align-items-end">
+                <label>Size:</label>
+                <span class="cm-txt afterInput">
+                  <input
+                    class="form-control auto-insert-double-x"
+                    type="text"
+                    name="Left lobe measurement (mm)"
+                    placeholder="mm x mm x mm"
+                    id="Leftlobemeasurement"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="data-get w-150px d-flex align-items-end">
+                <label>Volume:</label>
+                <span class="cm-txt afterInput">
+                  <input
+                    class="form-control auto-insert-double-x"
+                    type="text"
+                    name="Left lobe Volume (ml)"
+                    placeholder="LxWxHx0.52"
+                    id="Leftlobemeasurement"
+                    value=""
+                  />
+                </span>
+                cc (normal per lobe 9 &plusmn; 3 cc)
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="data-get w-150px d-flex align-items-end">
+                <label>Isthmus:</label>
+                <span class="cm-txt afterInput">
+                  <input
+                    class="form-control auto-insert-double-x"
+                    type="text"
+                    name="Left lobe Isthmus"
+                    placeholder=""
+                    id="Leftlobemeasurement"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="get-data d-flex flex-wrap align-items-center">
+                <label>Retrosternal extension:</label>
+                <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio"
+                    >Yes (see below)
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="Left lobe Retrosternal extension"
+                      id="yes"
+                      value="Yes"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >No
+                    <input
+                      type="radio"
+                      name="Left lobe Retrosternal extension"
+                      id="no"
+                      value="No"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="get-data d-flex flex-wrap align-items-center">
+                <label>Tracheal deviation:</label>
+                <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio"
+                    >Yes (see below)
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="left Tracheal deviation"
+                      id="yes"
+                      value="Yes"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >No
+                    <input
+                      type="radio"
+                      name="left Tracheal deviation"
+                      id="no"
+                      value="No"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap form-row w-100 w-215">
+              <div
+                class="data-get d-flex flex-wrap align-items-center flex-wrap"
+              >
+                <label> Texture: </label>
+                <div class="date-feild">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Left lobe texture"
+                    id="leftlobetexture"
+                  >
+                    <option value="" selected></option>
+                    <option value="Homogenous">Homogenous</option>
+                    <option value="Heterogenous">Heterogenous</option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="data-get d-flex flex-wrap align-items-center flex-wrap"
+              >
+                <label> Vascularity: </label>
+                <div class="date-feild">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Left lobe vascularity"
+                    id="leftlobevascularity"
+                  >
+                    <option value="" selected></option>
+                    <option value="Normal">Normal</option>
+                    <option value="Increased">Increased</option>
+                    <option value="Decreased">Decreased</option>
+                  </select>
+                </div>
+              </div>
+            </div>
 
+            <div class="d-flex flex-wrap form-row w-100">
+              <div class="get-data d-flex flex-wrap align-items-center">
+                <label>Nodules:</label>
+                <div class="radio-list d-flex align-items-center">
+                  <label class="customRadio"
+                    >Yes (see below)
+                    <input
+                      type="radio"
+                      checked="checked"
+                      name="Left lobe nodules"
+                      id="yes"
+                      value="Yes"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >No
+                    <input
+                      type="radio"
+                      name="Left lobe nodules"
+                      id="no"
+                      value="No"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
 
-					<div class="d-flex flex-wrap form-row w-100">
-						<div class="get-data d-flex flex-wrap align-items-center">
-							<label>Nodules:</label>
-							<div class="radio-list d-flex align-items-center">
-								<label class="customRadio">Yes (see below)
-									<input type="radio" checked="checked" name="Right lobe nodules" id="yes"
-										value="Yes">
-									<span class="checkmark"></span>
-								</label>
-								<label class="customRadio">No
-									<input type="radio" name="Right lobe nodules" id="no" value="No">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-						</div>
-					</div>
+            <div class="lobe-img">
+              <img
+                src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/left-lobe.jpg?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2056161820&Signature=ZCkcV6i%2BhaDOhMkGsB4nn9e%2BGlc%3D"
+                alt=""
+              />
+            </div>
+          </div>
 
-					<div class="lobe-img">
-						<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/right-lobe.png?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2119319594&Signature=XqukZ3ufWHGvDmHpQoMf0HfWAMY%3D"
-							alt="">
-					</div>
-				</div>
+          <div class="nodule-table w-100">
+            <div class="table_in w-100">
+              <div class="nodule_row d-flex w-100">
+                <div class="nodule-item">&nbsp;</div>
+                <div class="nodule-item">Nodule 1</div>
+                <div class="nodule-item">Nodule 2</div>
+                <div class="nodule-item">Nodule 3</div>
+                <div class="nodule-item">Nodule 4</div>
+              </div>
+              <div class="nodule_row d-flex w-100 full-input">
+                <div class="nodule-item">Location</div>
+                <div class="nodule-item">
+                  <input name="Nodule 1 location" type="text" />
+                </div>
+                <div class="nodule-item">
+                  <input name="Nodule 1 location" type="text" />
+                </div>
+                <div class="nodule-item">
+                  <input name="Nodule 1 location" type="text" />
+                </div>
+                <div class="nodule-item">
+                  <input name="Nodule 1 location" type="text" />
+                </div>
+              </div>
+              <div class="nodule_row d-flex w-100">
+                <div class="nodule-item">Size</div>
+                <div class="nodule-item">
+                  <span class="cm-txt">
+                    <input
+                      class="form-control auto-insert-x"
+                      type="text"
+                      name="Nodule 1 measurement (mm)"
+                      placeholder="mm x mm"
+                      id="nodule1measurement"
+                      value=""
+                    />
+                  </span>
+                </div>
+                <div class="nodule-item">
+                  <span class="cm-txt">
+                    <input
+                      class="form-control auto-insert-x"
+                      type="text"
+                      name="Nodule 2 measurement (mm)"
+                      placeholder="mm x mm"
+                      id="nodule2measurement"
+                      value=""
+                    />
+                  </span>
+                </div>
+                <div class="nodule-item">
+                  <span class="cm-txt">
+                    <input
+                      class="form-control auto-insert-x"
+                      type="text"
+                      name="Nodule 3 measurement (mm)"
+                      placeholder="mm x mm"
+                      id="nodule3measurement"
+                      value=""
+                    />
+                  </span>
+                </div>
+                <div class="nodule-item">
+                  <span class="cm-txt">
+                    <input
+                      class="form-control auto-insert-x"
+                      type="text"
+                      name="Nodule 4 measurement (mm)"
+                      placeholder="mm x mm"
+                      id="nodule4measurement"
+                      value=""
+                    />
+                  </span>
+                </div>
+              </div>
 
-				<div class="w-half d-flex flex-wrap w-100">
-					<h4>Left Lobe</h4>
+              <div class="nodule_row d-flex w-100 select-row">
+                <div class="nodule-item">Composition</div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 1 Composition"
+                    id="nodule1composition"
+                  >
+                    <option value="" selected></option>
+                    <option value="Cystic (0)">Cystic (0)</option>
+                    <option value="Spongiform (0)">Spongiform (0)</option>
+                    <option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
+                    <option value="Solid (2)">Solid (2)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 2 Composition"
+                    id="nodule2composition"
+                  >
+                    <option value="" selected></option>
+                    <option value="Cystic (0)">Cystic (0)</option>
+                    <option value="Spongiform (0)">Spongiform (0)</option>
+                    <option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
+                    <option value="Solid (2)">Solid (2)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 3 Composition"
+                    id="nodule3composition"
+                  >
+                    <option value="" selected></option>
+                    <option value="Cystic (0)">Cystic (0)</option>
+                    <option value="Spongiform (0)">Spongiform (0)</option>
+                    <option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
+                    <option value="Solid (2)">Solid (2)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 4 Composition"
+                    id="nodule4composition"
+                  >
+                    <option value="" selected></option>
+                    <option value="Cystic (0)">Cystic (0)</option>
+                    <option value="Spongiform (0)">Spongiform (0)</option>
+                    <option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
+                    <option value="Solid (2)">Solid (2)</option>
+                  </select>
+                </div>
+              </div>
 
-					<div class="d-flex flex-wrap form-row w-100">
-						<div class="data-get w-150px d-flex align-items-end">
-							<label>Size:</label>
-							<span class="cm-txt afterInput">
-								<input class="form-control auto-insert-double-x" type="text"
-									name="Left lobe measurement (mm)" placeholder="mm x mm x mm"
-									id="leftlobemeasurement" value="">
-							</span>
-							=
-							<span class="cm-txt afterInput w-100px">
-								<input class="form-control" type="text" name="Left lobe Volume (ml)"
-									id="leftlobevolume" value="">
-								<span class="cm-txt-in">ml</span>
-							</span>
-						</div>
-					</div>
-					<div class="d-flex flex-wrap form-row w-100 w-215">
-						<div class="data-get d-flex flex-wrap align-items-center flex-wrap">
-							<label>
-								Texture:
-							</label>
-							<div class="date-feild">
+              <div class="nodule_row d-flex w-100 select-row">
+                <div class="nodule-item">Echogenicity</div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 1 Echogenicity"
+                    id="nodule1Echogenicity"
+                  >
+                    <option value="" selected></option>
+                    <option value="Anechoeic (0)">Anechoeic (0)</option>
+                    <option value="Hyper/Isoechoeic (1)">
+                      Hyper/Isoechoeic (1)
+                    </option>
+                    <option value="Hypoecheic (2)">Hypoecheic (2)</option>
+                    <option value="Very hypoechoeic (3)">
+                      Very hypoechoeic (3)
+                    </option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 2 Echogenicity"
+                    id="nodule2Echogenicity"
+                  >
+                    <option value="" selected></option>
+                    <option value="Anechoeic (0)">Anechoeic (0)</option>
+                    <option value="Hyper/Isoechoeic (1)">
+                      Hyper/Isoechoeic (1)
+                    </option>
+                    <option value="Hypoecheic (2)">Hypoecheic (2)</option>
+                    <option value="Very hypoechoeic (3)">
+                      Very hypoechoeic (3)
+                    </option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 3 Echogenicity"
+                    id="nodule3Echogenicity"
+                  >
+                    <option value="" selected></option>
+                    <option value="Anechoeic (0)">Anechoeic (0)</option>
+                    <option value="Hyper/Isoechoeic (1)">
+                      Hyper/Isoechoeic (1)
+                    </option>
+                    <option value="Hypoecheic (2)">Hypoecheic (2)</option>
+                    <option value="Very hypoechoeic (3)">
+                      Very hypoechoeic (3)
+                    </option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 4 Echogenicity"
+                    id="nodule4Echogenicity"
+                  >
+                    <option value="" selected></option>
+                    <option value="Anechoeic (0)">Anechoeic (0)</option>
+                    <option value="Hyper/Isoechoeic (1)">
+                      Hyper/Isoechoeic (1)
+                    </option>
+                    <option value="Hypoecheic (2)">Hypoecheic (2)</option>
+                    <option value="Very hypoechoeic (3)">
+                      Very hypoechoeic (3)
+                    </option>
+                  </select>
+                </div>
+              </div>
 
-								<select class="form-control" type="text" name="Left lobe texture" id="leftlobetexture">
-									<option value="" selected></option>
-									<option value="Homogenous">Homogenous</option>
-									<option value="Heterogenous">Heterogenous</option>
-								</select>
-							</div>
-						</div>
-						<div class="data-get d-flex flex-wrap align-items-center flex-wrap">
-							<label>
-								Vascularity:
-							</label>
-							<div class="date-feild">
-								<select class="form-control" type="text" name="Left lobe vascularity"
-									id="leftlobevascularity">
-									<option value="" selected></option>
-									<option value="Normal">Normal</option>
-									<option value="Increased">Increased</option>
-									<option value="Decreased">Decreased</option>
-								</select>
-							</div>
-						</div>
-					</div>
+              <div class="nodule_row d-flex w-100 select-row">
+                <div class="nodule-item">Shape</div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 1 Shape"
+                    id="nodule1shape"
+                  >
+                    <option value="" selected></option>
+                    <option value="Wide > Tall (0)">Wide > Tall (0)</option>
+                    <option value="Tall>wide (3)">Tall>wide (3)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 2 Shape"
+                    id="nodule2shape"
+                  >
+                    <option value="" selected></option>
+                    <option value="Wide > Tall (0)">Wide > Tall (0)</option>
+                    <option value="Tall>wide (3)">Tall>wide (3)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 3 Shape"
+                    id="nodule3shape"
+                  >
+                    <option value="" selected></option>
+                    <option value="Wide > Tall (0)">Wide > Tall (0)</option>
+                    <option value="Tall>wide (3)">Tall>wide (3)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 4 Shape"
+                    id="nodule4shape"
+                  >
+                    <option value="" selected></option>
+                    <option value="Wide > Tall (0)">Wide > Tall (0)</option>
+                    <option value="Tall>wide (3)">Tall>wide (3)</option>
+                  </select>
+                </div>
+              </div>
 
+              <div class="nodule_row d-flex w-100 select-row">
+                <div class="nodule-item">Margins</div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 1 Margins"
+                    id="nodule1margins"
+                  >
+                    <option value="" selected></option>
+                    <option value="Smooth (0)">Smooth (0)</option>
+                    <option value="Ill defined (0)">Ill defined (0)</option>
+                    <option value="Irreg/lobulated (2)">
+                      Irreg/lobulated (2)
+                    </option>
+                    <option value="Extrathyroid ext (3)">
+                      Extrathyroid ext (3)
+                    </option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 2 Margins"
+                    id="nodule2margins"
+                  >
+                    <option value="" selected></option>
+                    <option value="Smooth (0)">Smooth (0)</option>
+                    <option value="Ill defined (0)">Ill defined (0)</option>
+                    <option value="Irreg/lobulated (2)">
+                      Irreg/lobulated (2)
+                    </option>
+                    <option value="Extrathyroid ext (3)">
+                      Extrathyroid ext (3)
+                    </option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 3 Margins"
+                    id="nodule3margins"
+                  >
+                    <option value="" selected></option>
+                    <option value="Smooth (0)">Smooth (0)</option>
+                    <option value="Ill defined (0)">Ill defined (0)</option>
+                    <option value="Irreg/lobulated (2)">
+                      Irreg/lobulated (2)
+                    </option>
+                    <option value="Extrathyroid ext (3)">
+                      Extrathyroid ext (3)
+                    </option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 4 Margins"
+                    id="nodule4margins"
+                  >
+                    <option value="" selected></option>
+                    <option value="Smooth (0)">Smooth (0)</option>
+                    <option value="Ill defined (0)">Ill defined (0)</option>
+                    <option value="Irreg/lobulated (2)">
+                      Irreg/lobulated (2)
+                    </option>
+                    <option value="Extrathyroid ext (3)">
+                      Extrathyroid ext (3)
+                    </option>
+                  </select>
+                </div>
+              </div>
 
-					<div class="d-flex flex-wrap form-row w-100">
-						<div class="get-data d-flex flex-wrap align-items-center">
-							<label>Nodules:</label>
-							<div class="radio-list d-flex align-items-center">
-								<label class="customRadio">Yes (see below)
-									<input type="radio" checked="checked" name="Left lobe nodules" id="yes" value="Yes">
-									<span class="checkmark"></span>
-								</label>
-								<label class="customRadio">No
-									<input type="radio" name="Left lobe nodules" id="no" value="No">
-									<span class="checkmark"></span>
-								</label>
-							</div>
-						</div>
-					</div>
+              <div class="nodule_row d-flex w-100 select-row">
+                <div class="nodule-item">Echogenic FOCI</div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 1 Echogenic FOCI"
+                    id="nodule1EchogenicFOCI"
+                  >
+                    <option value="" selected></option>
+                    <option value="None (0)">None (0)</option>
+                    <option value="Macrocalc (1)">Macrocalc (1)</option>
+                    <option value="Rim calc (2)">Rim calc (2)</option>
+                    <option value="Punctate foci (3)">Punctate foci (3)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 2 Echogenic FOCI"
+                    id="nodule2EchogenicFOCI"
+                  >
+                    <option value="" selected></option>
+                    <option value="None (0)">None (0)</option>
+                    <option value="Macrocalc (1)">Macrocalc (1)</option>
+                    <option value="Rim calc (2)">Rim calc (2)</option>
+                    <option value="Punctate foci (3)">Punctate foci (3)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 3 Echogenic FOCI"
+                    id="nodule3EchogenicFOCI"
+                  >
+                    <option value="" selected></option>
+                    <option value="None (0)">None (0)</option>
+                    <option value="Macrocalc (1)">Macrocalc (1)</option>
+                    <option value="Rim calc (2)">Rim calc (2)</option>
+                    <option value="Punctate foci (3)">Punctate foci (3)</option>
+                  </select>
+                </div>
+                <div class="nodule-item">
+                  <select
+                    class="form-control"
+                    type="text"
+                    name="Nodule 4 Echogenic FOCI"
+                    id="nodule4EchogenicFOCI"
+                  >
+                    <option value="" selected></option>
+                    <option value="None (0)">None (0)</option>
+                    <option value="Macrocalc (1)">Macrocalc (1)</option>
+                    <option value="Rim calc (2)">Rim calc (2)</option>
+                    <option value="Punctate foci (3)">Punctate foci (3)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="nodule_row d-flex w-100">
+                <div class="nodule-item">Calcs.</div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule1 calcs" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule2 calcs" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule3 calcs" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule4 calcs" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="nodule_row d-flex w-100">
+                <div class="nodule-item">III-defined Borders.</div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule1 III-defined Borders" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule2 III-defined Borders" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule3 III-defined Borders" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule4 III-defined Borders" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="nodule_row d-flex w-100">
+                <div class="nodule-item">Height > Width</div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule1 Height > Width" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule2 Height > Width" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule3 Height > Width" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule4 Height > Width" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="nodule_row d-flex w-100">
+                <div class="nodule-item">Hypo-echogenicity</div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule1 Hypo-echogenicity" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule2 Hypo-echogenicity" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule3 Hypo-echogenicity" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="nodule4 Hypo-echogenicity" />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="nodule_row d-flex w-100">
+                <div class="nodule-item">Extra-thyroid extension</div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input
+                      type="checkbox"
+                      name="nodule1 Extra-thyroid extension"
+                    />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input
+                      type="checkbox"
+                      name="nodule2 Extra-thyroid extension"
+                    />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input
+                      type="checkbox"
+                      name="nodule3 Extra-thyroid extension"
+                    />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+                <div class="nodule-item d-flex justify-content-center">
+                  <label class="customcheckbox">
+                    <input
+                      type="checkbox"
+                      name="nodule4 Extra-thyroid extension"
+                    />
+                    <span class="checkmark p-0"></span>
+                  </label>
+                </div>
+              </div>
+              <div>
+                <label
+                  >TIRADS Scorsse (0=TR1, 2=TR2, 3=TR3, 4-6=TR4, >6=TR5)
+                </label>
+              </div>
+              <div class="nodule_row d-flex w-100 score_row">
+                <div class="nodule-item">&nbsp;</div>
+                <div class="nodule-item">
+                  <input type="text" name="Nodule 1 Tirads Score" />
+                </div>
+                <div class="nodule-item">
+                  <input type="text" name="Nodule 2 Tirads Score" />
+                </div>
+                <div class="nodule-item">
+                  <input type="text" name="Nodule 3 Tirads Score" />
+                </div>
+                <div class="nodule-item">
+                  <input type="text" name="Nodule 4 Tirads Score" />
+                </div>
+              </div>
+            </div>
+          </div>
 
-					<div class="lobe-img">
-						<img src="https://s3.ap-southeast-2.amazonaws.com/qubs.io/worksheets/left-lobe.jpg?AWSAccessKeyId=AKIAXXNT6UOSOVBLLEOA&Expires=2056161820&Signature=ZCkcV6i%2BhaDOhMkGsB4nn9e%2BGlc%3D"
-							alt="">
-					</div>
-				</div>
+          <div
+            class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20"
+          >
+            <label class="mr-15 sm-w-auto">Parathyroids: </label>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60"
+                >Not Identified
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="Parathyroids"
+                  value="not Identified"
+                />
+                <span class="checkmark"></span>
+              </label>
 
-				<div class="nodule-table w-100">
-					<div class="table_in w-100">
-						<div class="nodule_row d-flex w-100">
-							<div class="nodule-item">
-								&nbsp;
-							</div>
-							<div class="nodule-item">
-								Nodule 1
-							</div>
-							<div class="nodule-item">
-								Nodule 2
-							</div>
-							<div class="nodule-item">
-								Nodule 3
-							</div>
-							<div class="nodule-item">
-								Nodule 4
-							</div>
-						</div>
-						<div class="nodule_row d-flex w-100 full-input">
-							<div class="nodule-item">
-								Location
-							</div>
-							<div class="nodule-item">
-								<input name="Nodule 1 location" type="text">
-							</div>
-							<div class="nodule-item">
-								<input name="Nodule 1 location" type="text">
-							</div>
-							<div class="nodule-item">
-								<input name="Nodule 1 location" type="text">
-							</div>
-							<div class="nodule-item">
-								<input name="Nodule 1 location" type="text">
-							</div>
-						</div>
-						<div class="nodule_row d-flex w-100">
-							<div class="nodule-item">
-								Size
-							</div>
-							<div class="nodule-item   ">
+              <label class="customRadio"
+                >Identified
+                <input type="radio" name="Parathyroids" value="Identified" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <input
+              class="form-control full-w flex-grow"
+              type="text"
+              name="Parathyroids comment"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div
+            class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20"
+          >
+            <label class="mr-15 sm-w-auto">Lymph Nodes: </label>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60"
+                >Normal
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="Lymph Nodes"
+                  value="normal"
+                />
+                <span class="checkmark"></span>
+              </label>
 
-								<span class="cm-txt  ">
-									<input class="form-control auto-insert-x" type="text"
-										name="Nodule 1 measurement (mm)" placeholder="mm x mm" id="nodule1measurement"
-										value="">
-								</span>
+              <label class="customRadio"
+                >Abnormal
+                <input type="radio" name="Lymph Nodes" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <input
+              class="form-control full-w flex-grow"
+              type="text"
+              name="MATERNAL STRUCTURES Uterus comment"
+              id="clinical"
+              value=""
+            />
+          </div>
+        </div>
 
-
-							</div>
-							<div class="nodule-item">
-								<span class="cm-txt  ">
-									<input class="form-control auto-insert-x" type="text"
-										name="Nodule 2 measurement (mm)" placeholder="mm x mm" id="nodule2measurement"
-										value="">
-								</span>
-
-							</div>
-							<div class="nodule-item">
-								<span class="cm-txt  ">
-									<input class="form-control auto-insert-x" type="text"
-										name="Nodule 3 measurement (mm)" placeholder="mm x mm" id="nodule3measurement"
-										value="">
-								</span>
-							</div>
-							<div class="nodule-item">
-								<span class="cm-txt  ">
-									<input class="form-control auto-insert-x" type="text"
-										name="Nodule 4 measurement (mm)" placeholder="mm x mm" id="nodule4measurement"
-										value="">
-								</span>
-							</div>
-						</div>
-
-						<div class="nodule_row d-flex w-100 select-row">
-							<div class="nodule-item">
-								Composition
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 1 Composition"
-									id="nodule1composition">
-									<option value="" selected></option>
-									<option value="Cystic (0)">Cystic (0)</option>
-									<option value="Spongiform (0)">Spongiform (0)</option>
-									<option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
-									<option value="Solid (2)">Solid (2)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 2 Composition"
-									id="nodule2composition">
-									<option value="" selected></option>
-									<option value="Cystic (0)">Cystic (0)</option>
-									<option value="Spongiform (0)">Spongiform (0)</option>
-									<option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
-									<option value="Solid (2)">Solid (2)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 3 Composition"
-									id="nodule3composition">
-									<option value="" selected></option>
-									<option value="Cystic (0)">Cystic (0)</option>
-									<option value="Spongiform (0)">Spongiform (0)</option>
-									<option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
-									<option value="Solid (2)">Solid (2)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 4 Composition"
-									id="nodule4composition">
-									<option value="" selected></option>
-									<option value="Cystic (0)">Cystic (0)</option>
-									<option value="Spongiform (0)">Spongiform (0)</option>
-									<option value="Solid/Cystic (1)">Solid/Cystic (1)</option>
-									<option value="Solid (2)">Solid (2)</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="nodule_row d-flex w-100 select-row">
-							<div class="nodule-item">
-								Echogenicity
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 1 Echogenicity"
-									id="nodule1Echogenicity">
-									<option value="" selected></option>
-									<option value="Anechoeic (0)">Anechoeic (0)</option>
-									<option value="Hyper/Isoechoeic (1)">Hyper/Isoechoeic (1)</option>
-									<option value="Hypoecheic (2)">Hypoecheic (2)</option>
-									<option value="Very hypoechoeic (3)">Very hypoechoeic (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 2 Echogenicity"
-									id="nodule2Echogenicity">
-									<option value="" selected></option>
-									<option value="Anechoeic (0)">Anechoeic (0)</option>
-									<option value="Hyper/Isoechoeic (1)">Hyper/Isoechoeic (1)</option>
-									<option value="Hypoecheic (2)">Hypoecheic (2)</option>
-									<option value="Very hypoechoeic (3)">Very hypoechoeic (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 3 Echogenicity"
-									id="nodule3Echogenicity">
-									<option value="" selected></option>
-									<option value="Anechoeic (0)">Anechoeic (0)</option>
-									<option value="Hyper/Isoechoeic (1)">Hyper/Isoechoeic (1)</option>
-									<option value="Hypoecheic (2)">Hypoecheic (2)</option>
-									<option value="Very hypoechoeic (3)">Very hypoechoeic (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 4 Echogenicity"
-									id="nodule4Echogenicity">
-									<option value="" selected></option>
-									<option value="Anechoeic (0)">Anechoeic (0)</option>
-									<option value="Hyper/Isoechoeic (1)">Hyper/Isoechoeic (1)</option>
-									<option value="Hypoecheic (2)">Hypoecheic (2)</option>
-									<option value="Very hypoechoeic (3)">Very hypoechoeic (3)</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="nodule_row d-flex w-100 select-row">
-							<div class="nodule-item">
-								Shape
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 1 Shape" id="nodule1shape">
-									<option value="" selected></option>
-									<option value="Wide > Tall (0)">Wide > Tall (0)</option>
-									<option value="Tall>wide (3)">Tall>wide (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 2 Shape" id="nodule2shape">
-									<option value="" selected></option>
-									<option value="Wide > Tall (0)">Wide > Tall (0)</option>
-									<option value="Tall>wide (3)">Tall>wide (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 3 Shape" id="nodule3shape">
-									<option value="" selected></option>
-									<option value="Wide > Tall (0)">Wide > Tall (0)</option>
-									<option value="Tall>wide (3)">Tall>wide (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 4 Shape" id="nodule4shape">
-									<option value="" selected></option>
-									<option value="Wide > Tall (0)">Wide > Tall (0)</option>
-									<option value="Tall>wide (3)">Tall>wide (3)</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="nodule_row d-flex w-100 select-row">
-							<div class="nodule-item">
-								Margins
-							</div>
-							<div class="nodule-item">
-
-
-								<select class="form-control" type="text" name="Nodule 1 Margins" id="nodule1margins">
-									<option value="" selected></option>
-									<option value="Smooth (0)">Smooth (0)</option>
-									<option value="Ill defined (0)">Ill defined (0)</option>
-									<option value="Irreg/lobulated (2)">Irreg/lobulated (2)</option>
-									<option value="Extrathyroid ext (3)">Extrathyroid ext (3) </option>
-								</select>
-
-
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 2 Margins" id="nodule2margins">
-									<option value="" selected></option>
-									<option value="Smooth (0)">Smooth (0)</option>
-									<option value="Ill defined (0)">Ill defined (0)</option>
-									<option value="Irreg/lobulated (2)">Irreg/lobulated (2)</option>
-									<option value="Extrathyroid ext (3)">Extrathyroid ext (3) </option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 3 Margins" id="nodule3margins">
-									<option value="" selected></option>
-									<option value="Smooth (0)">Smooth (0)</option>
-									<option value="Ill defined (0)">Ill defined (0)</option>
-									<option value="Irreg/lobulated (2)">Irreg/lobulated (2)</option>
-									<option value="Extrathyroid ext (3)">Extrathyroid ext (3) </option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 4 Margins" id="nodule4margins">
-									<option value="" selected></option>
-									<option value="Smooth (0)">Smooth (0)</option>
-									<option value="Ill defined (0)">Ill defined (0)</option>
-									<option value="Irreg/lobulated (2)">Irreg/lobulated (2)</option>
-									<option value="Extrathyroid ext (3)">Extrathyroid ext (3) </option>
-								</select>
-							</div>
-						</div>
-
-						<div class="nodule_row d-flex w-100 select-row">
-							<div class="nodule-item">
-								Echogenic FOCI
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 1 Echogenic FOCI"
-									id="nodule1EchogenicFOCI">
-									<option value="" selected></option>
-									<option value="None (0)">None (0)</option>
-									<option value="Macrocalc (1)">Macrocalc (1)</option>
-									<option value="Rim calc (2)">Rim calc (2)</option>
-									<option value="Punctate foci (3)">Punctate foci (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 2 Echogenic FOCI"
-									id="nodule2EchogenicFOCI">
-									<option value="" selected></option>
-									<option value="None (0)">None (0)</option>
-									<option value="Macrocalc (1)">Macrocalc (1)</option>
-									<option value="Rim calc (2)">Rim calc (2)</option>
-									<option value="Punctate foci (3)">Punctate foci (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 3 Echogenic FOCI"
-									id="nodule3EchogenicFOCI">
-									<option value="" selected></option>
-									<option value="None (0)">None (0)</option>
-									<option value="Macrocalc (1)">Macrocalc (1)</option>
-									<option value="Rim calc (2)">Rim calc (2)</option>
-									<option value="Punctate foci (3)">Punctate foci (3)</option>
-								</select>
-							</div>
-							<div class="nodule-item">
-								<select class="form-control" type="text" name="Nodule 4 Echogenic FOCI"
-									id="nodule4EchogenicFOCI">
-									<option value="" selected></option>
-									<option value="None (0)">None (0)</option>
-									<option value="Macrocalc (1)">Macrocalc (1)</option>
-									<option value="Rim calc (2)">Rim calc (2)</option>
-									<option value="Punctate foci (3)">Punctate foci (3)</option>
-								</select>
-							</div>
-						</div>
-
-					<div>
-						<label>TIRADS Scorsse (0=TR1, 2=TR2, 3=TR3, 4-6=TR4, >6=TR5) </label>
-					</div>
-						<div class="nodule_row d-flex w-100 score_row">
-							<div class="nodule-item">
-								&nbsp;
-								
-							</div>
-							<div class="nodule-item">
-								<input type="text" name="Nodule 1 Tirads Score">
-							</div>
-							<div class="nodule-item">
-								<input type="text" name="Nodule 2 Tirads Score">
-							</div>
-							<div class="nodule-item">
-								<input type="text" name="Nodule 3 Tirads Score">
-							</div>
-							<div class="nodule-item">
-								<input type="text" name="Nodule 4 Tirads Score">
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="d-flex w-100 flex-wrap para-lymph">
-					<div class="data-get w-100">
-						<label class="label-180">Parathyroids</label>
-						<input type="text" class="form-control" name="Parathyroids comments">
-					</div>
-					<div class="data-get w-100">
-						<label class="label-180">Lymph Nodes</label>
-						<input type="text" class="form-control" name="Lymph nodes comments">
-					</div>
-					<div class="data-get w-100">
-						<h4>Summary</h4>
-						<textarea class="form-control" name="Summary Comments" id="Summary"></textarea>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="btn-sub">
-				<input type="submit" class="btn btn-rounded" value="Submit">
-			</div>
-
-		</div>
-	</div>
-	<script src="assets/js/submitform.js"></script>
-</body>
-
+        <div class="btn-sub">
+          <input type="submit" class="btn btn-rounded" value="Submit" />
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
 </html>

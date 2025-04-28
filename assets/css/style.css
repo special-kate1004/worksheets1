@@ -497,6 +497,9 @@ form {
   width: 100%;
   max-width: 390px;
 }
+.w-120 {
+  width: 120px !important;
+}
 .w-120 select.form-control,
 .w-120 .form-control {
   width: 120px !important;
@@ -875,6 +878,13 @@ textarea {
     height: 510px;
   }
 }
+
+@media screen and (max-width: 1660px) {
+  .nodule-item input.form-control {
+    width: 180px !important;
+    margin-left: 15px;
+  }
+}
 @media (max-width: 1203px) {
   .form-wrapper {
     padding: 40px 0;
@@ -912,6 +922,7 @@ textarea {
     width: 180px;
     margin-left: 15px;
   }
+
   .name-txt .form-control {
     width: 400px;
   }
@@ -1277,9 +1288,24 @@ textarea {
   width: 500px;
   max-width: 100%;
 }
+.w-570 .form-control {
+  width: 580px;
+  max-width: 100%;
+}
 .w-680 .form-control {
   width: 680px;
   max-width: 100%;
+}
+@media screen and (max-width: 680px) {
+  .w-500 .form-control {
+    width: 100%;
+  }
+  .w-570 .form-control {
+    width: 100%;
+  }
+  .w-680 .form-control {
+    width: 100% !important;
+  }
 }
 .datingRow {
   margin-top: 35px;
@@ -1308,7 +1334,7 @@ textarea {
 .bg-gray {
   background: rgba(217, 217, 217, 0.4);
   width: 100%;
-  margin: 0;
+  margin: 20px 0 20px 0;
   display: block;
   height: 70px;
 }
@@ -1929,9 +1955,9 @@ img {
   .nodule-item span {
     padding: 0 10px;
   }
-  .nodule-item .cm-txt .form-control {
+  /* .nodule-item .cm-txt .form-control {
     width: 90px !important;
-  }
+  } */
 }
 @media (max-width: 1440px) {
   .twinSecWrapper .biometric-left {
@@ -2215,7 +2241,7 @@ img {
   }
   .nodule-item {
     height: 62px;
-    line-height: 60px;
+    line-height: 30px;
   }
   .select-row .nodule-item select.form-control {
     font-size: 18px;
@@ -2239,9 +2265,9 @@ img {
     line-height: 1;
     top: 53%;
   }
-  .nodule-item .cm-txt .form-control {
+  /* .nodule-item .cm-txt .form-control {
     width: 70px !important;
-  }
+  } */
   .limb-left {
     width: 100%;
     max-width: 100%;
@@ -2369,9 +2395,7 @@ img {
     width: 150px;
     font-size: 18px;
   }
-  .mb-0 {
-    margin-bottom: 0 !important;
-  }
+
   .left-checkbox,
   .right-comment {
     width: 100%;
@@ -2414,8 +2438,22 @@ img {
   max-width: 200px;
 }
 
+.max-w-1100px {
+  max-width: 1100px;
+}
+
+@media screen and (max-width: 1365px) {
+  .max-w-1100px {
+    max-width: 500px;
+  }
+}
+
 .flex-grow {
   flex-grow: 1;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .data-grid {
@@ -2455,6 +2493,10 @@ img {
   margin-bottom: 30px;
 }
 
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
 .mb-50 {
   margin-bottom: 50px;
 }
@@ -2479,6 +2521,10 @@ img {
   margin-left: -8px !important;
 }
 
+.ml-15- {
+  margin-left: -15px !important;
+}
+
 .mr-5 {
   margin-right: 5px !important;
 }
@@ -2486,8 +2532,35 @@ img {
   margin-right: 25px !important;
 }
 
+.mr-30 {
+  margin-right: 30px !important;
+}
+
 .mr-0 {
   margin-right: 0px !important;
+}
+
+.mr-15- {
+  margin-right: -15px !important;
+}
+
+@media screen and (max-width: 576px) {
+  .sm-mt-0 {
+    margin-top: 0px !important;
+  }
+
+  .sm-m-0 {
+    margin: 0 !important;
+  }
+
+  .sm-w-auto {
+    width: fit-content !important;
+    min-width: 70px !important;
+  }
+}
+
+.pr-25 {
+  padding-right: 25px !important;
 }
 
 .wd-100 {
@@ -2553,13 +2626,22 @@ img {
 
 .grid-column-4-1 .customcheckbox,
 .grid-column-3-1 .customcheckbox,
-.grid-column-6 .customcheckbox {
+.grid-column-6 .customcheckbox,
+.grid-column-7 .customcheckbox {
   transform: translateX(-20%) !important;
 }
 
 .grid-column-6 {
   display: grid;
   grid-template-columns: 170px 1fr 1fr 1fr 1fr 1fr;
+  margin: 5px 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.grid-column-7 {
+  display: grid;
+  grid-template-columns: 170px 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 5px 0;
   align-items: center;
   gap: 5px;
@@ -2639,7 +2721,7 @@ img {
 
   .grid-column-6 {
     display: grid;
-    grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr;
     margin: 5px 0;
     align-items: center;
   }
@@ -2658,7 +2740,32 @@ img {
     left: 2px;
   }
 
-  .grid-column-6 input.form-control {
+  .grid-column-7 {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px 0;
+    align-items: center;
+  }
+
+  .grid-column-7 input.form-control {
+    padding: 2px;
+  }
+
+  .grid-column-7 .radio-list .customRadio {
+    padding-left: 20px;
+  }
+
+  .grid-column-7 .radio-list .customRadio .checkmark {
+    width: 16px;
+    height: 16px;
+  }
+
+  .grid-column-7 .customRadio input:checked ~ .checkmark:after {
+    top: 2px;
+    left: 2px;
+  }
+
+  .grid-column-7 input.form-control {
     padding: 2px;
   }
 }
@@ -2832,6 +2939,10 @@ img {
   margin-bottom: 0 !important;
 }
 
+.margin-0 {
+  margin: 0 !important;
+}
+
 .m-auto {
   margin: auto !important;
 }
@@ -2873,11 +2984,15 @@ textarea#breast-ultrasound-summary {
 }
 
 .mb-8 {
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
 
 .mt-40 {
-  margin-top: 40px;
+  margin-top: 40px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
 }
 
 .pb-10 {
