@@ -144,6 +144,9 @@ body {
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-around {
+  justify-content: space-around !important;
+}
 .align-items-start {
   align-items: flex-start;
 }
@@ -1018,6 +1021,10 @@ textarea {
     order: 2;
     text-align: center;
     font-size: 26px;
+  }
+  .top-form label {
+    text-align: center;
+    display: block;
   }
   .top-form .logo {
     text-align: center;
@@ -2422,6 +2429,10 @@ img {
   text-align: right;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .min-w-auto {
   min-width: auto !important;
 }
@@ -2434,12 +2445,44 @@ img {
   min-width: 280px !important;
 }
 
+.min-w-400 {
+  min-width: 400px !important;
+}
+
 .max-w-200 {
   max-width: 200px;
 }
 
+.max-w-400 {
+  max-width: 400px !important;
+}
+
+.max-w-500 {
+  max-width: 500px !important;
+}
+
+.max-w-800 {
+  max-width: 800px !important;
+}
+
 .max-w-1100px {
   max-width: 1100px;
+}
+
+.max-w-full {
+  max-width: 100% !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.max-w-auto {
+  max-width: fit-content !important;
+}
+
+.w-auto {
+  width: fit-content !important;
 }
 
 @media screen and (max-width: 1365px) {
@@ -2472,6 +2515,16 @@ img {
   gap: 80px;
 }
 
+.gap-25 {
+  gap: 25px;
+}
+
+@media screen and (max-width: 567px) {
+  .sm-gap-0 {
+    gap: 0px !important;
+  }
+}
+
 .w-50 {
   min-width: 50px !important;
   display: inline-block !important;
@@ -2483,6 +2536,10 @@ img {
 
 .ml-13 {
   margin-left: 13px;
+}
+
+.ml-23 {
+  margin-left: 23px !important;
 }
 
 .ml-22 {
@@ -2556,6 +2613,12 @@ img {
   .sm-w-auto {
     width: fit-content !important;
     min-width: 70px !important;
+    max-width: 100% !important;
+  }
+
+  .sm-w-full {
+    width: 100% !important;
+    min-width: 100% !important;
   }
 }
 
@@ -2595,6 +2658,14 @@ img {
   font-style: italic;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-nowrap {
+  text-wrap-mode: nowrap;
+}
+
 .d-flex {
   display: flex;
 }
@@ -2608,6 +2679,30 @@ img {
   grid-template-columns: 170px 120px 1fr;
   margin: 5px 0;
   align-items: center;
+}
+
+.grid-column-3-2 {
+  display: grid;
+  grid-template-columns: 170px 120px 1fr;
+  margin: 5px 0;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-column-3-3 {
+  display: grid;
+  grid-template-columns: 170px 1fr 120px;
+  margin: 5px 0;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-column-3-4 {
+  display: grid;
+  grid-template-columns: 210px 1fr 120px;
+  margin: 5px 0;
+  align-items: center;
+  gap: 10px;
 }
 
 .grid-column-4 {
@@ -2624,8 +2719,12 @@ img {
   align-items: center;
 }
 
+.grid-column-3 .customcheckbox,
 .grid-column-4-1 .customcheckbox,
 .grid-column-3-1 .customcheckbox,
+.grid-column-3-2 .customcheckbox,
+.grid-column-3-3 .customcheckbox,
+.grid-column-3-4 .customcheckbox,
 .grid-column-6 .customcheckbox,
 .grid-column-7 .customcheckbox {
   transform: translateX(-20%) !important;
@@ -2687,6 +2786,24 @@ img {
   .grid-column-3-1 {
     grid-template-columns: 150px 69px 1fr;
   }
+
+  .grid-column-3-2 {
+    grid-template-columns: 120px 120px 1fr;
+  }
+
+  .grid-column-3-3 {
+    grid-template-columns: 120px 1fr 120px;
+  }
+
+  .grid-column-3-4 {
+    grid-template-columns: 190px 1fr 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .md-flex-wrap {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2710,6 +2827,18 @@ img {
 
   .grid-column-3-1 {
     grid-template-columns: 120px 69px 1fr;
+  }
+
+  .grid-column-3-2 {
+    grid-template-columns: 70px 100px 1fr;
+  }
+
+  .grid-column-3-3 {
+    grid-template-columns: 70px 1fr 100px;
+  }
+
+  .grid-column-3-4 {
+    grid-template-columns: 150px 1fr 40px;
   }
 
   .grid-column-5 {
@@ -2767,6 +2896,12 @@ img {
 
   .grid-column-7 input.form-control {
     padding: 2px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .grid-column-3-4 {
+    grid-template-columns: 130px 1fr 40px;
   }
 }
 
@@ -2997,6 +3132,10 @@ textarea#breast-ultrasound-summary {
 
 .pb-10 {
   padding-bottom: 10px;
+}
+
+.pt-0 {
+  padding-top: 0px !important;
 }
 
 .section .form-wrapper select.form-control {

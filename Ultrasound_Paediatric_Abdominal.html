@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+          <div>
+            <h1>PAEDIATRIC ABDOMINAL ULTRASOUND</h1>
+            <label>INTERIM SONOGRAPHER REPORT ONLY</label>
+          </div>
+          <div class="logo">
+            <img src="assets/images/logo.webp" alt="logo image" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="3 Point ID Check" />
+                <span class="checkmark"></span>
+              </label>
+              <label>3 Point ID Check</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Verbal Consent" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Verbal Consent</label>
+            </div>
+
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Normal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Normal</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Abnormal</label>
+            </div>
+          </div>
+
+          <!-- <div class="data-get w-100">
+                <label>Patient Details:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="patient-details"
+                id="patient-details"
+                value=""
+                ></textarea>
+            </div> -->
+        </div>
+
+        <div class="section">
+          <div
+            class="quality-row d-flex flex-wrap align-items-start gap-50 sm-gap-0 justify-content-between"
+          >
+            <div class="qty-column">
+              <img
+                src="./assets/images/hepatic_length.png"
+                alt="hepatic length vs age"
+                class="w-full"
+              />
+            </div>
+            <div class="qty-column">
+              <img
+                src="./assets/images/splenic_length.png"
+                alt="splenic length vs age"
+                class="w-full"
+              />
+            </div>
+          </div>
+          <div
+            class="quality-row d-flex flex-wrap align-items-start gap-50 justify-content-between"
+          >
+            <div class="qty-column">
+              <div class="comp-item-header">
+                <div class="grid-column-3-4">
+                  <label></label>
+                  <label></label>
+                  <label><strong>NAD</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>PANCREAS</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="PANCREAS"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="PANCREAS NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <input
+                  class="form-control w-full"
+                  type="text"
+                  name="PANCREAS comment"
+                  value=""
+                />
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>LIVER</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="LIVER"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="LIVER NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <input
+                  class="form-control w-full"
+                  type="text"
+                  name="LIVER comment"
+                  value=""
+                />
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Length</label>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="liver_length_size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label> </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Texture</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="LIVER_texture"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="LIVER_texture_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Contour</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="LIVER_contour"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="LIVER_contour_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">IHD</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="LIVER_IHD"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="LIVER_IHD_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>GALLBLADDER</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="GALLBLADDER"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="GALLBLADDER_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <input
+                  class="form-control w-full"
+                  type="text"
+                  name="GALLBLADDER comment"
+                  value=""
+                />
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Wall</label>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="GALLBLADDER_wall_size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label> </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Stones</label>
+
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="GALLBLADDER_stones"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="GALLBLADDER_stones"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right"></label>
+
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Single
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="GALLBLADDER_stones_singlity"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >Multiple
+                      <input
+                        type="radio"
+                        name="GALLBLADDER_stones_singlity"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Mobile</label>
+
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="GALLBLADDER_Mobile"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="GALLBLADDER_Mobile"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>CBD</strong></label>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="CBD size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label> </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2">
+                  <label><strong>Portal Vein</strong></label>
+                  <label>Antegrade</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="Portal_Vein_Antegrade"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="Portal_Vein_Antegrade"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="qty-column">
+              <div class="comp-item-header">
+                <div class="grid-column-3-4">
+                  <label></label>
+                  <label></label>
+                  <label><strong>NAD</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>RT KIDNEY</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="RT_KIDNEY"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="RT_KIDNEY_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Length</label>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="RT_KIDNEY_length"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label> </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Pelvis</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="RT_KIDNEY_Pelvis"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="RT_KIDNEY_Pelvis_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>LT KIDNEY</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="LT_KIDNEY"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="LT_KIDNEY_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Length</label>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="LT_KIDNEY_length"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label> </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Pelvis</label>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="LT_KIDNEY_Pelvis"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label> </label>
+                </div>
+              </div>
+
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>SPLEEN</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="SPLEEN"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="SPLEEN_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Length</label>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="SPLEEN_Length"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label> </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>AORTA / IVC</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="AORTA_IVC"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="AORTA_IVC_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">SMA / SMV</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="AORTA_IVC_SMA_SMV"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="AORTA_IVC_SMA_SMV_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>FREE FLUID</strong></label>
+
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="FREE_FLUID"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="FREE_FLUID" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Location</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="FREE_FLUID_location"
+                    value=""
+                  />
+                  <label></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>LYMPH NODES</strong></label>
+
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="LYMPH_NODES"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="LYMPH_NODES" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label class="text-align-right">Location</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="LYMPH_NODES_location"
+                    value=""
+                  />
+                  <label></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div
+            class="quality-row d-flex flex-wrap align-items-start gap-50 justify-content-between"
+          >
+            <div class="qty-column">
+              <div class="comp-item-header">
+                <div class="grid-column-3-4">
+                  <label></label>
+                  <label></label>
+                  <label><strong>NAD</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>APPENDIX</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="APPENDIX"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="APPENDIX_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Examined</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="APPENDIX_Examined"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="APPENDIX_Examined" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Seen</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="APPENDIX_seen"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="APPENDIX_seen" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="APPENDIX size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label>(n &lt; 6mm)</label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Tender</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="APPENDIX_tender"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="APPENDIX_tender" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Hyperaemic</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="APPENDIX_hyperaemic"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="APPENDIX_hyperaemic"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="qty-column">
+              <div class="comp-item-header">
+                <div class="grid-column-3-4">
+                  <label></label>
+                  <label></label>
+                  <label><strong>NAD</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>PELVIS</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="PELVIS"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="PELVIS_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Examined</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="PELVIS_examined"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="PELVIS_examined" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <textarea
+                class="form-control"
+                type="text"
+                name="PELVIS_Comment"
+                id="Comment"
+                value=""
+              ></textarea>
+            </div>
+          </div>
+          <div
+            class="quality-row d-flex flex-wrap align-items-start gap-50 justify-content-between"
+          >
+            <div class="qty-column">
+              <div class="comp-item-header">
+                <div class="grid-column-3-4">
+                  <label></label>
+                  <label></label>
+                  <label><strong>NAD</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>PYLORUS</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="PYLORUS"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="PYLORUS_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Examined</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="PYLORUS_examined"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="PYLORUS_examined" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <lable>Wall</lable>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="PYLORUS_wall"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label>(n &lt; 6mm)</label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <lable>Length</lable>
+                  <div class="data-get sm-col m-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="PYLORUS_length"
+                        value=""
+                      />
+                      <span class="cm-txt-in">mm</span>
+                    </span>
+                  </div>
+                  <label>(n &lt; 6mm)</label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Tender</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="PYLORUS_tender"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input type="radio" name="PYLORUS_tender" value="no" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Transit seen </label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="PYLORUS_transit_seen"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="PYLORUS_transit_seen"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="qty-column">
+              <div class="comp-item-header">
+                <div class="grid-column-3-4">
+                  <label></label>
+                  <label></label>
+                  <label><strong>NAD</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label><strong>INTUSSUSCEPTION</strong></label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="INTUSSUSCEPTION"
+                    value=""
+                  />
+                  <label class="customcheckbox">
+                    <input type="checkbox" name="INTUSSUSCEPTION_NAD" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Examined</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="INTUSSUSCEPTION_examined"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="INTUSSUSCEPTION_examined"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Present</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="INTUSSUSCEPTION_present"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="INTUSSUSCEPTION_present"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-4">
+                  <label>Colour seen</label>
+                  <div
+                    class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+                  >
+                    <label class="customRadio min-w-60"
+                      >Yes
+                      <input
+                        type="radio"
+                        checked="checked"
+                        name="INTUSSUSCEPTION_colour_seen"
+                        value="yes"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+
+                    <label class="customRadio"
+                      >No
+                      <input
+                        type="radio"
+                        name="INTUSSUSCEPTION_colour_seen"
+                        value="no"
+                      />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h4 class="text-align-center">
+            Renal Length vs Age (Male and Female)
+          </h4>
+          <div
+            class="quality-row d-flex flex-wrap align-items-start gap-50 justify-content-between"
+          >
+            <div class="qty-column">
+              <img
+                src="./assets/images/renal-length-left.png"
+                alt="renal length vs age left"
+                class="w-full"
+              />
+            </div>
+            <div class="qty-column">
+              <img
+                src="./assets/images/renal-length-right.png"
+                alt="renal length vs age right"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+      <!-- form body end -->
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

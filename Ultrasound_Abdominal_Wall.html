@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+          <div>
+            <h1>ABDOMINAL WALL ULTRASOUND</h1>
+            <label>INTERIM SONOGRAPHER REPORT ONLY</label>
+          </div>
+          <div class="logo">
+            <img src="assets/images/logo.webp" alt="logo image" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="3 Point ID Check" />
+                <span class="checkmark"></span>
+              </label>
+              <label>3 Point ID Check</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Verbal Consent" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Verbal Consent</label>
+            </div>
+
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Normal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Normal</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Abnormal</label>
+            </div>
+          </div>
+
+          <!-- <div class="data-get w-100">
+                <label>Patient Details:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="patient-details"
+                id="patient-details"
+                value=""
+                ></textarea>
+            </div> -->
+        </div>
+
+        <div class="section">
+          <div class="data-get checkboxWrap d-flex mb-8">
+            <label class="checklabel mr-25"><strong>Hernia</strong></label>
+            <div
+              class="radio-list d-flex align-items-center gap-10 sm-w-full max-w-full w-full pt-0"
+            >
+              <label class="customRadio min-w-60"
+                >Yes
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="Hernia"
+                  value="yes"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio"
+                >No
+                <input type="radio" name="Hernia" value="no" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="data-get checkboxWrap d-flex mb-8">
+            <label class="checklabel mr-25"><strong></strong></label>
+            <div
+              class="radio-list d-flex align-items-center gap-10 sm-w-full max-w-full w-full pt-0"
+            >
+              <label class="customRadio min-w-60"
+                >Single
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="Hernia singlity"
+                  value="yes"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio sm-w-full"
+                >Multiple (Extra Worksheets if Needed)
+                <input type="radio" name="Hernia singlity" value="no" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div
+            class="quality-row d-flex flex-wrap justify-content-between gap-50"
+          >
+            <div class="qty-column max-w-full w-auto flex-grow">
+              <div
+                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+              >
+                <label class="sm-w-full">Defect location:</label>
+                <input
+                  class="form-control full-w"
+                  type="text"
+                  name="Defect location"
+                  id="clinical"
+                  value=""
+                />
+              </div>
+              <div class="checkboxWrap d-flex">
+                <div
+                  class="data-get d-flex align-items-end gap-10 sm-col mb-0 w-130"
+                >
+                  <label class="sm-w-full">Defect size</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Defect size a"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <label class="ml-15 sm-m-0 min-w-auto w-auto">x</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Defect size b"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                </div>
+              </div>
+              <div class="checkboxWrap d-flex">
+                <div
+                  class="data-get d-flex align-items-end gap-10 sm-col mb-0 w-130"
+                >
+                  <label class="sm-w-full">Sac size</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Sac size a"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <label class="ml-15 sm-m-0 min-w-auto w-auto">x</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Sac size b"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <label class="ml-15 sm-m-0 min-w-auto w-auto">x</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Sac size c"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                </div>
+              </div>
+              <div class="data-get checkboxWrap d-flex mb-8">
+                <label class="checklabel mr-25">Content</label>
+                <div
+                  class="radio-list d-flex align-items-center gap-10 sm-w-auto max-w-full w-full pt-0"
+                >
+                  <label class="customRadio min-w-60"
+                    >Fat
+                    <input
+                      type="radio"
+                      checked="Fat"
+                      name="content"
+                      value="fat"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >Bowel
+                    <input type="radio" name="content" value="bowel" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio sm-w-auto"
+                    >Fat and Bowel
+                    <input type="radio" name="content" value="fat & bowel" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get checkboxWrap d-flex mb-8">
+                <label class="checklabel mr-25 sm-w-full">Reducibility</label>
+                <div
+                  class="radio-list d-flex align-items-center gap-10 sm-w-auto max-w-full w-full pt-0"
+                >
+                  <label class="customRadio min-w-60"
+                    >Reducible
+                    <input
+                      type="radio"
+                      checked="Fat"
+                      name="Reducibility"
+                      value="Reducible"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio sm-w-auto"
+                    >Not Reducible
+                    <input
+                      type="radio"
+                      name="Reducibility"
+                      value="Not Reducible"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <br /><br />
+              <div
+                class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+              >
+                <label>Defect location:</label>
+                <input
+                  class="form-control full-w"
+                  type="text"
+                  name="Defect location 1"
+                  id="clinical"
+                  value=""
+                />
+              </div>
+              <div class="checkboxWrap d-flex">
+                <div
+                  class="data-get d-flex align-items-end gap-10 sm-col mb-0 w-130"
+                >
+                  <label class="sm-w-full">Defect size</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Defect size a 1"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <label class="ml-15 sm-m-0 min-w-auto w-auto">x</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Defect size b 1"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                </div>
+              </div>
+              <div class="checkboxWrap d-flex">
+                <div
+                  class="data-get d-flex align-items-end gap-10 sm-col mb-0 w-130"
+                >
+                  <label class="sm-w-full">Sac size</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Sac size a 1"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <label class="ml-15 sm-m-0 min-w-auto w-auto">x</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Sac size b 1"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <label class="ml-15 sm-m-0 min-w-auto w-auto">x</label>
+                  <span class="cm-txt">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Sac size c 1"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                </div>
+              </div>
+              <div class="data-get checkboxWrap d-flex mb-8">
+                <label class="checklabel mr-25">Content</label>
+                <div
+                  class="radio-list d-flex align-items-center gap-10 sm-w-auto max-w-full w-full pt-0"
+                >
+                  <label class="customRadio min-w-60"
+                    >Fat
+                    <input
+                      type="radio"
+                      checked="Fat"
+                      name="content 1"
+                      value="fat"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio"
+                    >Bowel
+                    <input type="radio" name="content 1" value="bowel" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio sm-w-auto"
+                    >Fat and Bowel
+                    <input type="radio" name="content 1" value="fat & bowel" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="data-get checkboxWrap d-flex mb-8">
+                <label class="checklabel mr-25 sm-w-full">Reducibility</label>
+                <div
+                  class="radio-list d-flex align-items-center gap-10 sm-w-auto max-w-full w-full pt-0"
+                >
+                  <label class="customRadio min-w-60"
+                    >Reducible
+                    <input
+                      type="radio"
+                      checked="Fat"
+                      name="Reducibility 1"
+                      value="Reducible"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                  <label class="customRadio sm-w-auto"
+                    >Not Reducible
+                    <input
+                      type="radio"
+                      name="Reducibility 1"
+                      value="Not Reducible"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="qty-column max-w-500 w-auto">
+              <img
+                src="./assets/images/abdominal-wall.png"
+                class="w-full"
+                alt="aortic doppler"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="section dorsal-aspect-comp-section">
+          <h4>Abdominal Wall Musculature</h4>
+          <div class="comp-item-header grid-column-3">
+            <label>Linea alba (n ≤ 25mm)</label>
+            <label>Max. size</label>
+            <div class="data-get sm-col mb-0">
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Linea alba max size a"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="Linea alba max size b"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+              <label class="w-auto ml-23">Above the umbilicus</label>
+            </div>
+          </div>
+          <div class="data-get comp-item">
+            <div class="grid-column-3">
+              <label>Rectus abdominis</label>
+              <label class="customcheckbox">
+                <input type="checkbox" name="Rectus abdominis checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <input
+                class="form-control"
+                type="text"
+                name="Rectus abdominis comment"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="data-get comp-item">
+            <div class="grid-column-3">
+              <label>External oblique</label>
+              <label class="customcheckbox">
+                <input type="checkbox" name="External oblique checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <input
+                class="form-control"
+                type="text"
+                name="External oblique comment"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="data-get comp-item">
+            <div class="grid-column-3">
+              <label>Internal oblique</label>
+              <label class="customcheckbox">
+                <input type="checkbox" name="Internal oblique checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <input
+                class="form-control"
+                type="text"
+                name="Internal oblique comment"
+                value=""
+              />
+            </div>
+          </div>
+          <div class="data-get comp-item">
+            <div class="grid-column-3">
+              <label>Transversus abdominis</label>
+              <label class="customcheckbox">
+                <input type="checkbox" name="Transversus abdominis checkbox" />
+                <span class="checkmark"></span>
+              </label>
+              <input
+                class="form-control"
+                type="text"
+                name="Transversus abdominis comment"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+      <!-- form body end -->
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

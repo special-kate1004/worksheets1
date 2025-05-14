@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+            <div>
+                <h1>HINDFOOT ULTRASOUND
+                </h1>
+            </div>              
+            <div class="logo">
+                <img src="assets/images/logo.webp" alt="logo image" />
+            </div>
+        </div>
+ 
+        <div class="section">
+          <div class="data-get w-100 left-right-sec d-flex flex-wrap section gap-50">
+            <div class="d-flex flex-wrap align-items-center flex-grow">
+              <label>Patient Name</label>
+              <input
+                class="form-control flex-grow ml-23"
+                type="text"
+                name="patient-name"
+                value=""
+              />
+            </div>
+
+            <div class="date-feild">
+              <label>Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Date"
+                id="date"
+                value=""
+              />
+            </div>
+          </div>
+        
+          <div
+          class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+          <label>Sonographer:</label>
+          <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+          />
+          </div>
+
+          <div class="checkboxgroup d-flex flex-wrap align-items-center align-items-start gap-100 ml-8-">
+            <div class="d-flex gap-50">
+              <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox">
+                    <input type="checkbox" name="position right">
+                    <span class="checkmark"></span>
+                </label>
+                <label>RIGHT</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox">
+                    <input type="checkbox" name="position left">
+                    <span class="checkmark"></span>
+                </label>
+                <label>LEFT</label>
+            </div>
+            </div>
+            <div class="d-flex gap-50">
+              <div class="d-flex align-items-center gap-18">
+                <label class="customcheckbox">
+                    <input type="checkbox" name="normality normal">
+                    <span class="checkmark"></span>
+                </label>
+                <label>NORMAL</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox">
+                  <input type="checkbox" name="normality abnormal">
+                  <span class="checkmark"></span>
+              </label>
+              <label>ABNORMAL</label>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section dorsal-aspect-comp-section">
+          <div class="comp-item-header grid-column-3-1">
+              <label></label>
+              <label>NAD</label>
+              <label>FINDING</label>
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-3-1">
+                  <label>Plantar Fascia</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="Plantar Fascia nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <div class="data-get sm-col w-130">
+                    <div>
+                      <label>Thickness</label>
+                      <span class="cm-txt">
+                        <input
+                          class="form-control"
+                          type="text"
+                          name="Plantar Fascia Thickness"
+                          value=""
+                        />
+                        <span class="cm-txt-in">mm</span>
+                      </span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="data-get comp-item">
+              <div class="grid-column-3-1">
+                  <label class="text-align-right">Tear</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="Plantar Fascia Tear nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="Plantar Fascia Tear comment"
+                      value=""
+                  />
+              </div>
+          </div>
+          <div class="data-get comp-item">
+            <div class="grid-column-3-1">
+                <label class="text-align-right">Fibroma</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"   name="Plantar Fascia Fibroma nad" />
+                    <span class="checkmark"></span>
+                </label>
+                <input
+                    class="form-control"
+                    type="text"
+                    name="Plantar Fascia Fibroma comment"
+                    value=""
+                />
+            </div>
+        </div>
+          <div class="data-get comp-item">
+              <div class="grid-column-3-1">
+                  <label>Calcaneal spur</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="Calcaneal spur nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="Calcaneal spur comment"
+                      value=""
+                  />
+              </div>
+          </div>
+          <div class="data-get comp-item">
+              <div class="grid-column-3-1">
+                  <label>Lateral Band of Plantar Fascia</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="Lateral Band of Plantar Fascia nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="Lateral Band of Plantar Fascia comment"
+                      value=""
+                  />
+              </div>
+              
+          </div>
+        </div>
+
+        <div class="section dorsal-aspect-comp-section">
+          <div class="comp-item-header grid-column-3-1">
+              <label>ACHILLES</label>
+              <label>NAD</label>
+              <label></label>
+          </div>
+         
+
+          <div class="comp-item">
+            <div class="grid-column-3-1">
+                <label>Tear</label>
+                <label class="customcheckbox">
+                    <input type="checkbox"   name="ACHILLES Tear nad" />
+                    <span class="checkmark"></span>
+                </label>
+                <input
+                    class="form-control"
+                    type="text"
+                    name="ACHILLES Tear comment"
+                    value=""
+                />
+            </div>
+        </div>
+          <div class="comp-item">
+              <div class="grid-column-3-1">
+                  <label>Tendinosis</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="ACHILLES Tendinosis nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="ACHILLES Tendinosis comment"
+                      value=""
+                  />
+              </div>
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-3-1">
+                  <label>Neovascularity</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="ACHILLES Neovascularity nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="ACHILLES Neovascularity comment"
+                      value=""
+                  />
+              </div>
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-3-1">
+                  <label>Kager’s fatpad</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="ACHILLES Kager’s fatpad nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="ACHILLES Kager’s fatpad comment"
+                      value=""
+                  />
+              </div>
+              
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-3-1">
+                  <label>Retrocal. Bursa</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="ACHILLES Retrocal. Bursa nad " />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="ACHILLES Retrocal. Bursa comment"
+                      value=""
+                  />
+              </div>
+              
+          </div>
+          <div class="comp-item">
+              <div class="grid-column-3-1">
+                  <label>Enthesophyte</label>
+                  <label class="customcheckbox">
+                      <input type="checkbox"   name="ACHILLES Enthesophyte nad" />
+                      <span class="checkmark"></span>
+                  </label>
+                  <input
+                      class="form-control"
+                      type="text"
+                      name="ACHILLES Enthesophyte comment"
+                      value=""
+                  />
+              </div>
+              
+          </div>
+
+
+
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+        <!-- form body end -->
+      </div>
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

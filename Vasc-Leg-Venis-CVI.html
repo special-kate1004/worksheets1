@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+          <div>
+            <h1>LOWER LIMB VENOUS COMPETENCY STUDY</h1>
+            <label>INTERIM SONOGRAPHER REPORT ONLY</label>
+          </div>
+          <div class="logo">
+            <img src="assets/images/logo.webp" alt="logo image" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="RIGHT" />
+                <span class="checkmark"></span>
+              </label>
+              <label>RIGHT</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="LEFT" />
+                <span class="checkmark"></span>
+              </label>
+              <label>LEFT</label>
+            </div>
+
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Normal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Normal</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Abnormal</label>
+            </div>
+          </div>
+
+          <!-- <div class="data-get w-100">
+                <label>Patient Details:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="patient-details"
+                id="patient-details"
+                value=""
+                ></textarea>
+            </div> -->
+        </div>
+
+        <div class="section">
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">DVT/SVT </label>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Yes
+                <input type="radio" checked="checked" name="DVTorSVT" value="Yes">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">No
+                <input type="radio" name="DVTorSVT" value="No">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <input class="form-control full-w flex-grow" type="text" name="SVTorSVT comment" id="clinical" value="">
+          </div>
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">DEEP VEIN REFLUX </label>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Yes
+                <input type="radio" checked="checked" name="DDEP VEIN REFLUX" value="Yes">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">No
+                <input type="radio" name="DDEP VEIN REFLUX" value="No">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <input class="form-control full-w flex-grow" type="text" name="DDEP VEIN REFLUX comment" id="clinical" value="">
+          </div>
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">SFJ </label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="SFJ"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Competent
+                <input type="radio" checked="checked" name="SFJ1" value="Competent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Incompetent
+                <input type="radio" name="SFJ1" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">GSV </label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="GSV"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Competent
+                <input type="radio" checked="checked" name="GSV1" value="Competent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Incompetent
+                <input type="radio" name="GSV1" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">Length of GSV in facia </label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Length of GSV in facia"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">SPJ </label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="SPJ2-text"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Competent
+                <input type="radio" checked="checked" name="SPJ2" value="Competent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Incompetent
+                <input type="radio" name="SPJ2" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Absent
+                <input type="radio" name="SPJ2" value="Absent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto"> </label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="SPJ3-text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Above
+                <input type="radio" checked="checked" name="SPJ3" value="Competent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Below Knee
+                <input type="radio" name="SPJ3" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto ml-15">
+              <label class="customRadio min-w-60">Medial
+                <input type="radio" checked="checked" name="SPJ4" value="Competent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Central
+                <input type="radio" name="SPJ4" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Lateral to POP V
+                <input type="radio" name="SPJ4" value="Absent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">SSV </label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="SSV-text"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Competent
+                <input type="radio" checked="checked" name="SSV" value="Competent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Incompetent
+                <input type="radio" name="SSV" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <label class="mr-15 sm-w-auto">Length of SSV in facia </label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Length of SSV in facia text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+          </div>
+        </div>
+        
+        <div class="section">
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <h4 class="mr-15 sm-w-auto">Incompetent Parforators</h4>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto mb-8">
+              <label class="customRadio min-w-60">Yes
+                <input type="radio" checked="checked" name="Incompetent Parforators" value="Yes">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">No
+                <input type="radio" name="Incompetent Parforators" value="No">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <span class="cm-txt min-w-60">
+              <input
+                class="form-control"
+                type="text"
+                name="Incompetent Parforators1 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">medial
+                <input type="radio" checked="checked" name="Incompetent Parforators1" value="Competent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">lateral
+                <input type="radio" name="Incompetent Parforators1" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">posterior
+                <input type="radio" name="Incompetent Parforators1" value="Incompetent">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Incompetent Parforators2 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Above
+                <input type="radio" checked="checked" name="Incompetent Parforators2" value="Above">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Below
+                <input type="radio" name="Incompetent Parforators2" value="Below">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Groin
+                <input type="radio" checked="checked" name="Incompetent Parforators3" value="Groin">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Knee
+                <input type="radio" name="Incompetent Parforators3" value="Knee">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Ankle
+                <input type="radio" name="Incompetent Parforators3" value="Ankle">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <span class="cm-txt min-w-60">
+              <input
+                class="form-control"
+                type="text"
+                name="IP21 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">medial
+                <input type="radio" checked="checked" name="IP21" value="medial">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">lateral
+                <input type="radio" name="IP21" value="lateral">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">posterior
+                <input type="radio" name="IP21" value="posterior">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="IP22 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Above
+                <input type="radio" checked="checked" name="IP22" value="Above">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Below
+                <input type="radio" name="IP22" value="Below">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Groin
+                <input type="radio" checked="checked" name="IP23" value="Groin">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Knee
+                <input type="radio" name="IP23" value="Knee">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Ankle
+                <input type="radio" name="IP23" value="Ankle">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <span class="cm-txt min-w-60">
+              <input
+                class="form-control"
+                type="text"
+                name="IP31 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">medial
+                <input type="radio" checked="checked" name="IP31" value="medial">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">lateral
+                <input type="radio" name="IP31" value="lateral">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">posterior
+                <input type="radio" name="IP31" value="posterior">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="IP32 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Above
+                <input type="radio" checked="checked" name="IP32" value="Above">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Below
+                <input type="radio" name="IP32" value="Below">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Groin
+                <input type="radio" checked="checked" name="IP33" value="Groin">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Knee
+                <input type="radio" name="IP33" value="Knee">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Ankle
+                <input type="radio" name="IP33" value="Ankle">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          
+          <div class="data-get calculated edd w-100 d-flex align-items-end flex-wrap mt-20">
+            <span class="cm-txt min-w-60">
+              <input
+                class="form-control"
+                type="text"
+                name="IP41 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">medial
+                <input type="radio" checked="checked" name="IP41" value="medial">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">lateral
+                <input type="radio" name="IP41" value="lateral">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">posterior
+                <input type="radio" name="IP41" value="posterior">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="IP42 text"
+                value=""
+              />
+              <span class="cm-txt-in">cm</span>
+            </span>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Above
+                <input type="radio" checked="checked" name="IP42" value="Above">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Below
+                <input type="radio" name="IP42" value="Below">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
+              <label class="customRadio min-w-60">Groin
+                <input type="radio" checked="checked" name="IP43" value="Groin">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Knee
+                <input type="radio" name="IP43" value="Knee">
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio">Ankle
+                <input type="radio" name="IP43" value="Ankle">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="section">
+          <div class="edd w-100 align-items-center">
+            <img src="./assets/images/vasc-leg-venis-cvi.png" class="w-100"/>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+        
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+      <!-- form body end -->
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

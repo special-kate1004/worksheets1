@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+          <div>
+            <h1>RENAL DOPPLER STUDY</h1>
+            <label>INTERIM SONOGRAPHER REPORT ONLY</label>
+          </div>
+          <div class="logo">
+            <img src="assets/images/logo.webp" alt="logo image" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="3 Point ID Check" />
+                <span class="checkmark"></span>
+              </label>
+              <label>3 Point ID Check</label>
+            </div>
+            <div class="d-flex align-items-center gap-18 mr-45">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Verbal Consent" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Verbal Consent</label>
+            </div>
+
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Normal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Normal</label>
+            </div>
+            <div class="d-flex align-items-center gap-18 mr-45">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Abnormal</label>
+            </div>
+
+            <div class="data-get d-flex">
+              <label>Technical Quality:</label>
+              <div class="radio-list d-flex align-items-center">
+                <label class="customRadio min-w-auto"
+                  >Poor
+                  <input type="radio" name="Technical Quality" value="Poor" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio"
+                  >Fair
+                  <input type="radio" name="Technical Quality" value="Fair" />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio"
+                  >Good
+                  <input
+                    type="radio"
+                    checked="checked"
+                    name="Technical Quality"
+                    value="Good"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="data-get w-100">
+                <label>Patient Details:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="patient-details"
+                id="patient-details"
+                value=""
+                ></textarea>
+            </div> -->
+        </div>
+
+        <div
+          class="quality-row d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <div class="qty-column d-flex flex-col gap-10">
+            <div class="data-get sm-col mb-0">
+              <label><strong>RIGHT KIDNEY</strong></label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="RIGHT KIDNEY size"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+            </div>
+
+            <textarea
+              class="form-control"
+              type="text"
+              name="RIGHT KIDNEY Comment"
+              value=""
+            ></textarea>
+          </div>
+
+          <div class="qty-column d-flex flex-col gap-10">
+            <div class="data-get sm-col mb-0">
+              <label><strong>LEFT KIDNEY</strong></label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="LEFT KIDNEY size"
+                  value=""
+                />
+                <span class="cm-txt-in">mm</span>
+              </span>
+            </div>
+
+            <textarea
+              class="form-control"
+              type="text"
+              name="LEFT KIDNEY Comment"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+
+        <div
+          class="quality-row d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <div class="qty-column">
+            <div class="data-get sm-col">
+              <label><strong>AORTA</strong></label>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="RIGHT KIDNEY size"
+                  value=""
+                />
+                <span class="cm-txt-in">cm/s</span>
+              </span>
+            </div>
+          </div>
+          <div class="qty-column">
+            <div class="data-get d-flex">
+              <div class="radio-list d-flex align-items-center">
+                <label class="customRadio min-w-auto"
+                  >Multiphasic
+                  <input
+                    type="radio"
+                    name="Aorta waveform"
+                    value="Poor"
+                    checked
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="customRadio"
+                  >Monophasic
+                  <input type="radio" name="Aorta waveform" value="Fair" />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div
+            class="quality-row d-flex flex-wrap align-items-center justify-content-between"
+          >
+            <div class="qty-column">
+              <h4 class="text-align-center">RIGHT MAIN RENAL ARTERY</h4>
+
+              <div class="data-get comp-item-header">
+                <div class="grid-column-3-2">
+                  <label></label>
+                  <label></label>
+                  <label><strong>RAR</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Origin</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="right Origin size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="right Origin RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Prox</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="right Prox size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="right Prox RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Mid</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="right Mid size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="right Mid RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Dist</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="right Dist size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="right Dist RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <br /><br />
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label><strong>INTRARENAL RI</strong></label>
+                  <label class="text-align-right">Upper</label>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="right INTRARENAL RI upper"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label></label>
+                  <label class="text-align-right">Mid</label>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="right INTRARENAL RI mid"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label></label>
+                  <label class="text-align-right">Lower</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="right INTRARENAL RI lower"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="qty-column">
+              <h4 class="text-align-center">RIGHT MAIN RENAL ARTERY</h4>
+
+              <div class="data-get comp-item-header">
+                <div class="grid-column-3-2">
+                  <label></label>
+                  <label></label>
+                  <label><strong>RAR</strong></label>
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Origin</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="left Origin size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="left Origin RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Prox</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="left Prox size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="left Prox RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Mid</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="left Mid size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="left Mid RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label>Dist</label>
+
+                  <div class="data-get sm-col mb-0">
+                    <span class="cm-txt">
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="left Dist size"
+                        value=""
+                      />
+                      <span class="cm-txt-in">cm/s</span>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="left Dist RAR"
+                    value=""
+                  />
+                </div>
+              </div>
+              <br /><br />
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label><strong>INTRARENAL RI</strong></label>
+                  <label class="text-align-right">Upper</label>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="left INTRARENAL RI upper"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label></label>
+                  <label class="text-align-right">Mid</label>
+
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="left INTRARENAL RI mid"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="data-get comp-item">
+                <div class="grid-column-3-2 align-items-end">
+                  <label></label>
+                  <label class="text-align-right">Lower</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="left INTRARENAL RI lower"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+            ></textarea>
+          </div>
+
+          <div class="text-italic">
+            <h4>※ NOTES:</h4>
+            <label
+              ><strong>RAR = ( PSVRenal / PSVAorta ) > 3.5</strong>indicates
+              stenosis > 60%</label
+            >
+            <br />
+            <label
+              ><strong>PSV > 180 cm/sec</strong>indicates stenosis > 60%</label
+            ><br />
+            <label
+              ><strong>RI > 0.8</strong>indicates medical kidney disease</label
+            >
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+      <!-- form body end -->
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

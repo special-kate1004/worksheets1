@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+          <div>
+            <h1>LUMPS AND BUMPS</h1>
+            <label>INTERIM SONOGRAPHER REPORT ONLY</label>
+          </div>
+          <div class="logo">
+            <img src="assets/images/logo.webp" alt="logo image" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="3 Point ID Check" />
+                <span class="checkmark"></span>
+              </label>
+              <label>3 Point ID Check</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Verbal Consent" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Verbal Consent</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input
+                  type="checkbox"
+                  name="Single or Maltiple?"
+                  value="single"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <label>Single</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Verbal Consent" value="multiple" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Multiple (Extra Worksheets if Needed)</label>
+            </div>
+
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Normal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Normal</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Abnormal</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h4 class="text-underline">Lump 1</h4>
+          <div class="data-get sm-col mb-0 w-130">
+            <label><strong>Size</strong></label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Lump 1 size L"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            x
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Lump1 size W"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            x
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Lump1 size H"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            =
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Lump1 size volumn"
+                value=""
+              />
+              <span class="cm-txt-in">mm³</span>
+            </span>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label><strong>Location</strong></label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump1 location"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label><strong>Shape</strong></label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump1 shape"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="d-flex flex-wrap form-row w-100 w-215">
+            <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+              <label><strong>Echotexture</strong></label>
+              <div class="date-feild">
+                <select
+                  class="form-control"
+                  type="text"
+                  name="lump1 Echotexture"
+                >
+                  <option value="" selected></option>
+                  <option value="Normal">Homogenous</option>
+                  <option value="Increased">Heterogenous</option>
+                  <option value="Decreased">Echogenic</option>
+                  <option value="Decreased">Hypoechoic</option>
+                  <option value="Decreased">Isoechoic</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap form-row w-100 w-215">
+            <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+              <label><strong>Vascularity</strong></label>
+              <div class="date-feild">
+                <select
+                  class="form-control"
+                  type="text"
+                  name="lump1 Vascularity"
+                >
+                  <option value="" selected></option>
+                  <option value="Normal">Internal</option>
+                  <option value="Increased">Peripheral</option>
+                  <option value="Decreased">No Vascularity</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="data-get checkboxWrap d-flex mb-8 max-w-500">
+            <label class="checklabel"><strong>Compressible</strong></label>
+            <div
+              class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+            >
+              <label class="customRadio min-w-60"
+                >Yes
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="lump1 Compressible"
+                  value="yes"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio"
+                >No
+                <input type="radio" name="lump1 Compressible" value="no" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio"
+                >N/A
+                <input type="radio" name="lump1 Compressible" value="no" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="data-get checkboxWrap d-flex mb-8 max-w-500">
+            <label class="checklabel"><strong>Mobile</strong></label>
+            <div
+              class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+            >
+              <label class="customRadio min-w-60"
+                >Yes
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="lump1 Mobile"
+                  value="yes"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio"
+                >No
+                <input type="radio" name="lump1 Mobile" value="no" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label class="min-w-auto text-nowrap"
+              ><strong>Adjacent associated tissue</strong></label
+            >
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump1 Adjacent associated tissue"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label class="min-w-auto text-nowrap"
+              ><strong>The feature consists withape</strong></label
+            >
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump1 The feature consists with"
+              id="clinical"
+              value=""
+            />
+          </div>
+        </div>
+
+        <div class="section">
+          <h4 class="text-underline">Lump 2</h4>
+          <div class="data-get sm-col mb-0 w-130">
+            <label><strong>Size</strong></label>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="lump2 size L"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            x
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="lump2 size W"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            x
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="lump2 size H"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
+            =
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="lump2 size volumn"
+                value=""
+              />
+              <span class="cm-txt-in">mm³</span>
+            </span>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label><strong>Location</strong></label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump2 location"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label><strong>Shape</strong></label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump2 shape"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="d-flex flex-wrap form-row w-100 w-215">
+            <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+              <label><strong>Echotexture</strong></label>
+              <div class="date-feild">
+                <select
+                  class="form-control"
+                  type="text"
+                  name="lump2 Echotexture"
+                >
+                  <option value="" selected></option>
+                  <option value="Normal">Homogenous</option>
+                  <option value="Increased">Heterogenous</option>
+                  <option value="Decreased">Echogenic</option>
+                  <option value="Decreased">Hypoechoic</option>
+                  <option value="Decreased">Isoechoic</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap form-row w-100 w-215">
+            <div class="data-get d-flex flex-wrap align-items-center flex-wrap">
+              <label><strong>Vascularity</strong></label>
+              <div class="date-feild">
+                <select
+                  class="form-control"
+                  type="text"
+                  name="lump2 Vascularity"
+                >
+                  <option value="" selected></option>
+                  <option value="Normal">Internal</option>
+                  <option value="Increased">Peripheral</option>
+                  <option value="Decreased">No Vascularity</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="data-get checkboxWrap d-flex mb-8 max-w-500">
+            <label class="checklabel"><strong>Compressible</strong></label>
+            <div
+              class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+            >
+              <label class="customRadio min-w-60"
+                >Yes
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="lump2 Compressible"
+                  value="yes"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio"
+                >No
+                <input type="radio" name="lump2 Compressible" value="no" />
+                <span class="checkmark"></span>
+              </label>
+              <label class="customRadio"
+                >N/A
+                <input type="radio" name="lump2 Compressible" value="no" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div class="data-get checkboxWrap d-flex mb-8 max-w-500">
+            <label class="checklabel"><strong>Mobile</strong></label>
+            <div
+              class="radio-list d-flex align-items-center gap-50 sm-w-auto max-w-full w-full pt-0 ml-23"
+            >
+              <label class="customRadio min-w-60"
+                >Yes
+                <input
+                  type="radio"
+                  checked="checked"
+                  name="lump2 Mobile"
+                  value="yes"
+                />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="customRadio"
+                >No
+                <input type="radio" name="lump2 Mobile" value="no" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label class="min-w-auto text-nowrap"
+              ><strong>Adjacent associated tissue</strong></label
+            >
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump2 Adjacent associated tissue"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label class="min-w-auto text-nowrap"
+              ><strong>The feature consists withape</strong></label
+            >
+            <input
+              class="form-control full-w"
+              type="text"
+              name="lump2 The feature consists with"
+              id="clinical"
+              value=""
+            />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+      <!-- form body end -->
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>
