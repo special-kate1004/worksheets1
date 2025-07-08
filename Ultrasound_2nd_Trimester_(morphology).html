@@ -88,7 +88,7 @@
             />
           </div>
 
-          <div class="data-get d-flex flex-wrap align-items-end mb-0 sm-mt-0">
+          <div class="data-get d-flex flex-wrap align-items-end sm-mt-0">
             based on
             <div class="radio-list d-flex align-items-center gap-10">
               <label class="customRadio min-w-60" for="edd_method_LMP"
@@ -152,22 +152,26 @@
 
           <div class="data-get calculated edd w-100px d-flex align-items-end">
             <label class="mr-0">Gestational Age: </label>
-            <input
-              class="form-control"
-              type="text"
-              name="Assumed Gestational Age weeks"
-              id="estimateddateofdeliveryday"
-              value=""
-            />
-            w
-            <input
-              class="form-control afterInput"
-              type="text"
-              name="Assumed Gestational Age days"
-              id="estimateddateofdeliverymonth"
-              value=""
-            />
-            days
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="GA_w"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">w</span>
+            </span>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="GA_d"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">days</span>
+            </span>
           </div>
 
           <div class="w-570 d-mob-bk">
@@ -283,22 +287,26 @@
             <div class="data-get sm-col w-130">
               <div>
                 <label>AUA</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  name="Age Ultrasound Adjusted (Weeks)"
-                  id="ageultrasoundddjustedweek"
-                  value=""
-                />
-                w
-                <input
-                  class="form-control"
-                  type="text"
-                  name="Age Ultrasound Adjusted (Days)"
-                  id="ageultrasoundadjustedday"
-                  value=""
-                />
-                d
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="AUA_w"
+                    id="fhr"
+                    value=""
+                  />
+                  <span class="cm-txt-in">w</span>
+                </span>
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="AUA_d"
+                    id="fhr"
+                    value=""
+                  />
+                  <span class="cm-txt-in">d</span>
+                </span>
               </div>
             </div>
             <div class="data-get w-130 d-flex">
@@ -324,13 +332,16 @@
             <div class="data-get sm-col w-130">
               <div>
                 <label>Fetal HR</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  name="fetal HR"
-                  value=""
-                />
-                bpm
+                <span class="cm-txt">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="Fetal_HR"
+                    id="fhr"
+                    value=""
+                  />
+                  <span class="cm-txt-in">bpm</span>
+                </span>
               </div>
             </div>
             <div class="data-get w-130 d-flex">

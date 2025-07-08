@@ -123,7 +123,7 @@
         </div>
 
         <div class="section">
-          <div class="data-get calculated edd w-100px d-flex align-items-end">
+          <div class="data-get calculated edd w-100px d-flex align-items-center">
             <label class="mr-0">LNMP: </label>
             <input
               class="form-control"
@@ -160,7 +160,7 @@
             </div>
           </div>
           <div
-            class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
+            class="data-get calculated edd w-100px d-flex align-items-center flex-wrap"
           >
             <label class="mr-0">Clinical EDD: </label>
             <input
@@ -185,7 +185,7 @@
               name="clinical EDD year"
               id="estimateddateofdeliveryyear"
             />
-            <div class="data-get d-flex flex-wrap align-items-end mb-0 sm-mt-0">
+            <div class="data-get d-flex flex-wrap align-items-end sm-mt-0">
               based on
               <div class="radio-list d-flex align-items-center gap-10">
                 <label class="customRadio min-w-60" for="edd_method_LMP"
@@ -236,26 +236,30 @@
           </div>
           <div class="data-get calculated edd w-100px d-flex align-items-end">
             <label class="mr-0">Clinical GA: </label>
-            <input
-              class="form-control"
-              type="text"
-              name="Assumed Gestational Age weeks"
-              id="estimateddateofdeliveryday"
-              value=""
-            />
-            w
-            <input
-              class="form-control afterInput"
-              type="text"
-              name="Assumed Gestational Age days"
-              id="estimateddateofdeliverymonth"
-              value=""
-            />
-            days
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="GA_w"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">w</span>
+            </span>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="GA_days"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">days</span>
+            </span>
           </div>
           <div class="data-get d-flex flex-wrap align-items-center">
             <label>Heartbeat:</label>
-            <div class="radio-list d-flex align-items-center">
+            <div class="radio-list d-flex align-items-center ml-8-">
               <label class="customRadio min-w-60" for="Heartbeat-seen"
                 >Seen
                 <input
@@ -267,14 +271,16 @@
                 />
                 <span class="checkmark"></span>
               </label>
-              <input
-                class="form-control wd-100 ml-15"
-                type="text"
-                name="Heartbeat bmp"
-                id="estimateddateofdeliveryday"
-                value=""
-              />
-              bpm
+              <span class="cm-txt w-100px">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="heartbeat_seen"
+                  id="fhr"
+                  value=""
+                />
+                <span class="cm-txt-in">bpm</span>
+              </span>
 
               <label class="customRadio" for="Heartbeat-not-seen"
                 >Not seen
@@ -293,7 +299,7 @@
         <div class="section">
           <label><strong>PREGNANCY</strong></label>
           <div
-            class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
+            class="data-get calculated edd w-100px d-flex align-items-center flex-wrap"
           >
             <label class="mr-15 sm-w-auto">Gestational sac </label>
             <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
@@ -323,14 +329,16 @@
               </label>
             </div>
             <label class="sm-w-auto">MSD:</label>
-            <input
-              class="form-control"
-              type="text"
-              name="PREGNANCY Gestational sac MSD"
-              id="estimateddateofdeliveryday"
-              value=""
-            />
-            mm
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="MSD"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
           </div>
           <div
             class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
@@ -362,7 +370,7 @@
             </div>
           </div>
           <div
-            class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
+            class="data-get calculated edd w-100px d-flex align-items-center flex-wrap"
           >
             <label class="mr-15 sm-w-auto">Fetal pole </label>
             <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
@@ -391,34 +399,40 @@
             </div>
 
             <label class="sm-w-auto">CRL:</label>
-            <input
-              class="form-control"
-              type="text"
-              name="pregnancy fetal pole CRL"
-              id="estimateddateofdeliveryday"
-              value=""
-            />
-            mm
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="CRL"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">mm</span>
+            </span>
             <label class="mr-25"></label>
-            <input
-              class="form-control"
-              type="text"
-              name="pregnancy fetal pole w"
-              id="estimateddateofdeliveryday"
-              value=""
-            />
-            w
-            <input
-              class="form-control afterInput"
-              type="text"
-              name="pregnancy fetal pole days"
-              id="estimateddateofdeliverymonth"
-              value=""
-            />
-            days
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="CRL_w"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">w</span>
+            </span>
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="CRL_d"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">days</span>
+            </span>
           </div>
           <div
-            class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
+            class="data-get calculated edd w-100px d-flex align-items-center flex-wrap"
           >
             <label class="mr-15 sm-w-auto">Cardiac activity </label>
             <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
@@ -449,17 +463,19 @@
             </div>
 
             <label class="sm-w-auto">HR:</label>
-            <input
-              class="form-control"
-              type="text"
-              name="pregnancy fetal pole HR"
-              id="estimateddateofdeliveryday"
-              value=""
-            />
-            bpm
+            <span class="cm-txt">
+              <input
+                class="form-control"
+                type="text"
+                name="Cardiac_activity_HR"
+                id="fhr"
+                value=""
+              />
+              <span class="cm-txt-in">bpm</span>
+            </span>
           </div>
           <div
-            class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
+            class="data-get calculated edd w-100px d-flex align-items-center flex-wrap"
           >
             <label class="mr-15- sm-w-auto">Subchorionic haem. </label>
             <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
@@ -488,6 +504,7 @@
                 <span class="checkmark"></span>
               </label>
             </div>
+            <label class="sm-w-auto"></label>
             <input
               class="form-control full-w flex-grow"
               type="text"
@@ -543,11 +560,11 @@
             </div>
           </div>
           <div
-            class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
+            class="data-get calculated edd w-100px d-flex align-items-center flex-wrap"
           >
             <label class="mr-0">EDD </label>
             <input
-              class="form-control"
+              class="form-control ml-40"
               type="text"
               name="pregnancy EDD day"
               id="estimateddateofdeliveryday"
@@ -568,7 +585,7 @@
               name="pregnancy EDD Year"
               id="estimateddateofdeliveryyear"
             />
-            <div class="data-get d-flex flex-wrap align-items-end mb-0 sm-mt-0">
+            <div class="data-get d-flex flex-wrap align-items-center  sm-mt-0">
               based on
               <div class="radio-list d-flex align-items-center gap-10">
                 <label
@@ -668,7 +685,7 @@
           <div
             class="data-get calculated edd w-100px d-flex align-items-end flex-wrap"
           >
-            <label class="mr-0 sm-w-auto">Ovaries / Adnexa: </label>
+            <label class="mr-5 sm-w-auto">Ovaries / Adnexa: </label>
             <div class="radio-list d-flex align-items-center gap-10 sm-w-auto">
               <label
                 class="customRadio min-w-60"

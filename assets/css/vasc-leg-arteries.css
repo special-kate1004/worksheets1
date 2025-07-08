@@ -1,0 +1,101 @@
+.vasc-leg-arteries {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.vasc-leg-arteries .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.vasc-leg-arteries .col {
+  flex: 1 1 100%;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+/* On desktop, keep them side by side */
+@media (min-width: 768px) {
+  .vasc-leg-arteries .col {
+    flex: 1 1 33.333%;
+  }
+}
+
+/* Shared table styles */
+.vasc-leg-arteries .table {
+  display: grid;
+  width: 100%;
+}
+
+.vasc-leg-arteries .row {
+  display: contents;
+}
+
+.vasc-leg-arteries .rowspan3 {
+  grid-row: span 3;
+}
+
+.vasc-leg-arteries .cell {
+  padding: 10px 5px;
+  border: 1px dashed #666;
+  font-size: 22px;
+}
+
+.vasc-leg-arteries .cell input[type="text"] {
+  border: 0;
+  padding: 0 10px;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 0;
+  outline: none;
+}
+
+.vasc-leg-arteries .header .cell {
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Specific column counts */
+.vasc-leg-arteries .left-table {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.vasc-leg-arteries .right-table {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vasc-leg-arteries .right-bottom-table {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Image */
+.vasc-leg-arteries .img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  padding: 5px;
+}
+.vasc-leg-arteries .right-bottom-table .cell {
+  font-weight: bold;
+  text-align: center;
+}
+.vasc-leg-arteries .mb-30 {
+  margin-bottom: 30px;
+}
+
+.vasc-leg-arteries .cell-span-2 {
+  grid-column: span 2;
+}
+
+.vasc-leg-arteries .image-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
+}

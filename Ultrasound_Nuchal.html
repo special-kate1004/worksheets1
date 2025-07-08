@@ -146,22 +146,24 @@
 
             <div class="data-get calculated edd w-100px d-flex align-items-end">
               <label class="mr-0">Expected GA: </label>
-              <input
-                class="form-control"
-                type="text"
-                name="Assumed Gestational Age weeks"
-                id="estimateddateofdeliveryday"
-                value=""
-              />
-              w
-              <input
-                class="form-control afterInput"
-                type="text"
-                name="Assumed Gestational Age days"
-                id="estimateddateofdeliverymonth"
-                value=""
-              />
-              days
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="expected_GA_w"
+                  value=""
+                />
+                <span class="cm-txt-in">w</span>
+              </span>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="expected_GA_d"
+                  value=""
+                />
+                <span class="cm-txt-in">days</span>
+              </span>
             </div>
             <div
               class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
@@ -188,36 +190,33 @@
             <div class="d-flex flex-wrap form-row datingRow">
               <div class="data-get week-days">
                 <label class="small-label">CRL:</label>
-                <span class="cm-txt w-100px">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="biometry CRL"
-                    id="biparietaldiameter"
+                    name="CRL"
                     value=""
                   />
-                </span>
-                <span>cm =</span>
-                <span class="cm-txt w-190">
+                  <span class="cm-txt-in">cm</span>
+                </span>=
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="CRL w"
-                    id="biparietaldiameterweeks"
+                    name="CRL_w"
                     value=""
                   />
+                  <span class="cm-txt-in">w</span>
                 </span>
-                <span>w</span>
-                <span class="cm-txt w-190">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="CRL d"
-                    id="biparietaldiameterdays"
+                    name="CRL_d"
                     value=""
                   />
+                  <span class="cm-txt-in">d</span>
                 </span>
-                <span>d</span>
               </div>
             </div>
 
@@ -246,136 +245,125 @@
             <div class="d-flex flex-wrap form-row datingRow">
               <div class="data-get week-days">
                 <label class="small-label">BPD: </label>
-                <span class="cm-txt w-100px">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
                     name="BPD"
-                    id="biparietaldiameter"
                     value=""
                   />
-                </span>
-                <span>cm =</span>
-                <span class="cm-txt w-190">
+                  <span class="cm-txt-in">cm</span>
+                </span>=
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="BPD w"
-                    id="biparietaldiameterweeks"
+                    name="BPD_w"
                     value=""
                   />
+                  <span class="cm-txt-in">w</span>
                 </span>
-                <span>w</span>
-                <span class="cm-txt w-190">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="BPD d"
-                    id="biparietaldiameterdays"
+                    name="BPD_d"
                     value=""
                   />
+                  <span class="cm-txt-in">d</span>
                 </span>
-                <span>d</span>
               </div>
             </div>
             <div class="d-flex flex-wrap form-row datingRow">
               <div class="data-get week-days">
                 <label class="small-label">HC:</label>
-                <span class="cm-txt w-100px">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
                     name="HC"
-                    id="biparietaldiameter"
                     value=""
                   />
-                </span>
-                <span>cm =</span>
-                <span class="cm-txt w-190">
+                  <span class="cm-txt-in">cm</span>
+                </span>=
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="HC w"
-                    id="biparietaldiameterweeks"
+                    name="HC_w"
                     value=""
                   />
+                  <span class="cm-txt-in">w</span>
                 </span>
-                <span>w</span>
-                <span class="cm-txt w-190">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="HC d"
-                    id="biparietaldiameterdays"
+                    name="HC_d"
                     value=""
                   />
+                  <span class="cm-txt-in">d</span>
                 </span>
-                <span>d</span>
               </div>
             </div>
             <div class="d-flex flex-wrap form-row datingRow">
               <div class="data-get week-days">
                 <label class="small-label">AC:</label>
-                <span class="cm-txt w-100px">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
                     name="AC"
-                    id="biparietaldiameter"
                     value=""
                   />
-                </span>
-                <span>cm =</span>
-                <span class="cm-txt w-190">
+                  <span class="cm-txt-in">cm</span>
+                </span>=
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="AC w"
-                    id="biparietaldiameterweeks"
+                    name="AC_w"
                     value=""
                   />
+                  <span class="cm-txt-in">w</span>
                 </span>
-                <span>w</span>
-                <span class="cm-txt w-190">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="AC d"
-                    id="biparietaldiameterdays"
+                    name="AC_d"
                     value=""
                   />
+                  <span class="cm-txt-in">d</span>
                 </span>
-                <span>d</span>
               </div>
             </div>
             <div class="d-flex flex-wrap form-row datingRow">
               <div class="data-get week-days">
                 <label class="small-label">Fetal HR:</label>
-                <span class="cm-txt w-100px">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
-                    name="Fetal HR"
-                    id="biparietaldiameter"
+                    name="fetal_HR"
                     value=""
                   />
+                  <span class="cm-txt-in">bpm</span>
                 </span>
-                <span>bpm</span>
               </div>
             </div>
             <div class="d-flex flex-wrap form-row datingRow">
               <div class="data-get week-days">
                 <label class="small-label">NT</label>
-                <span class="cm-txt w-100px">
+                <span class="cm-txt w-130">
                   <input
                     class="form-control"
                     type="text"
                     name="NT"
-                    id="biparietaldiameter"
                     value=""
                   />
+                  <span class="cm-txt-in">mm</span>
                 </span>
-                <span>mm</span>
                 <span class="text-italic"
                   >appropriate between CRL 45 - 84mm (11w1d -13w6d)</span
                 >
@@ -405,11 +393,22 @@
                     <input type="checkbox" name="Bladder" />
                     <span class="checkmark"></span>
                   </label>
-                  <label class="customcheckbox"
-                    >Nasal bone seen/not seen
-                    <input type="checkbox" name="Nasal bone seen/not seen" />
-                    <span class="checkmark"></span>
-                  </label>
+                  <div class="d-flex justify-content-between">
+                    <label class="customcheckbox">Nasal bone</label>
+                    <label class="customRadio"
+                        >Seen
+                        <input type="radio" name="Nasal_bone" />
+                        <span class="checkmark"></span>
+                    </label>
+                  </div>
+                 <div class="d-flex justify-content-between">
+                  <label></label>
+                  <label class="customRadio"
+                  >Not Seen
+                  <input type="radio" name="Nasal_bone" />
+                  <span class="checkmark"></span>
+                </label>
+                 </div>
                 </div>
               </div>
               <div class="data-get checkboxWrap d-flex mb-8">
@@ -510,46 +509,43 @@
               <div class="d-flex flex-wrap form-row datingRow">
                 <div class="data-get week-days">
                   <label class="small-label">Cervix:</label>
-                  <span class="cm-txt w-100px">
+                  <span class="cm-txt w-130">
                     <input
                       class="form-control"
                       type="text"
-                      name="Cervix"
-                      id="biparietaldiameter"
+                      name="cervix"
                       value=""
                     />
+                    <span class="cm-txt-in">mm</span>
                   </span>
-                  <span>mm</span>
                 </div>
               </div>
               <div class="d-flex flex-wrap form-row datingRow">
                 <div class="data-get week-days">
                   <label class="small-label">Uterus:</label>
-                  <span class="cm-txt w-100px">
+                  <span class="cm-txt w-130">
                     <input
                       class="form-control"
                       type="text"
-                      name="Uterus"
-                      id="biparietaldiameter"
+                      name="uterus"
                       value=""
                     />
+                    <span class="cm-txt-in">mm</span>
                   </span>
-                  <span>mm</span>
                 </div>
               </div>
               <div class="d-flex flex-wrap form-row datingRow">
                 <div class="data-get week-days">
                   <label class="small-label">Ovaries:</label>
-                  <span class="cm-txt w-100px">
+                  <span class="cm-txt w-130">
                     <input
                       class="form-control"
                       type="text"
                       name="Ovaries"
-                      id="biparietaldiameter"
                       value=""
                     />
+                    <span class="cm-txt-in">mm</span>
                   </span>
-                  <span>mm</span>
                 </div>
               </div>
               <div class="d-flex flex-wrap form-row datingRow">

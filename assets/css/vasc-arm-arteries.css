@@ -1,0 +1,100 @@
+.vasc-arm-arteries {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.vasc-arm-arteries .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.vasc-arm-arteries .col {
+  flex: 1 1 100%;
+  min-width: 300px;
+  overflow: hidden;
+}
+
+/* On desktop, keep them side by side */
+@media (min-width: 768px) {
+  .vasc-arm-arteries .col {
+    flex: 1 1 33.333%;
+  }
+}
+
+/* Shared table styles */
+.vasc-arm-arteries .table {
+  display: grid;
+  width: 100%;
+}
+
+.vasc-arm-arteries .row {
+  display: contents;
+}
+
+.vasc-arm-arteries .cell {
+  padding: 10px 5px;
+  border: 1px dashed #666;
+  font-size: 22px;
+}
+
+.vasc-arm-arteries .cell input[type="text"] {
+  border: 0;
+  padding: 0 10px;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 0;
+  outline: none;
+}
+
+.vasc-arm-arteries .header .cell {
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Specific column counts */
+.vasc-arm-arteries .left-table {
+  grid-template-columns: repeat(3, 1fr);
+}
+.vasc-arm-arteries .left-table .cell {
+  border-left: none;
+  border-top: none;
+}
+.vasc-arm-arteries .right-table {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.vasc-arm-arteries .right-table .cell {
+  border-right: none;
+  border-top: none;
+}
+
+/* Image */
+.vasc-arm-arteries .img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  padding: 5px;
+}
+.vasc-arm-arteries .right-bottom-table .cell {
+  font-weight: bold;
+  text-align: center;
+}
+.vasc-arm-arteries .mb-30 {
+  margin-bottom: 30px;
+}
+
+.vasc-arm-arteries .cell-span-2 {
+  grid-column: span 2;
+}
+
+.vasc-arm-arteries .image-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

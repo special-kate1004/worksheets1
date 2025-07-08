@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vasc-leg-arteries.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+          <div>
+            <h1>LEG ARTERIAL DROPPLER</h1>
+          </div>
+          <div class="logo">
+            <img src="assets/images/logo.webp" alt="logo image" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Normal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Normal</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Abnormal</label>
+            </div>
+          </div>
+
+          <!-- <div class="data-get w-100">
+                <label>Patient Details:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="patient-details"
+                id="patient-details"
+                value=""
+                ></textarea>
+            </div> -->
+        </div>
+
+        <div class="section vasc-leg-arteries">
+          <div class="container">
+            <!-- Left Table (4 columns) -->
+            <div class="col">
+              <h4>LEFT</h4>
+              <div class="table left-table">
+                <div class="row header">
+                  <div class="cell cell-span-2">VESSEL</div>
+                  <div class="cell">PSV<br/>(CM/S)</div>
+                  <div class="cell">FLOW</div>
+                  <div class="cell">STENOSIS</div>
+                </div>
+                <div class="row">
+                  <div class="cell cell-span-2">Aorta</div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="cell cell-span-2">CIA</div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="cell cell-span-2">EIA</div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="cell cell-span-2">CFA</div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="cell cell-span-2">PROF</div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                  <div class="cell">
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="cell rowspan3">SFA</div>
+                  <div class="cell">PROX</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">MID</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">DIST</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell cell-span-2">POP</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell cell-span-2">TPT</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell rowspan3">PTA</div>
+                  <div class="cell">PROX</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">MID</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">DIST</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell rowspan3">PER A</div>
+                  <div class="cell">PROX</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">MID</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">DIST</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell rowspan3">ATA</div>
+                  <div class="cell">PROX</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">MID</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell">DIST</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell cell-span-2">Dorsalis Pedis</div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col">
+              <div class="image-wrapper">
+				<img src="./assets/images/vasc-leg-arteries.png" alt="image" class="img" />
+			  </div>
+            </div>
+
+            <!-- Right Table (3 columns) -->
+            <div class="col">
+              <h4>RIGHT</h4>
+              <div class="table right-table mb-30">
+                <div class="row header">
+                  <div class="cell">PSV<br/>(CM/S)</div>
+                  <div class="cell">FLOW</div>
+                  <div class="cell">STENOSIS</div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+              </div>
+
+              <div class="table right-bottom-table">
+                <div class="row header">
+                  <div class="cell cell-span-2">COMMENTS Grading of Stenosis</div>
+                </div>
+                <div class="row">
+                  <div class="cell">&lt; 1.5 : 1</div>
+                  <div class="cell">Normal</div>
+                </div>
+                <div class="row">
+                  <div class="cell">1.5:1 to 2:1</div>
+                  <div class="cell">&lt; 50%</div>
+                </div>
+                <div class="row">
+                  <div class="cell">2:1 to 4:1</div>
+                  <div class="cell">50% to 75%</div>
+                </div>
+                <div class="row">
+                  <div class="cell">&gt; 4 : 1</div>
+                  <div class="cell">&gt; 75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+      <!-- form body end -->
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>

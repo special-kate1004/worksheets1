@@ -159,22 +159,24 @@
 
             <div class="data-get calculated edd w-100px d-flex align-items-end">
               <label class="mr-0">Gestational Age: </label>
-              <input
-                class="form-control"
-                type="text"
-                name="Assumed Gestational Age weeks"
-                id="estimateddateofdeliveryday"
-                value=""
-              />
-              w
-              <input
-                class="form-control afterInput"
-                type="text"
-                name="Assumed Gestational Age days"
-                id="estimateddateofdeliverymonth"
-                value=""
-              />
-              days
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="GA_w"
+                  value=""
+                />
+                <span class="cm-txt-in">w</span>
+              </span>
+              <span class="cm-txt">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="GA_d"
+                  value=""
+                />
+                <span class="cm-txt-in">days</span>
+              </span>
             </div>
 
             <div class="w-570 d-mob-bk">
@@ -208,227 +210,230 @@
             </div>
           </div>
 
-          <div class="biometrics-sec">
-            <h4>Biometrics</h4>
-            <div class="d-flex flex-wrap form-row datingRow">
-              <div class="data-get week-days">
-                <label class="small-label">BPD:</label>
-                <span class="cm-txt w-100px">
+          <div class="d-flex gap-50 align-items-end justify-content-between w-full flex-wrap">
+            <div class="biometrics-sec">
+              <h4>Biometrics</h4>
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">BPD:</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Biparietal Diameter (mm)"
+                      id="biparietaldiameter"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Biparietal Diameter Weeks"
+                      id="biparietaldiameterweeks"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Weeks</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Biparietal Diameter Days"
+                      id="biparietaldiameterdays"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Days</span>
+                  </span>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Biparietal Diameter Percentile"
+                      id="biparietaldiameterpercentile"
+                      value=""
+                    />
+                    <span class="cm-txt-in">%</span>
+                  </span>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">HC</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Head Circumference (mm)"
+                      id="headcircumference"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Head Circumference Weeks"
+                      id="headcircumferenceweeks"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Weeks</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Head Circumference Days"
+                      id="headcircumferencedays"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Days</span>
+                  </span>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Head Circumference Percentile"
+                      id="headcircumferencepercentile"
+                      value=""
+                    />
+                    <span class="cm-txt-in">%</span>
+                  </span>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">AC</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Abdominal Circumference (mm)"
+                      id="abdominalcircumference"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Abdominal Circumference Weeks"
+                      id="abdominalcircumferenceweeks"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Weeks</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Abdominal Circumference Days"
+                      id="abdominalcircumferencedays"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Days</span>
+                  </span>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Abdominal Circumference Percentile"
+                      id="abdominalcircumferencepercentile"
+                      value=""
+                    />
+                    <span class="cm-txt-in">%</span>
+                  </span>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days">
+                  <label class="small-label">FL</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Femur Length (mm)"
+                      id="femurlength"
+                      value=""
+                    />
+                    <span class="cm-txt-in">mm</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Femur Length Weeks"
+                      id="femurlengthweeks"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Weeks</span>
+                  </span>
+                  <span class="cm-txt w-190">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Femur Length Days"
+                      id="femurlengthdays"
+                      value=""
+                    />
+                    <span class="cm-txt-in">Days</span>
+                  </span>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Femur Length Percentile"
+                      id="femurlengthpercentile"
+                      value=""
+                    />
+                    <span class="cm-txt-in">%</span>
+                  </span>
+                </div>
+              </div>
+  
+              <div class="d-flex flex-wrap form-row datingRow">
+                <div class="data-get week-days w-100px">
+                  <label class="small-label">EFBW:</label>
                   <input
                     class="form-control"
                     type="text"
-                    name="Biparietal Diameter (mm)"
-                    id="biparietaldiameter"
+                    name="Estimated Fetal Body Weight (grams)"
+                    id="estimatedfetalbodyweight"
                     value=""
                   />
-                  <span class="cm-txt-in">mm</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Biparietal Diameter Weeks"
-                    id="biparietaldiameterweeks"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Weeks</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Biparietal Diameter Days"
-                    id="biparietaldiameterdays"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Days</span>
-                </span>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Biparietal Diameter Percentile"
-                    id="biparietaldiameterpercentile"
-                    value=""
-                  />
-                  <span class="cm-txt-in">%</span>
-                </span>
+                </div>
+                <div class="data-get week-days w-100px">
+                  <label>g +/-</label>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Estimated Fetal Body Weight plus or minus (grams)"
+                      id="estimatedfetalbodyweightpm"
+                      value=""
+                    />
+                    <span class="cm-txt-in">g</span>
+                  </span>
+                  <span class="cm-txt w-100px">
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="Estimated Fetal Body Weight Percentile"
+                      id="estimatedfetalbodyweightpercentile"
+                      value=""
+                    />
+                    <span class="cm-txt-in">%</span>
+                  </span>
+                </div>
               </div>
             </div>
-
-            <div class="d-flex flex-wrap form-row datingRow">
-              <div class="data-get week-days">
-                <label class="small-label">HC</label>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Head Circumference (mm)"
-                    id="headcircumference"
-                    value=""
-                  />
-                  <span class="cm-txt-in">mm</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Head Circumference Weeks"
-                    id="headcircumferenceweeks"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Weeks</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Head Circumference Days"
-                    id="headcircumferencedays"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Days</span>
-                </span>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Head Circumference Percentile"
-                    id="headcircumferencepercentile"
-                    value=""
-                  />
-                  <span class="cm-txt-in">%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="d-flex flex-wrap form-row datingRow">
-              <div class="data-get week-days">
-                <label class="small-label">AC</label>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Abdominal Circumference (mm)"
-                    id="abdominalcircumference"
-                    value=""
-                  />
-                  <span class="cm-txt-in">mm</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Abdominal Circumference Weeks"
-                    id="abdominalcircumferenceweeks"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Weeks</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Abdominal Circumference Days"
-                    id="abdominalcircumferencedays"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Days</span>
-                </span>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Abdominal Circumference Percentile"
-                    id="abdominalcircumferencepercentile"
-                    value=""
-                  />
-                  <span class="cm-txt-in">%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="d-flex flex-wrap form-row datingRow">
-              <div class="data-get week-days">
-                <label class="small-label">FL</label>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Femur Length (mm)"
-                    id="femurlength"
-                    value=""
-                  />
-                  <span class="cm-txt-in">mm</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Femur Length Weeks"
-                    id="femurlengthweeks"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Weeks</span>
-                </span>
-                <span class="cm-txt w-190">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Femur Length Days"
-                    id="femurlengthdays"
-                    value=""
-                  />
-                  <span class="cm-txt-in">Days</span>
-                </span>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Femur Length Percentile"
-                    id="femurlengthpercentile"
-                    value=""
-                  />
-                  <span class="cm-txt-in">%</span>
-                </span>
-              </div>
-            </div>
-
-            <div class="d-flex flex-wrap form-row datingRow">
-              <div class="data-get week-days w-100px">
-                <label class="small-label">EFBW:</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  name="Estimated Fetal Body Weight (grams)"
-                  id="estimatedfetalbodyweight"
-                  value=""
-                />
-              </div>
-              <div class="data-get week-days w-100px">
-                <label>g +/-</label>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Estimated Fetal Body Weight plus or minus (grams)"
-                    id="estimatedfetalbodyweightpm"
-                    value=""
-                  />
-                  <span class="cm-txt-in">g</span>
-                </span>
-                <span class="cm-txt w-100px">
-                  <input
-                    class="form-control"
-                    type="text"
-                    name="Estimated Fetal Body Weight Percentile"
-                    id="estimatedfetalbodyweightpercentile"
-                    value=""
-                  />
-                  <span class="cm-txt-in">%</span>
-                </span>
-              </div>
-            </div>
+            <div ><img src="./assets/images/fetal_position.png" alt="fetal-position" class="max-w-400 sm-w-full"/></div>
           </div>
 
           <div class="biometrics-sec">
@@ -493,6 +498,7 @@
                     <option value="Footling">Footling</option>
                   </select>
                 </div>
+                <label class="mr-33"></label>
 
                 <div class="data-get d-flex align-items-center w-215">
                   <label>Fetal Movements</label>
@@ -535,84 +541,84 @@
                     <input type="checkbox" name="fetal-morphology-brain" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Brain</label>
+                  <label class="min-w-185">Brain</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Stomache" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Stomache</label>
+                  <label class="min-w-185">Stomache</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Diaphragm" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Diaphragm</label>
+                  <label class="min-w-185">Diaphragm</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Heart" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Heart</label>
+                  <label class="min-w-185">Heart</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Kidneys" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Kidneys</label>
+                  <label class="min-w-185">Kidneys</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Abdo wall" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Abdo wall</label>
+                  <label class="min-w-185">Abdo wall</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Nose/lips" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Nose/lips</label>
+                  <label class="min-w-185">Nose/lips</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Bladder" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Bladder</label>
+                  <label class="min-w-185">Bladder</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Spine" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Spine</label>
+                  <label class="min-w-185">Spine</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Cranium" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Cranium</label>
+                  <label class="min-w-185">Cranium</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-Profile" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Profile</label>
+                  <label class="min-w-185">Profile</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-RVOT" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>RVOT</label>
+                  <label class="min-w-185">RVOT</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
@@ -622,21 +628,21 @@
                     />
                     <span class="checkmark"></span>
                   </label>
-                  <label>Lateral ventricle</label>
+                  <label class="min-w-185">Lateral ventricle</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-IVS" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>IVS</label>
+                  <label class="min-w-185"> IVS</label>
                 </div>
                 <div class="d-flex align-items-center gap-18">
                   <label class="customcheckbox">
                     <input type="checkbox" name="fetal-morphology-LVOT" />
                     <span class="checkmark"></span>
                   </label>
-                  <label>LVOT</label>
+                  <label class="min-w-185">LVOT</label>
                 </div>
               </div>
             </div>
@@ -754,7 +760,7 @@
                   &nbsp; <span>(n = 5-25cm)</span>
                 </div>
 
-                <div class="d-flex flex-wrap align-items-center">
+                <div class="d-flex flex-wrap align-items-center ml-23">
                   <div class="radio-list d-flex align-items-center">
                     <label class="customRadio"
                       >Normal
@@ -789,7 +795,7 @@
                 <div class="data-get week-days">
                   <label class="small-label">Placental Position</label>
                   <input
-                    class="form-control"
+                    class="form-control ml-5"
                     type="text"
                     name="Placental Position"
                     id="placentalposition"
@@ -811,8 +817,9 @@
                     </label>
                   </div>
                 </div>
+                <label></label>
                 <div class="data-get d-flex align-items-center w-100px">
-                  <label>Distance from the os</label>
+                  <label class="mr-5">Distance from the os</label>
                   <span class="cm-txt">
                     <input
                       class="form-control"
@@ -829,7 +836,7 @@
                 <div class="data-get d-flex flex-wrap align-items-center">
                   <label>Presentation:</label>
                   <div class="radio-list d-flex align-items-center">
-                    <label class="customRadio"
+                    <label class="customRadio min-w-60"
                       >Cephalic
                       <input
                         type="radio"
@@ -849,7 +856,7 @@
                   <input
                     class="form-control"
                     type="text"
-                    name="Placental Position"
+                    name="presentation_type"
                     id="placentalposition"
                     value=""
                   />
@@ -858,41 +865,38 @@
                 <div class="data-get d-flex flex-wrap align-items-center w-100">
                   <label>Cervix:</label>
                   <div class="radio-list d-flex align-items-center">
-                    <label class="customRadio min-w-60" for="Heartbeat-seen"
-                      >normal
+                    <label class="customRadio min-w-60 mr-15"
+                      >Normal
                       <input
                         type="radio"
-                        checked="checked"
-                        name="Heartbeat"
-                        id="Heartbeat-seen"
-                        value="seen"
+                        checked
+                        name="Cervix"
+                        value="normal"
                       />
                       <span class="checkmark"></span>
                     </label>
 
-                    <label class="customRadio" for="Heartbeat-not-seen"
-                      >abnormal
+                    <label class="customRadio"
+                      >Abnormal
                       <input
                         type="radio"
-                        name="Heartbeat"
-                        id="Heartbeat-not-seen"
-                        value="not seen"
+                        name="Cervix"
+                        value="abnormal"
                       />
                       <span class="checkmark"></span>
                     </label>
                     <input
                       class="form-control wd-100 ml-15"
                       type="text"
-                      name="Heartbeat bmp"
+                      name="Cervix_bmp"
                       id="estimateddateofdeliveryday"
                       value=""
                     />
-                    <label class="customRadio" for="Heartbeat-not-seen"
+                    <label class="customRadio" 
                       >Not well seen
                       <input
                         type="radio"
-                        name="Heartbeat"
-                        id="Heartbeat-not-seen"
+                        name="Cervix"
                         value="not seen"
                       />
                       <span class="checkmark"></span>

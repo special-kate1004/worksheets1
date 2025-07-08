@@ -1,0 +1,95 @@
+.vasc-arm-dvt {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+.vasc-arm-dvt .container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.vasc-arm-dvt .col {
+  flex: 1 1 100%;
+  min-width: 300px;
+  overflow: hidden;
+  border: 1px dashed #666;
+}
+
+/* On desktop, keep them side by side */
+@media (min-width: 768px) {
+  .vasc-arm-dvt .col {
+    flex: 1 1 50%;
+  }
+
+  .vasc-arm-dvt {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vasc-arm-dvt {
+    font-size: 16px;
+  }
+}
+
+/* Shared table styles */
+.vasc-arm-dvt .table {
+  display: grid;
+  width: 100%;
+}
+
+.vasc-arm-dvt .row {
+  display: contents;
+}
+
+.vasc-arm-dvt .cell {
+  padding: 10px 5px;
+  border: 1px dashed #666;
+}
+
+.vasc-arm-dvt .cell input[type="text"] {
+  border: 0;
+  padding: 0 10px;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 0;
+  outline: none;
+}
+
+.vasc-arm-dvt .font-bold {
+  font-weight: bold;
+}
+
+.vasc-arm-dvt .header .cell {
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Specific column counts */
+.vasc-arm-dvt .left-table {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* Image */
+.vasc-arm-dvt .img {
+  height: 100%;
+  display: block;
+  padding: 5px;
+}
+
+.vasc-arm-dvt .cell-span-2 {
+  grid-column: span 2;
+}
+
+.vasc-arm-dvt .image-wrapper {
+  height: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center; /* horizontal center */
+}

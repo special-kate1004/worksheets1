@@ -1814,7 +1814,6 @@ img {
 .select-row .nodule-item select.form-control {
   height: 100%;
   width: 100%;
-  font-size: 24px;
 }
 .score_row .nodule-item {
   border: 0;
@@ -2534,6 +2533,10 @@ img {
   margin-left: -23px;
 }
 
+.ml-5 {
+  margin-left: 5px !important;
+}
+
 .ml-13 {
   margin-left: 13px;
 }
@@ -2550,6 +2553,10 @@ img {
   margin-bottom: 30px;
 }
 
+.ml-7 {
+  margin-left: 7px !important;
+}
+
 .mb-0 {
   margin-bottom: 0 !important;
 }
@@ -2562,6 +2569,12 @@ img {
   margin-right: 45px !important;
 }
 
+.mr-33 {
+  margin-right: 33px !important;
+}
+
+
+
 .mr-15 {
   margin-right: 15px !important;
 }
@@ -2572,6 +2585,10 @@ img {
 
 .ml-10 {
   margin-left: 10px !important;
+}
+
+.ml-40 {
+  margin-left: 40px !important;
 }
 
 .ml-8- {
@@ -3051,6 +3068,8 @@ img {
 .w-125.form-control {
   width: 125px;
 }
+
+
 
 .breast-ultrasound .left-sec label .breast-ultrasound .right-sec label {
   width: auto;

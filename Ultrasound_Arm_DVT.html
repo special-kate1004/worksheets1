@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <title>QUBS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/media-screen.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/vasc-arm-dvt.css" />
+  </head>
+  <body class="form-wrapper trimester-pg wrist-ultrasound elbow-ultrasound">
+    <div id="wrapper">
+      <div class="container">
+        <!-- form body start -->
+
+        <div class="top-form d-flex align-items-end justify-content-between">
+          <div>
+            <h1>ARM DVT ULTRASOUND</h1>
+          </div>
+          <div class="logo">
+            <img src="assets/images/logo.webp" alt="logo image" />
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="d-flex flex-wrap flex-justify-between">
+            <div class="data-get name-txt">
+              <label>Patient Name:</label>
+              <input
+                class="form-control"
+                type="text"
+                name="Patient Name"
+                id="patientName"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>DOB:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="DOB"
+                id="DOB"
+                value=""
+              />
+            </div>
+            <div class="data-get date-feild">
+              <label>Study Date:</label>
+              <input
+                class="form-control"
+                type="text"
+                placeholder="DD-MM-YYYY"
+                name="Study Date"
+                id="studyDate"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="data-get clinical d-flex justify-content-between w-100 align-items-center"
+          >
+            <label>Sonographer:</label>
+            <input
+              class="form-control full-w"
+              type="text"
+              name="Sonographer"
+              id="clinical"
+              value=""
+            />
+          </div>
+          <div class="data-get w-100">
+            <label>Clinical History:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="history"
+              id="history"
+              value=""
+            ></textarea>
+          </div>
+
+          <div
+            class="checkboxgroup d-flex flex-wrap align-items-center align-items-start justify-content-start gap-50"
+          >
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Right" value="Right" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Right</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Left" value="Left" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Left</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Normal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Normal</label>
+            </div>
+            <div class="d-flex align-items-center gap-18">
+              <label class="customcheckbox pr-25">
+                <input type="checkbox" name="Normality" value="Abnormal" />
+                <span class="checkmark"></span>
+              </label>
+              <label>Abnormal</label>
+            </div>
+          </div>
+
+          <!-- <div class="data-get w-100">
+                <label>Patient Details:</label>
+                <textarea
+                class="form-control"
+                type="text"
+                name="patient-details"
+                id="patient-details"
+                value=""
+                ></textarea>
+            </div> -->
+        </div>
+
+        <div class="section vasc-arm-dvt">
+          <div class="container">
+            <!-- Left Table (6 columns) -->
+            <div class="col">
+              <div class="table left-table">
+                <div class="row header">
+                  <div class="cell"></div>
+                  <div class="cell cell-span-2">COMPRESSION</div>
+                  <div class="cell cell-span-2">AUGMENTATION</div>
+                  <div class="cell">THROMBUS</div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Jugular</div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Jugular Compression">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Jagular Augmentation">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Subclavian</div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Subclavian Compression">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Subclavian Augmentation">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Axillary</div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Axillary Compression">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Axillary Augmentation">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Brachial</div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Brachial Compression">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Brachial Augmentation">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+                <div class="row">
+                  <div class="cell font-bold">Radial</div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Radial Compression1">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Radial Compression2">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Radial Augmentation1">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Radial Augmentation2">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Ulnar</div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Ulnar Compression1">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Ulnar Compression2">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Ulnar Augmentation1">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Ulnar Augmentation2">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Cephalic</div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Cephalic Compression">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Cephalic Augmentation">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Basilic</div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Basilic Compression">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Basilic Augmentation">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+
+                <div class="row">
+                  <div class="cell font-bold">Med Cubit</div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Med Cubit Compression">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell cell-span-2 d-flex justify-content-center">
+                    <label class="customcheckbox">
+                      <input type="checkbox" name="Med Cubit Augmentation">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="cell"><input type="text" /></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Image -->
+            <div class="col">
+              <div class="image-wrapper">
+                <img src="./assets/images/vacas-arm-dvt.png" alt="image" class="img" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="section">
+          <div class="data-get w-100">
+            <label>Comments:</label>
+            <textarea
+              class="form-control"
+              type="text"
+              name="Comment"
+              id="Comment"
+              value=""
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" class="btn btn-rounded" value="Submit" />
+        <span id="submitMessage"></span>
+      </div>
+      <!-- form body end -->
+    </div>
+    <script src="assets/js/submitform.js"></script>
+  </body>
+</html>
